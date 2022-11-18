@@ -1370,48 +1370,6 @@
         <RankDisplay value="Never"/>
         <Attributes index="Psionic" value="0"/>
     </CUnit>
-    <CUnit id="Loki">
-        <LifeArmor value="50"/>
-        <Speed value="1.6992"/>
-        <AbilArray index="3" Link="Stimpack2"/>
-        <AbilArray index="5" removed="1"/>
-        <BehaviorArray index="0" removed="1"/>
-        <BehaviorArray index="1" removed="1"/>
-        <CardLayouts index="0">
-            <LayoutButtons index="1" Face="" Type="Undefined" AbilCmd="" Row="0" Column="0"/>
-            <LayoutButtons index="2" AbilCmd="stop,Stop"/>
-            <LayoutButtons index="6" Face="ForceField" AbilCmd="ForceField,Execute" Column="1"/>
-            <LayoutButtons index="7" Face="EnableGuardianShield" AbilCmd="GuardianShield2,On" Column="2"/>
-            <LayoutButtons Face="DisableGuardianShield" Type="AbilCmd" AbilCmd="GuardianShield2,Off" Row="2" Column="2"/>
-            <LayoutButtons Face="Stim" Type="AbilCmd" AbilCmd="Stimpack2,Execute" Row="1" Column="4"/>
-            <LayoutButtons Face="ArmorpiercingMode" Type="AbilCmd" AbilCmd="ThorAPMode,Execute" Row="1" Column="0"/>
-            <LayoutButtons Face="ExplosiveMode" Type="AbilCmd" AbilCmd="ThorNormalMode,Execute" Row="1" Column="1"/>
-            <LayoutButtons Face="LokiYamatoGun" Type="AbilCmd" AbilCmd="LokiYamato,Execute" Row="2" Column="0"/>
-            <LayoutButtons Face="SpectreHoldFire" Type="AbilCmd" AbilCmd="SpectreHoldFire,Execute" Row="1" Column="2"/>
-            <LayoutButtons Face="SpectreWeaponsFree" Type="AbilCmd" AbilCmd="SpectreWeaponsFree,Execute" Row="1" Column="3"/>
-            <LayoutButtons Face="HolyStorm" Type="AbilCmd" AbilCmd="HolyStorm,Execute" Row="2" Column="3"/>
-            <LayoutButtons Face="Vortex" Type="AbilCmd" AbilCmd="ArtanisVortex,255" Row="2" Column="4"/>
-        </CardLayouts>
-        <FlagArray index="Hero" value="1"/>
-        <FlagArray index="ArmySelect" value="1"/>
-        <SubgroupPriority value="119"/>
-        <WeaponArray index="0" Link="BattleCruiserLoki"/>
-        <WeaponArray index="1" Link="ArmageddonCannons" Turret="DiamondbackCopymessiah"/>
-        <EnergyStart value="100"/>
-        <EnergyMax value="100"/>
-        <KillXP value="3000"/>
-        <StationaryTurningRate value="315"/>
-        <TurningRate value="315"/>
-        <Acceleration value="1.75"/>
-        <ShieldArmorName value="Shields"/>
-        <RandomNameArray value="Unit/Name/TheMessiahColored"/>
-        <Subtitle value="UnitSubtitle/TheMessiah"/>
-        <RankDisplay value="Never"/>
-        <ShieldRegenDelay value="10"/>
-        <ShieldRegenRate value="10"/>
-        <LifeStart value="8000"/>
-        <LifeMax value="8000"/>
-    </CUnit>
     <CUnit id="Lurker">
         <Attributes index="Heroic" value="1"/>
         <LifeStart value="3500"/>

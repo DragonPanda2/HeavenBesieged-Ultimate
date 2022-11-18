@@ -217,25 +217,7 @@
         <On Terms="TimerExpired; TimerName PhaseIn" Send="TimerSet 0.350000 PhaseOut"/>
         <On Terms="TimerExpired; TimerName PhaseOut" Send="Destroy"/>
     </CActorSimple>
-    <CActorModel id="SystemHeroicGlowMessiahUnit" parent="ModelAddition">
-        <Filter index="Enemy" value="1"/>
-        <Inherits index="BaseModelScale" value="0"/>
-        <Inherits index="CloakEffect" value="0"/>
-        <Inherits index="Opacity" value="0"/>
-        <Inherits index="Scale" value="0"/>
-        <Inherits index="TintColor" value="0"/>
-        <Inherits index="Visibility" value="0"/>
-        <AcceptedHostedPropTransfers index="BaseModelScale" value="0"/>
-        <AcceptedHostedPropTransfers index="CloakEffect" value="0"/>
-        <AcceptedHostedPropTransfers index="LocalTintColor" value="0"/>
-        <AcceptedHostedPropTransfers index="Opacity" value="0"/>
-        <AcceptedHostedPropTransfers index="Scale" value="0"/>
-        <AcceptedHostedPropTransfers index="TintColor" value="0"/>
-        <AcceptedHostedPropTransfers index="Visibility" value="0"/>
-        <On Terms="UnitDeathCustomize" Send="Destroy"/>
-        <HostSiteOps Ops="SOpShadow" HoldRotation="1"/>
-        <Model value="HeroicGlow"/>
-    </CActorModel>
+
     <CActorModel id="SystemHeroicGlowMediumUnit" parent="ModelAddition">
         <Filter index="Enemy" value="1"/>
         <Inherits index="CloakEffect" value="0"/>
