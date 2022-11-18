@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CAttachMethodArcTest id="AMArcTestWeapon2">
+        <Tests index="Weapon" value="1"/>
+        <Tests index="ActionAcquisition" value="1"/>
+        <Type value="Preference"/>
+    </CAttachMethodArcTest>
+    <CAttachMethodArcTest id="AMArcTestWeapon3">
+        <Tests index="Weapon" value="1"/>
+        <Tests index="ActionAcquisition" value="1"/>
+        <Type value="Preference"/>
+    </CAttachMethodArcTest>
+    <CAttachMethodFilter id="AMFilterWeapon2">
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMFilterWeapon3">
+        <Keys Keyword="Weapon"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMFilterWeaponSetA02">
+        <Keys Keyword="Weapon"/>
+        <Keys Keyword="SetA" Index="0"/>
+    </CAttachMethodFilter>
+    <CAttachMethodFilter id="AMFilterWeaponSetA22">
+        <Keys Keyword="Weapon"/>
+        <Keys Keyword="SetA" Index="2"/>
+    </CAttachMethodFilter>
+    <CAttachMethodPattern id="AMPatternThor2">
+        <Keyword value="Weapon"/>
+        <Driver value="ThorsHammerDamage"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPattern id="AMPatternThorAALance2">
+        <Keyword value="Weapon"/>
+        <Base value="::RollingIndex"/>
+        <Driver value="LanceMissileLaunchersDamage"/>
+    </CAttachMethodPattern>
+    <CAttachMethodPortAllocator id="AMPortAllocatorBunker2">
+        <PortLimit value="3"/>
+    </CAttachMethodPortAllocator>
+    <CAttachMethodPortAllocator id="AMPortAllocatorBunker3">
+        <PortLimit value="3"/>
+    </CAttachMethodPortAllocator>
+    <CAttachMethodProximity id="AMProximityTargetAll2">
+        <RequestCount value="0"/>
+        <SortResults value="1"/>
+        <Location Value="TargetUnitOrPoint"/>
+    </CAttachMethodProximity>
+    <CAttachMethodProximity id="AMProximityTargetAll3">
+        <RequestCount value="0"/>
+        <SortResults value="1"/>
+        <Location Value="TargetUnitOrPoint"/>
+    </CAttachMethodProximity>
+    <CAttachMethodVolumesRequery id="AMVolumesRequery2"/>
+    <CAttachMethodVolumesRequery id="AMVolumesRequery3"/>
+    <CAttachMethodVolumesTargets id="AMVolumesTargets2"/>
+    <CAttachMethodVolumesTargets id="AMVolumesTargets3"/>
+    <CAttachMethodVolumesWeightedPick id="AMVolumesWeightedPick2">
+        <VolumeFactor value="1.000000"/>
+        <ProximityFactorNear value="3.000000"/>
+        <ProximityFactorFar value="1.000000"/>
+    </CAttachMethodVolumesWeightedPick>
+    <CAttachMethodVolumesWeightedPick id="AMVolumesWeightedPick3">
+        <VolumeFactor value="1.000000"/>
+        <ProximityFactorNear value="3.000000"/>
+        <ProximityFactorFar value="1.000000"/>
+    </CAttachMethodVolumesWeightedPick>
+</Catalog>

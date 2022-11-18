@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirement id="APCDummyWeaponsNotDisabled">
+        <NodeArray index="Show" Link="EqCountBehaviorAPCDisableDummyWeaponsCompleteOnlyAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="IsPassiveController">
+        <NodeArray index="Use" Link="CountUpgradePassiveControllerCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="OnCreep">
+        <NodeArray index="Use" Link="CountBehaviorOnCreepCompleteOnlyAtUnit2352477682"/>
+    </CRequirement>
+    <CRequirement id="Phase0WormUnloadLock">
+        <NodeArray index="Use" Link="Not3268024579CountUpgradePhase0WormUnloadLockCompleteOnly"/>
+    </CRequirement>
+</Catalog>

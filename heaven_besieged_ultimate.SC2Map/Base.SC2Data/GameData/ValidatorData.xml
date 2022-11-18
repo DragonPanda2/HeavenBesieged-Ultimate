@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CValidatorUnitOrderQueue id="APCisAttacking">
+        <AbilLink value="APCAttack"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorCombine id="Applyimmobilizervalidator">
+        <Type value="And"/>
+        <CombineArray value="IsNotDback"/>
+        <CombineArray value="IsNotForgotten"/>
+        <CombineArray value="isNotHarpy"/>
+        <CombineArray value="isNotVirtue"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="AttackTargetValidator">
+        <ResultFailed value="Error,AllyTarget"/>
+        <CombineArray value="TargetIsEnemy"/>
+        <CombineArray value="TargetisLesserMinion"/>
+        <CombineArray value="TargetisSelfPlayerisNOTPassive"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="AutoStim">
+        <Type value="And"/>
+        <CombineArray value="AutoStimEnemySearch"/>
+        <CombineArray value="isNotStimmed"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="Autocastallowedonheroes">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="EnableAutocastonheroic"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="Brimstonebombcursorvalidator">
+        <Filters value="Ground;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorCombine id="CasterAndTargetNotDead">
+        <CombineArray value="CasterNotDead"/>
+        <CombineArray value="TargetNotDead"/>
+        <CombineArray value="NotHidden"/>
+    </CValidatorCombine>
+    <CValidatorUnitDetected id="CasterDetected">
+        <Flags index="Normal" value="1"/>
+        <Flags index="Radar" value="1"/>
+    </CValidatorUnitDetected>
+    <CValidatorUnitFilters id="CasterIsNotHidden2">
+        <WhichUnit Value="Caster"/>
+        <Filters value="-;Hidden"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="CasterNotFungalGrowthed2">
+        <ResultFailed value="Error,CantBlinkWhileRooted"/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="FungalGrowth"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="DonatelloRepairNotInUse">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="DonatelloRepairInUse"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="EnemyTarget2">
+        <Filters value="-;Self,Player,Ally,Neutral"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="HasDetector1">
+        <Compare value="GT"/>
+        <Behavior value="Detector1022"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorPlayerRequirement id="HasShapedBlast2">
+        <Find value="1"/>
+        <Value value="UseShapedBlast"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitType id="IsNotGod">
+        <Value value="Artanis"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsGod">
+        <Value value="Artanis"/>
+    </CValidatorUnitType>
+    <CValidatorPlayerRequirement id="NotaPassiveController">
+        <Value value="IsPassiveController"/>
+    </CValidatorPlayerRequirement>
+    <CValidatorUnitCompareBehaviorCount id="HealBeamAvailable2">
+        <WhichUnit Value="Caster"/>
+        <Compare value="LT"/>
+        <Value value="1"/>
+        <Behavior value="MedivacHealBeamBusy2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="HealPeriodicCombine2">
+        <Type value="And"/>
+        <CombineArray value="nocancelbuff"/>
+        <CombineArray value="CasterHasEnergy"/>
+        <CombineArray value="LifeGTZero"/>
+        <CombineArray value="NotMaxHP"/>
+        <CombineArray value="HealTargetInRange2"/>
+        <CombineArray value="NotHidden"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="HealTargetInRange2">
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="6"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorCombine id="HeroicHealValidator">
+        <CombineArray value="NotHeroic"/>
+        <CombineArray value="HeroicHealValidator2"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="HeroicHealValidator2">
+        <Type value="And"/>
+        <CombineArray value="Autocastallowedonheroes"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="IsDback">
+        <Value value="Diamondback"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="IsForgotten">
+        <Value value="Roach2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitFlying id="IsCasterInAir">
+        <WhichUnit Value="Caster"/>
+    </CValidatorUnitFlying>
+    <CValidatorCombine id="IsNotDback">
+        <CombineArray value="IsDback"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="IsNotForgotten">
+        <CombineArray value="IsForgotten"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitFilters id="IsHeroic">
+        <Filters value="Heroic;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFlying id="IsNotInAir">
+        <Find value="0"/>
+    </CValidatorUnitFlying>
+    <CValidatorUnitOrderQueue id="IsnotHealing">
+        <AbilLink value="donatellohealdummy"/>
+        <Find value="0"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitType id="HarpyLeapAssaultHarpyIsFlying">
+        <WhichUnit Value="Source"/>
+        <Value value="HunterlingLeaping"/>
+    </CValidatorUnitType>
+    <CValidatorUnitFilters id="PsiStormUTargetFilters">
+        <Filters value="Ground;Player,Ally,Structure,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="TargetIsPlayer"/>
+    <CValidatorUnitCompareField id="TargetRadiusSmall2">
+        <Compare value="LT"/>
+        <Field value="Radius"/>
+        <Value value="1.25"/>
+    </CValidatorUnitCompareField>
+    <CValidatorCombine id="TargetisSelfPlayerisNOTPassive">
+        <Type value="And"/>
+        <CombineArray value="TargetIsPlayer"/>
+        <CombineArray value="NotaPassiveController"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareCargo id="RaphHasNoCargo">
+        <Type value="Used"/>
+    </CValidatorUnitCompareCargo>
+    <CValidatorUnitCompareVital id="SeraphielSnipeHasEnergy">
+        <ResultFailed value="NotEnoughEnergy"/>
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="50"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitType id="TargetIsAbaddonBKerrigan">
+        <Value value="KerriganCharBurrowed"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsAbaddonKerrigan">
+        <Value value="KerriganChar"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsNydusPortal">
+        <Value value="NydusCanal"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsAsmodeusFlyOdin">
+        <Value value="OdinFlying"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsAsmodeusOdin">
+        <Value value="Odin"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsAstarothBHydraHero">
+        <Value value="HydraliskBurrowed2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsAstarothHydraHero">
+        <Value value="Hydralisk2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsDemonZergling">
+        <Value value="Zergling"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsDevilHydra">
+        <Value value="Hydralisk"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsFlayedBurrowedHydraElite">
+        <Value value="HunterKillerBurrowed"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsFlayedHydraElite">
+        <Value value="HunterKiller"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsForgottenBurrowedRoachElite">
+        <Value value="RoachBurrowed2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsForgottenRoachElite">
+        <Value value="Roach2"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsGolemImmortal">
+        <Value value="Immortal"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsGragolyeAssaultVikingElite">
+        <Value value="VikingAssault"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsGragolyeFighterVikingElite">
+        <Value value="VikingFighter"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsHellfireSiegeTank">
+        <Value value="SiegeBreakerSieged"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsHellfireTankTank">
+        <Value value="SiegeBreaker"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsImpRoach">
+        <Value value="Roach"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsMolochStalkerHero">
+        <Value value="Stalker"/>
+    </CValidatorUnitType>
+    <CValidatorUnitFilters id="TargetIsNotAlly">
+        <Filters value="-;Ally"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitType id="TargetIsNotAzarelBLurker">
+        <Value value="LurkerBurrowed"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsNotAzarelLurker">
+        <Value value="Lurker"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsNotDemonZergling">
+        <Value value="Zergling"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsNotDevilHydra">
+        <Value value="Hydralisk"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsNotImpRoach">
+        <Value value="Roach"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsSammyazzaKarass">
+        <Value value="Karass"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsTheDevilMutalisk">
+        <Value value="Mutalisk"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareVital id="TargetLifenotfull">
+        <ResultFailed value="RequiresHealTarget"/>
+        <Compare value="LT"/>
+        <Type value="Fraction"/>
+        <Value value="1"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotBeingHealed2">
+        <Behavior value="MedivacTargetBeingHealed2"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetisLesserMinion">
+        <CombineArray value="TargetIsDemonZergling"/>
+        <CombineArray value="TargetIsDevilHydra"/>
+        <CombineArray value="TargetIsImpRoach"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetisNotAzarelCombine">
+        <ResultFailed value="Error,CantTargetAzarel"/>
+        <Type value="And"/>
+        <CombineArray value="TargetIsNotAzarelLurker"/>
+        <CombineArray value="TargetIsNotAzarelBLurker"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetisNotLesserMinion">
+        <ResultFailed value="Error,CantTargetLesser"/>
+        <Type value="And"/>
+        <CombineArray value="TargetIsNotDemonZergling"/>
+        <CombineArray value="TargetIsNotDevilHydra"/>
+        <CombineArray value="TargetIsNotImpRoach"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetisRanged">
+        <ResultFailed value="Error,NotRanged"/>
+        <CombineArray value="TargetIsAbaddonKerrigan"/>
+        <CombineArray value="TargetIsAbaddonBKerrigan"/>
+        <CombineArray value="TargetIsAsmodeusOdin"/>
+        <CombineArray value="TargetIsAsmodeusFlyOdin"/>
+        <CombineArray value="TargetIsAstarothHydraHero"/>
+        <CombineArray value="TargetIsAstarothBHydraHero"/>
+        <CombineArray value="TargetIsFlayedHydraElite"/>
+        <CombineArray value="TargetIsFlayedBurrowedHydraElite"/>
+        <CombineArray value="TargetIsForgottenRoachElite"/>
+        <CombineArray value="TargetIsForgottenBurrowedRoachElite"/>
+        <CombineArray value="TargetIsGolemImmortal"/>
+        <CombineArray value="TargetIsGragolyeAssaultVikingElite"/>
+        <CombineArray value="TargetIsGragolyeFighterVikingElite"/>
+        <CombineArray value="TargetIsHellfireSiegeTank"/>
+        <CombineArray value="TargetIsHellfireTankTank"/>
+        <CombineArray value="TargetIsMolochStalkerHero"/>
+        <CombineArray value="TargetIsSammyazzaKarass"/>
+        <CombineArray value="TargetIsTheDevilMutalisk"/>
+    </CValidatorCombine>
+    <CValidatorUnitOrderQueue id="Targetisattacking">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="attack"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitCompareBehaviorCount id="HasDetector5">
+        <Compare value="GT"/>
+        <Behavior value="Detector102"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HasInfernalSiege">
+        <Compare value="GT"/>
+        <Behavior value="InfernalSiege"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="DoesnotHaveInfernalSiege">
+        <Behavior value="InfernalSiege"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HunterlingLanding">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="Landing"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HunterlingLeapAttacking">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="LeapAttacking"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="HunterlingLeapTargetScan">
+        <AreaArray>
+            <Compare value="GT"/>
+            <Count value="0"/>
+            <Radius value="1"/>
+            <Validator value="TargetNotBeingLeapAttacked"/>
+        </AreaArray>
+        <SearchFilters value="Ground;Player,Ally,Neutral,Structure,Missile,Item,Buried,Dead,Hidden,Invulnerable"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="HunterlingLeaping">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="Leaping"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="HunterlingLeapingOrLanding">
+        <CombineArray value="HunterlingLeaping"/>
+        <CombineArray value="HunterlingLanding"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="InRangeOfLeapTargetPoint">
+        <Compare value="GT"/>
+        <Range value="0.5"/>
+        <WhichLocation Value="TargetUnitOrPoint"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitType id="InfernalSiegeValidator"/>
+    <CValidatorUnitType id="IsSiegedHellfire">
+        <Value value="SiegeBreakerSieged"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareVital id="Life3">
+        <Compare value="GE"/>
+        <Value value="5"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorLocationEnumArea id="AutoStimEnemySearch">
+        <WhichLocation Value="CasterUnitOrPoint"/>
+        <AreaArray Compare="GT" Count="0" Radius="7"/>
+        <Compare value="GE"/>
+        <Count value="1"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Dead"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareCargo id="NotEmpty">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Type value="Load"/>
+    </CValidatorUnitCompareCargo>
+    <CValidatorUnitCompareVital id="Shieldle1">
+        <ResultFailed value="TooMuchLife"/>
+        <Compare value="LE"/>
+        <Value value="1"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotBeingLeapAttacked">
+        <Behavior value="LeapStun"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="TargetNotDead"/>
+    <CValidatorCondition id="UnknownValidator">
+        <IfArray Test="IsHeroic" Return="Autocastallowedonheroes"/>
+        <Else value="returntrue"/>
+    </CValidatorCondition>
+    <CValidatorUnitCompareBehaviorCount id="UnknownValidator2">
+        <Behavior value="LeapAttacking"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnknownValidator3">
+        <Behavior value="ShockwaveHeight"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="YamatoTargetFilters">
+        <Filters value="-;Self,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="casterhasnoalacrity">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Alacrity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="casterhasstalking">
+        <WhichUnit Value="Caster"/>
+        <Value value="1"/>
+        <Behavior value="Stalking"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="casterhasnoambushpreparing">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="AmbushPreparing"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="casterhasnoambushprepared">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="AmbushPrepared"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="donatellorepairfilters">
+        <Filters value="Mechanical,Visible;Self,Neutral,Enemy,Structure,Missile,Uncommandable,Dead"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareVital id="hardenedshieldsvalidator">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="50"/>
+        <Vital value="Shields"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="hasEnourghEnergyForLifeSteal">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1.5"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareVital id="hasEnourghEnergyForAlacrity">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Value value="1"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="hasLifeDrain">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="LifeStealingAttack"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="Casterisnotloaded">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="isLoaded"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="hasnoPushable">
+        <Behavior value="pushable"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="holdingfire">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="SpectreHoldFireB"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="isHarpy">
+        <CombineArray value="isHarpyair"/>
+        <CombineArray value="isHarpyground"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="isHarpyground">
+        <Value value="Hunterling"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="isHarpyair">
+        <Value value="HunterlingLeaping"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitOrderQueue id="isHoldingPosition">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="move"/>
+        <AbilCmdIndex value="2"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitType id="isNotVirtue">
+        <Value value="Stalker2"/>
+        <Find value="0"/>
+    </CValidatorUnitType>
+    <CValidatorUnitOrderQueue id="isPatroling">
+        <WhichUnit Value="Target"/>
+        <AbilLink value="move"/>
+        <AbilCmdIndex value="1"/>
+    </CValidatorUnitOrderQueue>
+    <CValidatorUnitFilters id="iselite">
+        <Filters value="Robotic;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitFilters id="iselite2">
+        <Filters value="Worker;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorCombine id="isnotMass">
+        <CombineArray value="isMass"/>
+        <Negate value="1"/>
+        <ResultFailed value="CantTargetThatUnit"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="isNotHarpy">
+        <CombineArray value="isHarpy"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="isNotStimmed">
+        <Compare value="LT"/>
+        <Value value="1"/>
+        <Behavior value="Stimpack"/>
+        <WhichUnit Value="Caster"/>
+        <ResultNoUnit value="QueueIsFull"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="isWarriorAngel">
+        <Value value="Marine"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="isMass">
+        <CombineArray value="IsHydralisk"/>
+        <CombineArray value="IsRoach"/>
+        <CombineArray value="IsZergling"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="isoverseer">
+        <Value value="Overseer"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="nocancelbuff">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="donatellocancelrepair"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="returntrue">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Behavior value="Alacrity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="structureeliteorhero">
+        <ResultFailed value="CantTargetThatUnit"/>
+        <CombineArray value="IsStructure"/>
+        <CombineArray value="IsHeroic"/>
+        <CombineArray value="iselite"/>
+        <CombineArray value="IsOverlord"/>
+        <CombineArray value="isoverseer"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="targetisnothydra">
+        <CombineArray value="IsHydralisk"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+</Catalog>

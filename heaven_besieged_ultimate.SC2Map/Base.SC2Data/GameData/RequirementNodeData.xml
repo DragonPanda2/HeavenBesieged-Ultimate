@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirementCountBehavior id="CountBehaviorAPCDisableDummyWeaponsCompleteOnlyAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="APCDisableDummyWeapons" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorOnCreepCompleteOnlyAtUnit2352477682">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="OnCreep" State="CompleteOnlyAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUpgrade id="CountUpgradePassiveControllerCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="PassiveController" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePhase0WormUnloadLockCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="Phase0WormUnloadLock" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="EqCountBehaviorAPCDisableDummyWeaponsCompleteOnlyAtUnit0">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorAPCDisableDummyWeaponsCompleteOnlyAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementNot id="Not3268024579CountUpgradePhase0WormUnloadLockCompleteOnly">
+        <OperandArray index="0" value="CountUpgradePhase0WormUnloadLockCompleteOnly"/>
+    </CRequirementNot>
+</Catalog>

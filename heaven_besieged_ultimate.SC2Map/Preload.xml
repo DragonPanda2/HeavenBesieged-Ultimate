@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preload>
+<Asset path="forichi (1).dds" Type="Image"/>
+<Asset path="assets\textures\ui_achievement.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_glue_minibutton_blue_normalpressed.dds" Type="Image"/>
+<Asset path="assets\textures\ui_gamemenu_menubutton_normalpressed_terran.dds" Type="Image"/>
+<Asset path="assets\textures\ui_observer_custom_map_container.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_glue_listboxframe.dds" Type="Image"/>
+<Asset path="assets\textures\black.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_glue_frame_blueinnercontainerframe.dds" Type="Image"/>
+<Asset path="assets\textures\white.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_challenge_frame_glowstroke.dds" Type="Image"/>
+<Asset path="assets\textures\btn-tips-hotkeys.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_glue_minibutton_green_normalpressed.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_glue_minibutton_green_normaloverpressedover.dds" Type="Image"/>
+<Asset path="assets\textures\blank.dds" Type="Image"/>
+<Asset path="assets\textures\ui_screens_zeratul_prologue_spotlight.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_glue_minibutton_blue_normaloverpressedover.dds" Type="Image"/>
+<Asset path="assets\textures\ui_glues_helpmenu_achievementicon.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_glue_campaign_floatingraceicon_divider_highlight.dds" Type="Image"/>
+<Asset path="assets\textures\ui_screens_zeratul_prologue_spotlight.lvl0" Type="Image"/>
+<Asset path="assets\textures\ui_streaming_movie_progressbarborder.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_challenge_button_checkmark.dds" Type="Image"/>
+<Asset path="assets\textures\ui_help_frame_tips_checkmark_terran.dds" Type="Image"/>
+<Asset path="assets\textures\btn-ability-protoss-recallondeath.dds" Type="Image"/>
+<Asset path="assets\textures\ui_battlenet_glues_toastbg.dds" Type="Image"/>
+<Asset path="assets\textures\ui_ingame_tabbutton_metalframe.dds" Type="Image"/>
+<Asset path="assets\textures\ui_emoticons_thumbsup.dds" Type="Image"/>
+<Asset path="assets\textures\ui_gamemenu_menubutton_normaloverpressedover_terran.dds" Type="Image"/>
+<Asset path="assets\textures\ui_aicommand_build_open_aggressivepush.dds" Type="Image"/>
+<Asset path="assets\textures\ui_streaming_movie_progressbarbuffer.dds" Type="Image"/>
+<Actor id="SYSTEM_ActorConfig"/>
+<Actor id="AiurProtossBuildingsSmall" Variations="4"/>
+<Actor id="ForceFieldWall"/>
+<Actor id="MetalWall" Variations="0"/>
+<Actor id="MetalWallCorner" Variations="2,3"/>
+<Actor id="ShakurasHexColumns" Variations="4"/>
+<Actor id="ShakurasTempleWall" Variations="1,7"/>
+<Actor id="Sunrays"/>
+<Actor id="TempleMonolythLarge" Variations="1,2"/>
+<Actor id="XelNagaColumn"/>
+<Actor id="XelNagaCliffWallSpires" Variations="0"/>
+<Actor id="XelNagaHullCliffWalls" Variations="2"/>
+<Actor id="XelNagaHullPlate"/>
+<Actor id="XelNagaHullReactorConduit" Variations="0,1"/>
+<Actor id="XelNagaTowerSmall" Variations="1"/>
+<Actor id="MonlythLightBridge"/>
+<Behavior id="Hallucination"/>
+<Behavior id="HallucinationTimedLife"/>
+<Behavior id="APCDisableDummyWeapons"/>
+<Behavior id="APCSwapWeapons"/>
+<Behavior id="APCRange"/>
+<Behavior id="BeingBanished"/>
+<Behavior id="CommonHealVisual"/>
+<Behavior id="Damageplus1"/>
+<Behavior id="DonatelloRepairSearch"/>
+<Behavior id="HealBeaconEvil"/>
+<Behavior id="HealBeacon"/>
+<Behavior id="InfernalSiege"/>
+<Behavior id="SystemHevenReinforcementVisual"/>
+<Behavior id="SystemHellReinforcementVisual"/>
+<Behavior id="donatellocancelrepair"/>
+<Behavior id="targetofleap"/>
+<Effect id="PsiStormDamage"/>
+<Effect id="EvilHealBeamController"/>
+<Effect id="MolochTransferLifeBeamController"/>
+<Model id="PingArrow"/>
+<Model id="PingObjective"/>
+<Model id="ShapeArrowPointer"/>
+<Model id="ShapeArrowPointer2"/>
+<Sound id="UI_GenericError"/>
+<Sound id="UI_BnetToast"/>
+<Terrain id="Meinhoff"/>
+<Unit id="Baneling"/>
+<Unit id="SupplyDepot"/>
+<Unit id="MissileTurret"/>
+<Unit id="Bunker"/>
+<Unit id="SiegeTankSieged"/>
+<Unit id="VikingAssault"/>
+<Unit id="Marine"/>
+<Unit id="Reaper"/>
+<Unit id="Ghost"/>
+<Unit id="Marauder"/>
+<Unit id="Thor"/>
+<Unit id="Hellion"/>
+<Unit id="Pylon"/>
+<Unit id="Assimilator"/>
+<Unit id="Gateway"/>
+<Unit id="FleetBeacon"/>
+<Unit id="PhotonCannon"/>
+<Unit id="RoboticsBay"/>
+<Unit id="Zealot"/>
+<Unit id="Stalker"/>
+<Unit id="DarkTemplar" Variations="0"/>
+<Unit id="Sentry"/>
+<Unit id="Immortal"/>
+<Unit id="NydusNetwork"/>
+<Unit id="SpineCrawler"/>
+<Unit id="Zergling"/>
+<Unit id="Hydralisk"/>
+<Unit id="Mutalisk"/>
+<Unit id="Ultralisk"/>
+<Unit id="Roach"/>
+<Unit id="Infestor"/>
+<Unit id="Overseer"/>
+<Unit id="WarpGate"/>
+<Unit id="CreepTumorBurrowed"/>
+<Unit id="NydusCanal"/>
+<Unit id="Beacon_Protoss"/>
+<Unit id="Beacon_Terran"/>
+<Unit id="Beacon_Zerg"/>
+<Unit id="PathingBlocker1x1"/>
+<Unit id="PathingBlocker2x2"/>
+<Unit id="ShapeSmileyFace"/>
+<Unit id="Lurker"/>
+<Unit id="SiegeBreaker"/>
+<Unit id="PerditionTurret"/>
+<Unit id="WarPig"/>
+<Unit id="KerriganChar"/>
+<Unit id="Zeratul"/>
+<Unit id="HunterKiller"/>
+<Unit id="HelsAngelAssault"/>
+<Unit id="Odin"/>
+<Unit id="Spectre"/>
+<Unit id="Loki"/>
+<Unit id="Firebat"/>
+<Unit id="Diamondback"/>
+<Unit id="Predator"/>
+<Unit id="Goliath"/>
+<Unit id="PrisonZealot"/>
+<Unit id="Artanis"/>
+<Unit id="Karass"/>
+<Unit id="SMMarSaraBarCorkboardBackground"/>
+<Unit id="Nova"/>
+<Unit id="StoneZealot"/>
+<Unit id="Hydralisk2"/>
+<Unit id="Roach2"/>
+<Unit id="Fallen"/>
+<Unit id="Hunterling"/>
+<Unit id="MedivacAPC"/>
+<Unit id="Metatron"/>
+<Unit id="NydusNetwork2"/>
+<Unit id="Raguel"/>
+<Unit id="Donatello"/>
+<Unit id="Stalker2"/>
+<Unit id="Ultralisk2"/>
+</Preload>

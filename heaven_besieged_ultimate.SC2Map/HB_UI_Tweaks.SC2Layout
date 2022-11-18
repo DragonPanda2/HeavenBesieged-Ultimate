@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+  <Frame type='Button' name='GameUI/UIContainer/FullscreenUpperContainer/AllianceButton' file='GameUI'>
+    <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+    <Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+  </Frame>
+</Desc>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="250mmStrikeCannonsSound2" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\Thor\Thor_AttackImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Thor\Thor_AttackImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Thor\Thor_AttackImpact2.wav"/>
+    </CSound>
+    <CSound id="BrimstoneBombImpact" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionMedium5.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionMedium4.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Explosions\Terran_ExplosionMedium2.wav"/>
+        <Volume value="-5.490000,-5.490000"/>
+    </CSound>
+    <CSound id="BrimstoneBombLaunch" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\Battlecruiser\Battlecruiser_PlasmaAttackLoop1.wav"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Volume value="-6.860000,-6.860000"/>
+    </CSound>
+    <CSound id="DefilerMP_PlagueImpact2" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact4.wav"/>
+        <Pitch value="-2.000000,2.000000"/>
+        <Volume value="-3.430000,-3.430000"/>
+    </CSound>
+    <CSound id="HighTemplar_Attack2" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Attack00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Attack01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Attack02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Attack03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Attack04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Attack05.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Attack06.ogg"/>
+        <Flags index="Download" value="0"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="HighTemplar_DeathFX2" parent="Protoss_DeathFX"/>
+    <CSound id="HighTemplar_Help2" parent="Alert">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Help00.ogg"/>
+        <Mode value="3DWorld"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="HighTemplar_Pissed2" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Pissed00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Pissed01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Pissed02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Pissed03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Pissed04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Pissed05.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Pissed06.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Pissed07.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Pissed08.ogg"/>
+        <Flags index="Download" value="0"/>
+        <Select value="Sequential"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="HighTemplar_PsionicStormVO2" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_PsionicStorm00.ogg"/>
+        <Chance value="25"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="HighTemplar_Ready2" parent="Ready">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Ready00.ogg"/>
+        <Volume value="3.000000,3.000000"/>
+    </CSound>
+    <CSound id="HighTemplar_What2" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_What00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_What01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_What02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_What03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_What04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_What05.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_What06.ogg"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="HighTemplar_Yes2" parent="ProtossAck">
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Yes00.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Yes01.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Yes02.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Yes03.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Yes04.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Yes05.ogg"/>
+        <AssetArray File="LocalizedData\Sounds\ProtossUnitVO\HighTemplar\HighTemplar_Yes06.ogg"/>
+        <Volume value="2.000000,2.000000"/>
+    </CSound>
+    <CSound id="Hunterling_AttackImpact" parent="Zerg_AttackImpactSmallPierce"/>
+    <CSound id="Hunterling_AttackImpact2" parent="Zerg_AttackImpactSmallPierce"/>
+    <CSound id="Hunterling_AttackLaunch" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch10.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch11.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch12.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch13.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch14.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch15.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch5.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch6.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch7.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch8.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch9.wav"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-4.560000,-4.560000"/>
+    </CSound>
+    <CSound id="Hunterling_AttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch10.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch11.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch12.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch13.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch14.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch15.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch5.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch6.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch7.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch8.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_AttackLaunch9.wav"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <VariationMinimum value="8"/>
+        <Volume value="-4.560000,-4.560000"/>
+    </CSound>
+    <CSound id="Hunterling_DeathFXEviscerate" parent="Uni_DeathFXEviscerate">
+        <EditorCategories value="Race:Zerg"/>
+    </CSound>
+    <CSound id="Hunterling_DeathFXFire" parent="Uni_DeathFXFire">
+        <EditorCategories value="Race:Zerg"/>
+    </CSound>
+    <CSound id="Hunterling_Explode" parent="Zerg_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\SharedEffects\Explosions\Zerg_ExplosionSmall0.wav" Pitch="-3.000000,6.000000" Volume="-3.000000,0.000000"/>
+        <AssetArray index="1" File="Assets\Sounds\Zerg\SharedEffects\Explosions\Zerg_ExplosionSmall1.wav" Pitch="-3.000000,6.000000" Volume="-3.000000,0.000000"/>
+    </CSound>
+    <CSound id="Hunterling_JumpLand" parent="Movement">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\SpineCrawler\SpineCrawler_AttackImpact2.wav"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-0.890000,0.840000"/>
+        <Volume value="-6.000000,-6.000000"/>
+    </CSound>
+    <CSound id="Hunterling_JumpLaunch" parent="Movement">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Zergling\Zergling_What1.ogg"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-1.000000,1.000000"/>
+        <Volume value="-7.000000,-7.000000"/>
+    </CSound>
+    <CSound id="Infestor_FungalGrowthImpact2" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthImpact4.wav"/>
+        <Pitch value="-2.000000,2.000000"/>
+        <Volume value="-3.430000,-3.430000"/>
+    </CSound>
+    <CSound id="Infestor_FungalGrowthLaunch2" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Infestor\Infestor_FungalGrowthLaunch2.wav"/>
+        <Pitch value="-2.000000,2.000000"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="LeapImpactSound" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\Ultralisk_AttackImpact3.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="Left2Die_Hunterling_Ambience2" parent="Alert">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Left2Die_Hunterling_Ambience01.wav"/>
+        <AssetArray File="Assets\Sounds\Left2Die_Hunterling_Ambience02.wav"/>
+        <AssetArray File="Assets\Sounds\Left2Die_Hunterling_Ambience03.wav"/>
+        <AssetArray File="Assets\Sounds\Left2Die_Hunterling_Ambience04.wav"/>
+        <AssetArray File="Assets\Sounds\Left2Die_Hunterling_Ambience05.wav"/>
+        <Category value="UI"/>
+        <DupeDestroyCount value="4"/>
+        <DupeMuteCount value="4"/>
+    </CSound>
+    <CSound id="Medivac_HealLoop2" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\Medivac\Medivac_HealLoop.wav" LoopCount="-1"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-1.820000,1.640000"/>
+        <Volume value="-9.000000,-9.000000"/>
+    </CSound>
+    <CSound id="OmegaStormSound2" parent="Spell">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\Queen\Queen_SwarmInfestationLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Queen\Queen_SwarmInfestationLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Queen\Queen_SwarmInfestationLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Queen\Queen_SwarmInfestationLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Queen\Queen_SwarmInfestationLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Queen\Queen_SwarmInfestationLaunch5.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Queen\Queen_SwarmInfestationLaunch6.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Queen\Queen_SwarmInfestationLaunch7.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\Queen\Queen_SwarmInfestationLaunch8.wav"/>
+    </CSound>
+    <CSound id="PhotonCannon_AttackImpact2" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\PhotonCannon\PhotonCannon_AttackImpact0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\PhotonCannon\PhotonCannon_AttackImpact1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\PhotonCannon\PhotonCannon_AttackImpact2.wav"/>
+        <Volume value="-13.980000,-13.980000"/>
+    </CSound>
+    <CSound id="PhotonCannon_AttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\PhotonCannon\PhotonCannon_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\PhotonCannon\PhotonCannon_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\PhotonCannon\PhotonCannon_AttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\PhotonCannon\PhotonCannon_AttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Protoss\PhotonCannon\PhotonCannon_AttackLaunch4.wav"/>
+        <Pitch value="-1.000000,2.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="Protoss_BuildingPlacementSmall2" parent="UI">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\SharedEffects\Construction\Protoss_BuildingPlacementSmall0.wav"/>
+        <Pitch value="9.000000,9.000000"/>
+        <Volume value="-6.180000,-6.180000"/>
+    </CSound>
+    <CSound id="SiegeTank_SiegedAttackImpact2" parent="Terran_ExplosionMedium">
+        <AssetArray index="0" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium0.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium1.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium2.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium3.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium4.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="5" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium5.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="6" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium6.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="7" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium7.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="8" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium8.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <AssetArray index="9" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium9.wav" Pitch="-3.000000,3.000000" FacialGroup=""/>
+        <DupeMuteCount value="10"/>
+        <Pitch value="0.000000,0.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="SiegeTank_SiegedAttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch2.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch3.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch4.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch5.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch6.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch7.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch8.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\SiegeTank\SiegeTank_SiegeAttackLaunch9.wav"/>
+        <DupeDestroyCount value="8"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="-6.180000,-1.820000"/>
+        <Volume value="-2.520000,-1.460000"/>
+    </CSound>
+    <CSound id="Spectre_Death">
+        <Category value="Death"/>
+    </CSound>
+    <CSound id="Thor_HandGunAttackImpact2" parent="Terran_ExplosionSmall">
+        <DupeMaximumMethod value="Prevent"/>
+        <DupeMuteCount value="10"/>
+        <Volume value="-6.000000,-6.000000"/>
+    </CSound>
+    <CSound id="Thor_HandGunAttackLaunch2" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Terran\Thor\Thor_AttackLaunch0.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Thor\Thor_AttackLaunch1.wav"/>
+        <AssetArray File="Assets\Sounds\Terran\Thor\Thor_AttackLaunch2.wav"/>
+        <DupeDestroyCount value="4"/>
+        <DupeMaximumMethod value="Replace"/>
+        <Pitch value="-1.000000,1.000000"/>
+    </CSound>
+</Catalog>

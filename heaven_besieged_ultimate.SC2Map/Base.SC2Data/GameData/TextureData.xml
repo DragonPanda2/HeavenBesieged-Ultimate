@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CTexture id="Kerrigan_Diffuse">
+        <File value="Assets\Textures\kerrigan_specular.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="SM_ki_head_Diff">
+        <File value="Assets\Textures\sm_katelockwell_h_diff.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+</Catalog>

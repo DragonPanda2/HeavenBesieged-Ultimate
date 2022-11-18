@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CGame id="Dflt">
+        <PlayerLeaveFlags index="FulfillResourceRequests" value="0"/>
+        <PlayerLeaveFlags index="SplitResources" value="0"/>
+        <CreepDecayTime value="3"/>
+        <EnableRewardSkins value="0"/>
+        <EnableRewardVoicePacks value="0"/>
+        <EnableRewardConsoleSkins value="0"/>
+    </CGame>
+</Catalog>

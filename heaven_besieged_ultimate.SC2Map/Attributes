@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Attributes>
+    <Attribute>
+        <Id Value="1"/>
+        <Type Value="Player"/>
+        <Name Value="Attribute001/Name"/>
+        <Availability Value="First"/>
+        <Visibility Value="All"/>
+        <Access Value="Self"/>
+        <Value>
+            <Id Value="22"/>
+            <Name Value="Attribute001/Value022/Name"/>
+            <Description Value="Attribute001/Value022/Desc"/>
+            <Icon Value="Assets\Textures\btn-status-detector.dds"/>
+        </Value>
+        <Value>
+            <Id Value="23"/>
+            <Name Value="Attribute001/Value023/Name"/>
+            <Description Value="Attribute001/Value023/Desc"/>
+            <Icon Value="Assets\Textures\btn-status-detector.dds"/>
+        </Value>
+        <Value>
+            <Id Value="21"/>
+            <Name Value="Attribute001/Value021/Name"/>
+            <Description Value="Attribute001/Value021/Desc"/>
+            <Icon Value="Assets\Textures\btn-status-detector.dds"/>
+        </Value>
+        <Value>
+            <Id Value="11"/>
+            <Name Value="Attribute001/Value011/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="12"/>
+            <Name Value="Attribute001/Value012/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="13"/>
+            <Name Value="Attribute001/Value013/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="14"/>
+            <Name Value="Attribute001/Value014/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="15"/>
+            <Name Value="Attribute001/Value015/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="16"/>
+            <Name Value="Attribute001/Value016/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="17"/>
+            <Name Value="Attribute001/Value017/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="18"/>
+            <Name Value="Attribute001/Value018/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="19"/>
+            <Name Value="Attribute001/Value019/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="20"/>
+            <Name Value="Attribute001/Value020/Name"/>
+            <Icon Value="Assets\Textures\ui_tip_questionmark.dds"/>
+        </Value>
+        <Value>
+            <Id Value="1"/>
+            <Name Value="Attribute001/Value001/Name"/>
+            <Description Value="Attribute001/Value001/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-terran-battlecruiserloki.dds"/>
+        </Value>
+        <Value>
+            <Id Value="2"/>
+            <Name Value="Attribute001/Value002/Name"/>
+            <Description Value="Attribute001/Value002/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-terran-hellion.dds"/>
+        </Value>
+        <Value>
+            <Id Value="3"/>
+            <Name Value="Attribute001/Value003/Name"/>
+            <Description Value="Attribute001/Value003/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-terran-marinemercenary.dds"/>
+        </Value>
+        <Value>
+            <Id Value="4"/>
+            <Name Value="Attribute001/Value004/Name"/>
+            <Description Value="Attribute001/Value004/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-terran-nova.dds"/>
+        </Value>
+        <Value>
+            <Id Value="5"/>
+            <Name Value="Attribute001/Value005/Name"/>
+            <Description Value="Attribute001/Value005/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-protoss-prisonzealot.dds"/>
+        </Value>
+        <Value>
+            <Id Value="6"/>
+            <Name Value="Attribute001/Value006/Name"/>
+            <Description Value="Attribute001/Value006/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-protoss-darktemplar.dds"/>
+        </Value>
+        <Value>
+            <Id Value="7"/>
+            <Name Value="Attribute001/Value007/Name"/>
+            <Description Value="Attribute001/Value007/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-zerg-mutalisk.dds"/>
+        </Value>
+        <Value>
+            <Id Value="8"/>
+            <Name Value="Attribute001/Value008/Name"/>
+            <Description Value="Attribute001/Value008/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-terran-odin.dds"/>
+        </Value>
+        <Value>
+            <Id Value="9"/>
+            <Name Value="Attribute001/Value009/Name"/>
+            <Description Value="Attribute001/Value009/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-zerg-hydralisk.dds"/>
+        </Value>
+        <Value>
+            <Id Value="10"/>
+            <Name Value="Attribute001/Value010/Name"/>
+            <Description Value="Attribute001/Value010/Desc"/>
+            <Icon Value="Assets\Textures\btn-unit-protoss-stalker-dark.dds"/>
+        </Value>
+        <Default>
+            <Slot Id="0"/>
+            <Value Id="20"/>
+        </Default>
+        <Default>
+            <Slot Id="1"/>
+            <Value Id="19"/>
+        </Default>
+        <Default>
+            <Slot Id="2"/>
+            <Value Id="18"/>
+        </Default>
+        <Default>
+            <Slot Id="3"/>
+            <Value Id="17"/>
+        </Default>
+        <Default>
+            <Slot Id="4"/>
+            <Value Id="16"/>
+        </Default>
+        <Default>
+            <Slot Id="5"/>
+            <Value Id="15"/>
+        </Default>
+        <Default>
+            <Slot Id="6"/>
+            <Value Id="14"/>
+        </Default>
+        <Default>
+            <Slot Id="7"/>
+            <Value Id="13"/>
+        </Default>
+        <Default>
+            <Slot Id="8"/>
+            <Value Id="12"/>
+        </Default>
+        <Default>
+            <Slot Id="9"/>
+            <Value Id="11"/>
+        </Default>
+        <Default>
+            <Slot Id="10"/>
+            <Value Id="21"/>
+        </Default>
+        <Default>
+            <Slot Id="11"/>
+            <Value Id="23"/>
+        </Default>
+        <Default>
+            <Slot Id="12"/>
+            <Value Id="22"/>
+        </Default>
+    </Attribute>
+    <Attribute>
+        <Id Value="2"/>
+        <Type Value="Global"/>
+        <Name Value="Attribute002/Name"/>
+        <Availability Value="All"/>
+        <Visibility Value="None"/>
+        <Access Value="None"/>
+        <Hidden/>
+        <Value>
+            <Id Value="1"/>
+            <Name Value="Attribute002/Value001/Name"/>
+        </Value>
+        <Value>
+            <Id Value="2"/>
+            <Name Value="Attribute002/Value002/Name"/>
+        </Value>
+        <Default>
+            <Slot Id="Global"/>
+            <Value Id="1"/>
+        </Default>
+    </Attribute>
+    <DefaultVariants Value="0"/>
+    <Variant>
+        <Id Value="1"/>
+        <CategoryId Value="15"/>
+        <ModeId Value="1"/>
+        <ModeName Value="Variant001/ModeName"/>
+        <ModeDesc Value="Variant001/ModeDesc"/>
+        <MaxTeamSize Value="10"/>
+        <AttributeHidden Namespace="999" Id="3006"/>
+        <AttributeHidden Namespace="999" Id="3002"/>
+        <AttributeHidden Namespace="999" Id="3001"/>
+        <AttributeHidden Namespace="999" Id="3003"/>
+        <AttributeHidden Namespace="999" Id="3004"/>
+        <AttributeHidden Namespace="999" Id="3010"/>
+        <AttributeHidden Namespace="999" Id="3000"/>
+        <AttributeHidden Namespace="0" Id="2"/>
+        <Attribute Namespace="999" Id="2000">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="29746"/>
+                <Locked/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="2011">
+            <Default>
+                <Slot Id="0"/>
+                <Value Id="21553"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="1"/>
+                <Value Id="21553" Index="1"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="2"/>
+                <Value Id="21553" Index="2"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="3"/>
+                <Value Id="21553" Index="3"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="4"/>
+                <Value Id="21553" Index="4"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="5"/>
+                <Value Id="21553" Index="7"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="6"/>
+                <Value Id="21553" Index="8"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="7"/>
+                <Value Id="21553" Index="9"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="8"/>
+                <Value Id="21553" Index="10"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="9"/>
+                <Value Id="21553" Index="11"/>
+                <Locked/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="1001">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="28271"/>
+                <Locked/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="3000">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="1399615351"/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="3006">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="12597"/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="500">
+            <Default>
+                <Slot Id="11"/>
+                <Value Id="1131180900"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="12"/>
+                <Value Id="1131180900"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="10"/>
+                <Value Id="1131180900"/>
+                <Locked/>
+            </Default>
+            <ValueHidden Id="1131375984" Slot="0"/>
+            <ValueHidden Id="1131375984" Slot="1"/>
+            <ValueHidden Id="1131375984" Slot="2"/>
+            <ValueHidden Id="1131375984" Slot="3"/>
+            <ValueHidden Id="1131375984" Slot="4"/>
+            <ValueHidden Id="1131375984" Slot="5"/>
+            <ValueHidden Id="1131375984" Slot="6"/>
+            <ValueHidden Id="1131375984" Slot="7"/>
+            <ValueHidden Id="1131375984" Slot="8"/>
+            <ValueHidden Id="1131375984" Slot="9"/>
+        </Attribute>
+        <Attribute Id="1">
+            <Default>
+                <Slot Id="10"/>
+                <Value Id="21"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="11"/>
+                <Value Id="23"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="12"/>
+                <Value Id="22"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="0"/>
+                <Value Id="20"/>
+            </Default>
+            <Default>
+                <Slot Id="1"/>
+                <Value Id="19"/>
+            </Default>
+            <Default>
+                <Slot Id="2"/>
+                <Value Id="18"/>
+            </Default>
+            <Default>
+                <Slot Id="3"/>
+                <Value Id="17"/>
+            </Default>
+            <Default>
+                <Slot Id="4"/>
+                <Value Id="16"/>
+            </Default>
+            <Default>
+                <Slot Id="5"/>
+                <Value Id="15"/>
+            </Default>
+            <Default>
+                <Slot Id="6"/>
+                <Value Id="14"/>
+            </Default>
+            <Default>
+                <Slot Id="7"/>
+                <Value Id="13"/>
+            </Default>
+            <Default>
+                <Slot Id="8"/>
+                <Value Id="12"/>
+            </Default>
+            <Default>
+                <Slot Id="9"/>
+                <Value Id="11"/>
+            </Default>
+        </Attribute>
+        <Attribute Id="2">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="1"/>
+            </Default>
+        </Attribute>
+    </Variant>
+    <Variant>
+        <Id Value="2"/>
+        <CategoryId Value="15"/>
+        <ModeId Value="1"/>
+        <ModeName Value="Variant002/ModeName"/>
+        <ModeDesc Value="Variant002/ModeDesc"/>
+        <MaxTeamSize Value="10"/>
+        <AttributeHidden Namespace="999" Id="3006"/>
+        <AttributeHidden Namespace="999" Id="3002"/>
+        <AttributeHidden Namespace="999" Id="3001"/>
+        <AttributeHidden Namespace="999" Id="3003"/>
+        <AttributeHidden Namespace="999" Id="3004"/>
+        <AttributeHidden Namespace="999" Id="3010"/>
+        <AttributeHidden Namespace="999" Id="3000"/>
+        <AttributeHidden Namespace="0" Id="2"/>
+        <Attribute Namespace="999" Id="2000">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="29746"/>
+                <Locked/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="2011">
+            <Default>
+                <Slot Id="0"/>
+                <Value Id="21553"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="1"/>
+                <Value Id="21553" Index="1"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="2"/>
+                <Value Id="21553" Index="2"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="3"/>
+                <Value Id="21553" Index="3"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="4"/>
+                <Value Id="21553" Index="4"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="5"/>
+                <Value Id="21553" Index="5"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="6"/>
+                <Value Id="21553" Index="6"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="7"/>
+                <Value Id="21553" Index="7"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="8"/>
+                <Value Id="21553" Index="8"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="9"/>
+                <Value Id="21553" Index="9"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="10"/>
+                <Value Id="21553" Index="10"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="11"/>
+                <Value Id="21553" Index="11"/>
+                <Locked/>
+            </Default>
+            <Default>
+                <Slot Id="12"/>
+                <Value Id="21553" Index="12"/>
+                <Locked/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="1001">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="28271"/>
+                <Locked/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="3000">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="1399615351"/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="3006">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="12597"/>
+            </Default>
+        </Attribute>
+        <Attribute Id="2">
+            <Default>
+                <Slot Id="Global"/>
+                <Value Id="2"/>
+            </Default>
+        </Attribute>
+        <Attribute Namespace="999" Id="500">
+            <ValueHidden Id="1131375984" Slot="0"/>
+            <ValueHidden Id="1131375984" Slot="1"/>
+            <ValueHidden Id="1131375984" Slot="2"/>
+            <ValueHidden Id="1131375984" Slot="3"/>
+            <ValueHidden Id="1131375984" Slot="4"/>
+            <ValueHidden Id="1131375984" Slot="5"/>
+            <ValueHidden Id="1131375984" Slot="6"/>
+            <ValueHidden Id="1131375984" Slot="7"/>
+            <ValueHidden Id="1131375984" Slot="8"/>
+            <ValueHidden Id="1131375984" Slot="9"/>
+            <ValueHidden Id="1131375984" Slot="10"/>
+            <ValueHidden Id="1131375984" Slot="11"/>
+            <ValueHidden Id="1131375984" Slot="12"/>
+        </Attribute>
+        <Attribute Id="1">
+            <Default>
+                <Slot Id="0"/>
+                <Value Id="20"/>
+            </Default>
+            <Default>
+                <Slot Id="1"/>
+                <Value Id="19"/>
+            </Default>
+            <Default>
+                <Slot Id="2"/>
+                <Value Id="18"/>
+            </Default>
+            <Default>
+                <Slot Id="3"/>
+                <Value Id="17"/>
+            </Default>
+            <Default>
+                <Slot Id="4"/>
+                <Value Id="16"/>
+            </Default>
+            <Default>
+                <Slot Id="5"/>
+                <Value Id="15"/>
+            </Default>
+            <Default>
+                <Slot Id="6"/>
+                <Value Id="14"/>
+            </Default>
+            <Default>
+                <Slot Id="7"/>
+                <Value Id="13"/>
+            </Default>
+            <Default>
+                <Slot Id="8"/>
+                <Value Id="12"/>
+            </Default>
+            <Default>
+                <Slot Id="9"/>
+                <Value Id="11"/>
+            </Default>
+        </Attribute>
+    </Variant>
+</Attributes>

@@ -1,0 +1,15 @@
+<StyleFile>
+	<Constant name="Vera" val="Vera.ttf"/>
+	<Constant name="VeraBold" val="VeraBd.ttf"/>
+	<Constant name="VeraMono" val="VeraMono.ttf"/>
+	
+	<Style name="HBTutorialCinematicHeader" font="#Vera" styleflags="Shadow" Shadowoffset="3" height="48" hjustify="Center"/>
+	<Style name="HBTutorialCinematic" font="#VeraBold" styleflags="Shadow" Shadowoffset="3" height="24" hjustify="Center"/>
+	<Style name="HBStatisticsMono" font="#FontMonospace" styleflags="Shadow" Shadowoffset="2" height="18" hjustify="Left" vjustify="Middle"/>
+	<Style name="HBStatistics" font="#Vera" styleflags="Shadow" Shadowoffset="2" height="18" hjustify="Right" vjustify="Middle"/>
+	<Style name="HBStatisticsBold" font="#VeraBold" styleflags="Shadow" Shadowoffset="2" height="18" hjustify="Right" vjustify="Middle"/>
+	<Style name="HBStatisticsBoldLeft" font="#VeraBold" styleflags="Shadow" Shadowoffset="2" height="18" hjustify="Left" vjustify="Middle"/>
+	<Style name="HBCentered" font="#Vera" styleflags="Shadow" Shadowoffset="2" height="24" hjustify="Center" vjustify="Middle"/>
+	<Style name="HBCentered36" font="#Vera" styleflags="Shadow" Shadowoffset="2" height="36" hjustify="Center" vjustify="Middle"/>
+	
+</StyleFile>

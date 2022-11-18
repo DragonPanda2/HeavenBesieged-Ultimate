@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacedObjects Version="27">
+    <ObjectUnit Id="627" Position="14,47,0" Rotation="0.9074" Scale="1,1,1" UnitType="SpineCrawler" Player="8"/>
+    <ObjectUnit Id="536" Position="58.865,138.0102,0" Rotation="0.1987" Scale="1,1,1" UnitType="Predator" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="402" Position="115.9333,101.9,0" Rotation="6.131" Scale="1,1,1" UnitType="Marine" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="60" Position="93.8923,63.021,0" Rotation="1.703" Scale="1,1,1" UnitType="SiegeTankSieged" Player="5"/>
+    <ObjectUnit Id="505" Position="54.8671,55.7248,0" Rotation="6.2416" Scale="1,1,1" UnitType="Thor" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="87" Position="105,128,0" Rotation="4.3247" Scale="1,1,1" UnitType="PhotonCannon" Player="2"/>
+    <ObjectUnit Id="18" Position="46.5,169.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="Bunker" Player="1"/>
+    <ObjectUnit Id="444" Position="36.4362,130.6984,0" Rotation="6.085" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="121" Position="35,114,0" Scale="1,1,1" UnitType="Pylon" Player="4"/>
+    <ObjectUnit Id="471" Position="30.4748,126.4941,0" Rotation="0.2915" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="605" Position="72.4953,130.3891,0" Rotation="5.8115" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="566" Position="76.3735,118.2592,0" Rotation="5.2644" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="37" Position="66,53,0" Rotation="1.6672" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="395" Position="74.1125,68.887,0" Rotation="1.7797" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="78" Position="20.3273,109.8852,0" Rotation="0.8054" Scale="1,1,1" UnitType="SiegeTankSieged" Player="3"/>
+    <ObjectUnit Id="480" Position="113.9152,124.5576,0" Rotation="4.4892" Scale="1,1,1" UnitType="Ghost" Player="2"/>
+    <ObjectUnit Id="513" Position="68.2846,115.446,0" Rotation="5.572" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="580" Position="46.4711,128.383,0" Rotation="5.558" Scale="1,1,1" UnitType="Ghost" Player="4"/>
+    <ObjectUnit Id="559" Position="54.22,117.9667,0" Rotation="0.864" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="421" Position="80.8266,75.0852,0" Rotation="6.139" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="11" Position="69,70,0" Rotation="0.8605" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="96" Position="28,105,0" Rotation="2.0634" Scale="1,1,1" UnitType="PhotonCannon" Player="3"/>
+    <ObjectUnit Id="75" Position="76.9812,109.9768,0" Rotation="5.489" Scale="1,1,1" UnitType="SiegeTankSieged" Player="5"/>
+    <ObjectUnit Id="485" Position="114.76,127.6137,0" Rotation="4.8652" Scale="1,1,1" UnitType="Ghost" Player="2"/>
+    <ObjectUnit Id="32" Position="60,55,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="398" Position="75.1748,70.466,0" Rotation="1.469" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="516" Position="65.8435,115.609,0" Rotation="5.9538" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="554" Position="52.314,117.824,0" Rotation="1.0556" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="459" Position="116.1,75.3308,0" Rotation="5.7431" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="101" Position="102,104,0" Rotation="6.235" Scale="1,1,1" UnitType="PhotonCannon" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="416" Position="105.8854,103.041,0" Rotation="4.0483" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="14" Position="62,171,0" Rotation="2.6401" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="541" Position="52.6376,111.696,0" Rotation="5.9057" Scale="1,1,1" UnitType="Thor" Player="1"/>
+    <ObjectUnit Id="630" Position="15.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="508" Position="72.9538,55.8813,0" Rotation="6.2116" Scale="1,1,1" UnitType="Thor" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="82" Position="33,128,0" Rotation="0.321" Scale="1,1,1" UnitType="PhotonCannon" Player="4"/>
+    <ObjectUnit Id="407" Position="116.4003,102.476,0" Rotation="6.0761" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="57" Position="56.97,55.88,0" Rotation="0.1962" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1"/>
+    <ObjectUnit Id="124" Position="62,55,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="1"/>
+    <ObjectUnit Id="466" Position="22.3208,110.4257,0" Rotation="0.397" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="23" Position="62,77,0" Rotation="4.3581" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="441" Position="37.8498,129.59,0" Rotation="5.8737" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="563" Position="74.5683,117.548,0" Rotation="5.2827" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="600" Position="71.4777,130.4262,0" Rotation="5.8632" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="526" Position="60.381,117.6074,0" Rotation="0.6445" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="65" Position="52.6198,74.48,0" Rotation="5.5085" Scale="1,1,1" UnitType="Hellion" Player="3"/>
+    <ObjectUnit Id="495" Position="25.9941,151.1601,0" Rotation="4.6618" Scale="1,1,1" UnitType="SiegeTankSieged" Player="3"/>
+    <ObjectUnit Id="42" Position="111.122,75.2924,0" Rotation="0.785" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="388" Position="48.568,75.2687,0" Rotation="6.008" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="449" Position="111.1374,76.022,0" Rotation="0.7231" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="111" Position="97,128,0" Scale="1,1,1" UnitType="Pylon" Player="5"/>
+    <ObjectUnit Id="426" Position="95.5617,129.5063,0" Rotation="5.8244" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="4" Position="40.921,56.0156,0" Rotation="4.151" Scale="1,1,1" UnitType="SiegeTankSieged" Player="3"/>
+    <ObjectUnit Id="544" Position="78.2653,111.34,0" Rotation="5.9135" Scale="1,1,1" UnitType="Thor" Player="1"/>
+    <ObjectUnit Id="910" Position="62,57,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="587" Position="80.624,129.4052,0" Rotation="0.6752" Scale="1,1,1" UnitType="Ghost" Player="5"/>
+    <ObjectUnit Id="502" Position="80.1225,147.6276,0" Rotation="5.9453" Scale="1,1,1" UnitType="Thor" Player="1"/>
+    <ObjectUnit Id="88" Position="72,127,0" Rotation="5.4272" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="413" Position="105.693,106.5166,0" Rotation="4.956" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="51" Position="81,72,0" Rotation="4.0363" Scale="1,1,1" UnitType="PhotonCannon" Player="2"/>
+    <ObjectUnit Id="535" Position="61.314,136.3757,0" Rotation="0.3857" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="636" Position="39.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="569" Position="74.8044,120.5305,0" Rotation="5.603" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="594" Position="55.737,130.3981,0" Rotation="0.4814" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="118" Position="22,114,0" Scale="1,1,1" UnitType="Pylon" Player="3"/>
+    <ObjectUnit Id="472" Position="29.6223,127.443,0" Rotation="0.378" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="29" Position="59,72,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="435" Position="33.149,129.5534,0" Rotation="0.233" Scale="1,1,1" UnitType="Marauder" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="408" Position="111.556,101.432,0" Rotation="0.6096" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="54" Position="93.5,77.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="Bunker" Player="5"/>
+    <ObjectUnit Id="499" Position="13,161,0" Rotation="1.013" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="93" Position="23,116,0" Rotation="3.7651" Scale="1,1,1" UnitType="PhotonCannon" Player="3"/>
+    <ObjectUnit Id="633" Position="7.5,63.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="530" Position="67.485,117.507,0" Rotation="5.684" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="599" Position="70.5585,130.47,0" Rotation="5.9123" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="914" Position="67,110,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="572" Position="73.398,119.2353,0" Rotation="5.7888" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="24" Position="59,74,0" Rotation="1.032" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="438" Position="36.6572,129.5895,0" Rotation="6.0251" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="115" Position="78,127,0" Rotation="5.4252" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="477" Position="106.9672,98.1022,0" Rotation="0.7348" Scale="1,1,1" UnitType="SiegeTankSieged" Player="2"/>
+    <ObjectUnit Id="608" Position="59.5964,116.6391,0" Rotation="0.735" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="523" Position="66.7387,135.1035,0" Rotation="5.873" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="47" Position="19,125,0" Rotation="5.4975" Scale="1,1,1" UnitType="FleetBeacon" Player="14"/>
+    <ObjectUnit Id="385" Position="51.7817,70.2138,0" Rotation="5.1027" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="490" Position="30,170,0" Rotation="1.0134" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="431" Position="23.7861,118.7172,0" Rotation="0.0856" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="1" Position="47,72,0" Rotation="3.1547" Scale="1,1,1" UnitType="PhotonCannon" Player="3"/>
+    <ObjectUnit Id="106" Position="114,104,0" Scale="1,1,1" UnitType="Pylon" Player="2"/>
+    <ObjectUnit Id="590" Position="56.5192,131.5651,0" Rotation="0.4165" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="549" Position="68.303,116.3884,0" Rotation="5.5678" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="907" Position="62,110,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="123" Position="70,53,0" Rotation="1.6665" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="446" Position="110.3498,76.0532,0" Rotation="0.5241" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="16" Position="58,171,0" Rotation="2.8283" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="564" Position="75.5207,117.5124,0" Rotation="5.1696" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="607" Position="60.3825,116.5686,0" Rotation="0.644" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="538" Position="69.2954,136.5297,0" Rotation="5.6713" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="625" Position="18.5,42.5,0" Rotation="6.0207" Scale="1,1,1" UnitType="NydusNetwork" Player="8"/>
+    <ObjectUnit Id="85" Position="95,128,0" Rotation="5.7907" Scale="1,1,1" UnitType="PhotonCannon" Player="5"/>
+    <ObjectUnit Id="507" Position="68.955,57.4301,0" Rotation="5.4653" Scale="1,1,1" UnitType="Thor" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="62" Position="27.969,73.5058,0" Rotation="6.1965" Scale="1,1,1" UnitType="SiegeTankSieged" Player="4"/>
+    <ObjectUnit Id="400" Position="112.551,36.6191,0" Rotation="5.8298" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="582" Position="82.5151,128.393,0" Rotation="0.5163" Scale="1,1,1" UnitType="Ghost" Player="5"/>
+    <ObjectUnit Id="98" Position="87,114,0" Rotation="0.5197" Scale="1,1,1" UnitType="PhotonCannon" Player="5"/>
+    <ObjectUnit Id="460" Position="117.6416,75.3144,0" Rotation="5.529" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="9" Position="62,67,0" Rotation="2.4428" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="423" Position="79.473,76.5036,0" Rotation="0.0983" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="482" Position="113.715,127.0812,0" Rotation="4.8745" Scale="1,1,1" UnitType="Ghost" Player="2"/>
+    <ObjectUnit Id="76" Position="84.98,129.88,0" Scale="1,1,1" UnitType="SiegeTankSieged" Player="5"/>
+    <ObjectUnit Id="393" Position="76.3488,68.8603,0" Rotation="1.9267" Scale="1,1,1" UnitType="Firebat" Player="2"/>
+    <ObjectUnit Id="39" Position="112.4494,102.366,0" Rotation="0.4211" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="515" Position="66.6462,115.5756,0" Rotation="5.8154" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="579" Position="47.4841,128.347,0" Rotation="5.4096" Scale="1,1,1" UnitType="Ghost" Player="4"/>
+    <ObjectUnit Id="552" Position="54.461,118.82,0" Rotation="0.5256" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="12" Position="69,74,0" Rotation="1.5632" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="418" Position="105.904,104.5375,0" Rotation="4.3823" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="103" Position="116,100,0" Rotation="6.235" Scale="1,1,1" UnitType="PhotonCannon" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="457" Position="116.907,76.028,0" Rotation="5.6906" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="396" Position="80.828,73.6408,0" Rotation="6.0915" Scale="1,1,1" UnitType="Firebat" Player="2"/>
+    <ObjectUnit Id="34" Position="37.2233,115.9362,0" Rotation="0.2307" Scale="1,1,1" UnitType="Marauder" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="487" Position="20.95,160.8398,0" Scale="3,3,3" UnitType="Beacon_Terran" Player="3"/>
+    <ObjectUnit Id="73" Position="114.7944,126.1381,0" Rotation="5.3417" Scale="1,1,1" UnitType="SiegeTankSieged" Player="2"/>
+    <ObjectUnit Id="518" Position="58.7524,135.0334,0" Rotation="0.742" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="443" Position="33.3176,130.6953,0" Rotation="0.181" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="21" Position="53,166,0" Rotation="0.7934" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="464" Position="30.555,110.9101,0" Rotation="0.8984" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="126" Position="83,70,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="602" Position="72.5212,131.477,0" Rotation="5.836" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="561" Position="53.5014,120.2634,0" Rotation="0.566" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="628" Position="23,47,0" Rotation="2.4196" Scale="1,1,1" UnitType="SpineCrawler" Player="8"/>
+    <ObjectUnit Id="543" Position="75.5634,111.313,0" Rotation="0.3298" Scale="1,1,1" UnitType="Thor" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="59" Position="87.104,56.28,0" Rotation="3.6213" Scale="1,1,1" UnitType="SiegeTankSieged" Player="2"/>
+    <ObjectUnit Id="405" Position="111.5151,102.4128,0" Rotation="0.5366" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="80" Position="31,128,0" Scale="1,1,1" UnitType="Pylon" Player="4"/>
+    <ObjectUnit Id="510" Position="60.421,115.5253,0" Rotation="0.645" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="6" Position="100.0278,126.8952,0" Rotation="0.1381" Scale="1,1,1" UnitType="SiegeTankSieged" Player="5"/>
+    <ObjectUnit Id="424" Position="94.475,130.6328,0" Rotation="6.033" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="109" Position="103,128,0" Scale="1,1,1" UnitType="Pylon" Player="2"/>
+    <ObjectUnit Id="451" Position="110.3403,75.3051,0" Rotation="0.8542" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="908" Position="64,57,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2"/>
+    <ObjectUnit Id="546" Position="65.8132,116.466,0" Rotation="5.9492" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="524" Position="68.0192,135.2485,0" Rotation="5.715" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="390" Position="53.5175,68.772,0" Rotation="4.8017" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="40" Position="66,55,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="1"/>
+    <ObjectUnit Id="493" Position="32,150,0" Rotation="0.356" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="67" Position="99,78,0" Rotation="0.265" Scale="1,1,1" UnitType="PerditionTurret" Player="5"/>
+    <ObjectUnit Id="592" Position="56.5073,130.4843,0" Rotation="0.4414" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="917" Position="60.5,56.5,0" Rotation="3.076" Scale="1,1,1" UnitType="PathingBlocker1x1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="433" Position="20.2421,120.8063,0" Rotation="0.0856" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="31" Position="60,53,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="474" Position="30.0605,111.6206,0" Rotation="0.8352" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="116" Position="62,165,0" Rotation="5.6105" Scale="1,1,1" UnitType="MissileTurret" Player="1"/>
+    <ObjectUnit Id="49" Position="78,66,0" Scale="1,1,1" UnitType="Pylon" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="415" Position="106.2622,107.0246,0" Rotation="5.045" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="90" Position="50,119,0" Rotation="5.4726" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="500" Position="21,169,0" Rotation="1.013" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="638" Position="15.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="533" Position="58.723,136.462,0" Rotation="0.646" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="574" Position="45.5666,129.4086,0" Rotation="5.8364" Scale="1,1,1" UnitType="Ghost" Player="4"/>
+    <ObjectUnit Id="912" Position="62,111,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="479" Position="114.6232,124.8825,0" Rotation="4.4492" Scale="1,1,1" UnitType="Ghost" Player="2"/>
+    <ObjectUnit Id="113" Position="75,124,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="436" Position="32.0117,129.594,0" Rotation="0.3784" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="26" Position="64,67,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="95" Position="41,114,0" Rotation="5.8706" Scale="1,1,1" UnitType="PhotonCannon" Player="4"/>
+    <ObjectUnit Id="497" Position="20.9714,165.8796,0" Rotation="4.6618" Scale="1,1,1" UnitType="SiegeTankSieged" Player="3"/>
+    <ObjectUnit Id="52" Position="31.5,77.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="Bunker" Player="4"/>
+    <ObjectUnit Id="410" Position="104.7521,104.6032,0" Rotation="4.2592" Scale="1,1,1" UnitType="Firebat" Player="2"/>
+    <ObjectUnit Id="528" Position="61.9858,117.4868,0" Rotation="0.3986" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="635" Position="31.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="104" Position="102,102,0" Scale="1,1,1" UnitType="Pylon" Player="2"/>
+    <ObjectUnit Id="3" Position="40,73,0" Scale="1,1,1" UnitType="Pylon" Player="3"/>
+    <ObjectUnit Id="429" Position="22.611,117.7392,0" Rotation="0.086" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="588" Position="81.5588,129.3122,0" Rotation="0.5598" Scale="1,1,1" UnitType="Ghost" Player="5"/>
+    <ObjectUnit Id="521" Position="60.1271,137.8718,0" Rotation="0.256" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="488" Position="29.5251,152.5368,0" Scale="1,1,1" UnitType="Beacon_Protoss" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="387" Position="46.8325,75.1213,0" Rotation="6.2526" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="45" Position="64,124,0" Scale="1,1,1" UnitType="WarpGate" Player="14"/>
+    <ObjectUnit Id="156" Position="102.0268,150.9687,0" Rotation="1.291" Scale="1,1,1" UnitType="SiegeTankSieged" Player="2"/>
+    <ObjectUnit Id="306" Position="91.8264,117.8161,0" Rotation="5.9106" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="247" Position="108,110,0" Rotation="2.8813" Scale="1,1,1" UnitType="PhotonCannon" Player="2"/>
+    <ObjectUnit Id="345" Position="76.6791,95.256,0" Rotation="0.972" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="723" Position="104.99,38.0397,0" Rotation="3.9267" Scale="1,1,1" UnitType="Overseer" Player="9"/>
+    <ObjectUnit Id="765" Position="114.7353,36.4018,0" Rotation="1.6362" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="851" Position="112.6096,34.469,0" Rotation="4.7897" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="662" Position="71.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="178" Position="62.94,157.92,0" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="673" Position="104.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="783" Position="111.795,40.3066,0" Rotation="3.1413" Scale="1,1,1" UnitType="Hydralisk2" Player="9">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="299" Position="60.3923,72.453,0" Rotation="4.812" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="133" Position="48,67,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="320" Position="55.8923,97.3037,0" Rotation="0.4985" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="238" Position="82.174,58.111,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="171" Position="78,119,0" Rotation="5.4252" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="261" Position="93.171,65.1491,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="192" Position="77,166,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="366" Position="113.3935,99.4555,0" Rotation="0.5776" Scale="1,1,1" UnitType="Firebat" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="740" Position="102.48,37.2697,0" Rotation="3.9267" Scale="1,1,1" UnitType="HunterKiller" Player="9"/>
+    <ObjectUnit Id="655" Position="63.5,15.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="676" Position="96.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="778" Position="21.22,34.5898,0" Rotation="2.356" Scale="1,1,1" UnitType="Immortal" Player="8"/>
+    <ObjectUnit Id="325" Position="55.5871,95.8051,0" Rotation="0.7844" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="235" Position="81.8395,59.7231,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="302" Position="41.8962,115.6467,0" Rotation="5.8486" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="128" Position="106.2058,103.823,0" Rotation="4.2436" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="197" Position="82.8085,147.993,0" Rotation="0.046" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1"/>
+    <ObjectUnit Id="363" Position="104.6557,103.1613,0" Rotation="3.8498" Scale="1,1,1" UnitType="Firebat" Player="2"/>
+    <ObjectUnit Id="174" Position="66,165,0" Rotation="0.5996" Scale="1,1,1" UnitType="MissileTurret" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="256" Position="92.7915,66.4013,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="650" Position="71.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="847" Position="114.5754,34.596,0" Rotation="4.8276" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="737" Position="110.4611,36.5498,0" Rotation="0.7346" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="242" Position="83.523,56.7187,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="348" Position="89.0871,117.201,0" Rotation="6.2673" Scale="1,1,1" UnitType="Metatron" Player="5"/>
+    <ObjectUnit Id="153" Position="107.0385,166.001,0" Rotation="5.789" Scale="1,1,1" UnitType="SiegeTankSieged" Player="2"/>
+    <ObjectUnit Id="311" Position="91.5437,129.5212,0" Rotation="0.1997" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="787" Position="110.5051,35.738,0" Rotation="5.8276" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="726" Position="22.96,38.0998,0" Rotation="2.356" Scale="1,1,1" UnitType="Overseer" Player="8"/>
+    <ObjectUnit Id="659" Position="47.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="760" Position="61.8198,17.5197,0" Rotation="3.1413" Scale="1,1,1" UnitType="Hunterling" Player="7"/>
+    <ObjectUnit Id="854" Position="115.6823,39.5522,0" Rotation="4.0986" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="370" Position="20.2126,89.388,0" Rotation="5.5661" Scale="1,1,1" UnitType="Goliath" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="220" Position="35.9836,66.4877,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="281" Position="72.7133,57.3142,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="183" Position="55,166,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="335" Position="80.0302,82.8452,0" Rotation="2.5227" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="225" Position="37.7622,69.413,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="292" Position="68.5913,59.5021,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="138" Position="18,121,0" Rotation="3.6833" Scale="1,1,1" UnitType="MissileTurret" Player="3"/>
+    <ObjectUnit Id="686" Position="80.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="768" Position="10.89,44.24,0" Rotation="1.5705" Scale="1,1,1" UnitType="SiegeBreaker" Player="8">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="709" Position="18.5,42.5,0" Rotation="6.0207" Scale="1,1,1" UnitType="NydusNetwork2" Player="8">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="640" Position="7.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="747" Position="110.43,48.38,0" Rotation="3.9267" Scale="1,1,1" UnitType="Roach2" Player="9"/>
+    <ObjectUnit Id="207" Position="45.6926,59.542,0" Rotation="5.9538" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="353" Position="91.8581,116.5036,0" Rotation="5.834" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="164" Position="62,114,0" Rotation="5.4704" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="266" Position="55.0988,58.1118,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="732" Position="111.5966,38.4995,0" Rotation="3.22" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="248" Position="90.1113,69.533,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="342" Position="74.107,96.4555,0" Rotation="5.1813" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="147" Position="114,154,0" Rotation="1.0134" Scale="1,1,1" UnitType="MissileTurret" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="317" Position="48.3334,84.2736,0" Rotation="3.841" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="376" Position="19.6738,111.6435,0" Rotation="0.758" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="214" Position="35.5883,67.35,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="275" Position="56.6223,57.4216,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="189" Position="55.0178,164.1218,0" Rotation="2.5366" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="665" Position="109.5,42.5,0" Rotation="6.0207" Scale="1,1,1" UnitType="NydusNetwork" Player="9"/>
+    <ObjectUnit Id="754" Position="70.48,22.5097,0" Rotation="3.1413" Scale="1,1,1" UnitType="Baneling" Player="7"/>
+    <ObjectUnit Id="860" Position="117.6252,37.482,0" Rotation="3.5112" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="729" Position="75.6794,73.6857,0" Rotation="0.8315" Scale="1,1,1" UnitType="WarPig" Player="2"/>
+    <ObjectUnit Id="690" Position="23.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="150" Position="94,148,0" Rotation="0.3566" Scale="1,1,1" UnitType="MissileTurret" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="312" Position="94.3918,129.6247,0" Rotation="6.0053" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="253" Position="90.4548,67.7231,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="339" Position="72.1057,97.6762,0" Rotation="5.3928" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="278" Position="55.8498,57.4458,0" Rotation="5.9445" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="184" Position="67,167,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="381" Position="26.5754,126.6967,0" Rotation="0.8054" Scale="1,1,1" UnitType="Goliath" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="211" Position="108.7006,104.7653,0" Rotation="4.5827" Scale="1,1,1" UnitType="MedivacAPC" Player="2"/>
+    <ObjectUnit Id="759" Position="60.42,17.67,0" Rotation="3.1413" Scale="1,1,1" UnitType="Hunterling" Player="7"/>
+    <ObjectUnit Id="857" Position="117.727,38.7902,0" Rotation="4.0856" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="668" Position="114,47,0" Rotation="3.2526" Scale="1,1,1" UnitType="SpineCrawler" Player="9"/>
+    <ObjectUnit Id="289" Position="70.988,57.4655,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="143" Position="112,121,0" Rotation="4.5766" Scale="1,1,1" UnitType="MissileTurret" Player="2"/>
+    <ObjectUnit Id="330" Position="38.8398,116.75,0" Scale="1,1,1" UnitType="HelsAngelAssault" Player="4"/>
+    <ObjectUnit Id="704" Position="17.606,47.5693,0" Rotation="3.1413" Scale="1,1,1" UnitType="Lurker" Player="8"/>
+    <ObjectUnit Id="683" Position="112.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="773" Position="10.5651,35.7622,0" Rotation="2.14" Scale="1,1,1" UnitType="VikingAssault" Player="8"/>
+    <ObjectUnit Id="750" Position="54.8298,25.4,0" Rotation="3.1413" Scale="1,1,1" UnitType="Ultralisk2" Player="7"/>
+    <ObjectUnit Id="645" Position="64,29,0" Rotation="1.8208" Scale="1,1,1" UnitType="SpineCrawler" Player="7"/>
+    <ObjectUnit Id="161" Position="68,114,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="271" Position="56.5317,58.2312,0" Rotation="5.9401" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="202" Position="42.9384,57.1098,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="356" Position="65.9162,68.4338,0" Rotation="5.8996" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="660" Position="55.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="849" Position="110.578,34.596,0" Rotation="4.6948" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="219" Position="35.3022,65.7482,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="373" Position="26.2993,104.8088,0" Rotation="1.3671" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="176" Position="81.5,169.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="Bunker" Player="1"/>
+    <ObjectUnit Id="347" Position="75.9584,89.9296,0" Rotation="0.0664" Scale="1,1,1" UnitType="PrisonZealot" Player="5"/>
+    <ObjectUnit Id="245" Position="84.205,56.287,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="304" Position="37.2133,117.151,0" Rotation="0.1982" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="158" Position="64,137,0" Scale="1,1,1" UnitType="Beacon_Protoss" Player="1"/>
+    <ObjectUnit Id="788" Position="111.5651,35.6464,0" Rotation="5.8276" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="721" Position="58.94,24.1198,0" Rotation="3.1413" Scale="1,1,1" UnitType="Overseer" Player="7"/>
+    <ObjectUnit Id="364" Position="113.125,100.5637,0" Rotation="0.0476" Scale="1,1,1" UnitType="Firebat" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="194" Position="74.9848,148.249,0" Rotation="0.0461" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1"/>
+    <ObjectUnit Id="263" Position="60.3552,59.3312,0" Rotation="5.9445" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="169" Position="53,124,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="653" Position="47.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="803" Position="68.47,21.44,0" Rotation="3.1413" Scale="1,1,1" UnitType="Baneling" Player="7"/>
+    <ObjectUnit Id="742" Position="101.47,37.46,0" Rotation="3.9267" Scale="1,1,1" UnitType="HunterKiller" Player="9"/>
+    <ObjectUnit Id="675" Position="88.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="236" Position="82.4768,58.9316,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="322" Position="49.9843,83.7458,0" Rotation="4.0605" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="135" Position="48,62,0" Rotation="2.6264" Scale="1,1,1" UnitType="PhotonCannon" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="297" Position="40.6276,115.5634,0" Rotation="6.0146" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="258" Position="92.4887,65.5808,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="172" Position="50,127,0" Rotation="5.4252" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="361" Position="104.7517,108.573,0" Rotation="5.6091" Scale="1,1,1" UnitType="Firebat" Player="2"/>
+    <ObjectUnit Id="199" Position="79,158,0" Rotation="2.1528" Scale="1,1,1" UnitType="MissileTurret" Player="1"/>
+    <ObjectUnit Id="739" Position="102.5698,38.3198,0" Rotation="3.9267" Scale="1,1,1" UnitType="HunterKiller" Player="9"/>
+    <ObjectUnit Id="845" Position="115.5817,35.2597,0" Rotation="1.754" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="648" Position="64.5,26.5,0" Rotation="0.523" Scale="1,1,1" UnitType="NydusCanal" Player="7"/>
+    <ObjectUnit Id="776" Position="13.913,35.1594,0" Rotation="2.525" Scale="1,1,1" UnitType="VikingAssault" Player="8"/>
+    <ObjectUnit Id="678" Position="120.5,47.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="130" Position="88,70,0" Rotation="3.9226" Scale="1,1,1" UnitType="PhotonCannon" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="300" Position="67.5166,71.106,0" Rotation="1.7724" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="233" Position="111,113,0" Scale="1,1,1" UnitType="Pylon" Player="2"/>
+    <ObjectUnit Id="327" Position="53.9477,96.4296,0" Rotation="0.9248" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="852" Position="115.5622,37.4123,0" Rotation="3.0698" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="762" Position="65.6137,15.8303,0" Rotation="3.1413" Scale="1,1,1" UnitType="Hunterling" Player="7"/>
+    <ObjectUnit Id="831" Position="80.175,75.7231,0" Rotation="6.2705" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="657" Position="96.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="181" Position="60,169,0" Rotation="5.4265" Scale="1,1,1" UnitType="MissileTurret" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="222" Position="37.393,67.8105,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="368" Position="15.7854,87.7253,0" Rotation="0.356" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="309" Position="90.457,130.6477,0" Rotation="0.3156" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="155" Position="96.9082,156.0734,0" Rotation="4.6635" Scale="1,1,1" UnitType="SiegeTankSieged" Player="2"/>
+    <ObjectUnit Id="350" Position="86.0212,116.622,0" Rotation="0.453" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="240" Position="83.8256,57.5393,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="724" Position="114.0598,38.0397,0" Rotation="3.9267" Scale="1,1,1" UnitType="Overseer" Player="9"/>
+    <ObjectUnit Id="703" Position="23.3671,41.995,0" Rotation="3.1413" Scale="1,1,1" UnitType="Karass" Player="8"/>
+    <ObjectUnit Id="785" Position="109.5,42.5,0" Rotation="6.0207" Scale="1,1,1" UnitType="NydusNetwork2" Player="9">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="745" Position="112.5498,49.6198,0" Rotation="3.9267" Scale="1,1,1" UnitType="Roach2" Player="9"/>
+    <ObjectUnit Id="642" Position="47.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="264" Position="59.5312,58.5385,0" Rotation="6.155" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="166" Position="61,133,0" Rotation="0.1691" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="355" Position="61.9995,68.4,0" Rotation="0.461" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="205" Position="45.3288,58.0368,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="136" Position="40,70,0" Rotation="2.6264" Scale="1,1,1" UnitType="PhotonCannon" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="294" Position="73.434,58.394,0" Rotation="5.9401" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="333" Position="74.1247,83.715,0" Rotation="3.8188" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="711" Position="63.9091,87.175,0" Rotation="6.2375" Scale="1,1,1" UnitType="DarkTemplar" Player="6"/>
+    <ObjectUnit Id="770" Position="10.74,48.4,0" Rotation="1.5705" Scale="1,1,1" UnitType="SiegeBreaker" Player="8"/>
+    <ObjectUnit Id="684" Position="120.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="191" Position="49,166,0" Rotation="0.7934" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="273" Position="59.556,59.3784,0" Rotation="5.947" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="212" Position="64.219,10.0673,0" Rotation="6.0207" Scale="1,1,1" UnitType="NydusNetwork" Player="10"/>
+    <ObjectUnit Id="378" Position="24.8425,104.899,0" Rotation="1.389" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="862" Position="116.5058,35.608,0" Rotation="6.0686" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="752" Position="56.74,23.8098,0" Rotation="3.1413" Scale="1,1,1" UnitType="Ultralisk2" Player="7"/>
+    <ObjectUnit Id="667" Position="114,38,0" Rotation="4.035" Scale="1,1,1" UnitType="SpineCrawler" Player="9"/>
+    <ObjectUnit Id="734" Position="111.5083,36.5158,0" Rotation="5.206" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="319" Position="54.2597,83.5957,0" Rotation="2.119" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="145" Position="100,168,0" Rotation="1.0134" Scale="1,1,1" UnitType="MissileTurret" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="340" Position="75.1718,95.2202,0" Rotation="5.0373" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="250" Position="89.8085,68.7124,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="209" Position="46.4167,60.303,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="383" Position="46.8952,73.7072,0" Rotation="6.233" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="186" Position="65.2697,158.0798,0" Rotation="0.231" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="276" Position="55.092,57.4187,0" Rotation="5.9445" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="670" Position="106.5,44.5,0" Rotation="0.523" Scale="1,1,1" UnitType="NydusCanal" Player="9"/>
+    <ObjectUnit Id="859" Position="116.5837,37.646,0" Rotation="5.1423" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="757" Position="70.5397,21.5898,0" Rotation="3.1413" Scale="1,1,1" UnitType="Baneling" Player="7"/>
+    <ObjectUnit Id="688" Position="7.5,55.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="798" Position="19.66,34.74,0" Rotation="2.356" Scale="1,1,1" UnitType="Immortal" Player="8"/>
+    <ObjectUnit Id="731" Position="112.4792,38.5178,0" Rotation="1.4978" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="337" Position="76.7441,85.2402,0" Rotation="2.3361" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="255" Position="92.1542,67.1928,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="314" Position="53.0412,84.868,0" Rotation="1.801" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="148" Position="116,152,0" Rotation="1.0134" Scale="1,1,1" UnitType="MissileTurret" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="647" Position="64,18,0" Rotation="1.4404" Scale="1,1,1" UnitType="SpineCrawler" Player="7"/>
+    <ObjectUnit Id="748" Position="111.44,48.2597,0" Rotation="3.9267" Scale="1,1,1" UnitType="Roach2" Player="9"/>
+    <ObjectUnit Id="358" Position="67.4748,73.9511,0" Rotation="1.1677" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="200" Position="64,72,0" Rotation="3.1413" Scale="1,1,1" UnitType="Gateway" Player="14"/>
+    <ObjectUnit Id="163" Position="59,133,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="328" Position="51.0883,95.1921,0" Rotation="5.0612" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="141" Position="18,129,0" Rotation="5.6745" Scale="1,1,1" UnitType="MissileTurret" Player="3"/>
+    <ObjectUnit Id="291" Position="67.6533,59.5021,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="775" Position="12.0671,37.1887,0" Rotation="2.069" Scale="1,1,1" UnitType="VikingAssault" Player="8"/>
+    <ObjectUnit Id="681" Position="120.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="706" Position="67.4743,26.7043,0" Rotation="3.1413" Scale="1,1,1" UnitType="Infestor" Player="7">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="313" Position="51.9082,89.8984,0" Rotation="0.1162" Scale="1,1,1" UnitType="Nova" Player="4"/>
+    <ObjectUnit Id="151" Position="115,161,0" Rotation="1.0134" Scale="1,1,1" UnitType="MissileTurret" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="338" Position="78.0341,83.9284,0" Rotation="2.42" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="252" Position="91.4426,67.7937,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="728" Position="13.98,47.16,0" Rotation="2.356" Scale="1,1,1" UnitType="Overseer" Player="8"/>
+    <ObjectUnit Id="691" Position="15.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="797" Position="19.47,36.23,0" Rotation="2.356" Scale="1,1,1" UnitType="Immortal" Player="8"/>
+    <ObjectUnit Id="856" Position="117.5468,39.6511,0" Rotation="1.7395" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="758" Position="69.5698,21.48,0" Rotation="3.1413" Scale="1,1,1" UnitType="Baneling" Player="7"/>
+    <ObjectUnit Id="669" Position="105,47,0" Rotation="2.7685" Scale="1,1,1" UnitType="SpineCrawler" Player="9"/>
+    <ObjectUnit Id="185" Position="73,166,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="279" Position="72.5793,58.3522,0" Rotation="5.947" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="210" Position="47.43,60.0607,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="380" Position="27.6645,127.7043,0" Rotation="0.6076" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="705" Position="64.2104,24.2368,0" Rotation="3.1413" Scale="1,1,1" UnitType="Mutalisk" Player="7"/>
+    <ObjectUnit Id="772" Position="10.5451,37.699,0" Rotation="1.8933" Scale="1,1,1" UnitType="VikingAssault" Player="8"/>
+    <ObjectUnit Id="682" Position="104.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="142" Position="116,119,0" Rotation="4.1501" Scale="1,1,1" UnitType="MissileTurret" Player="2"/>
+    <ObjectUnit Id="288" Position="68.5502,58.616,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="331" Position="72.0793,82.7006,0" Rotation="3.6977" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="270" Position="55.879,58.2312,0" Rotation="5.9401" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="160" Position="60,114,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="357" Position="67.5134,70.33,0" Rotation="1.9316" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="203" Position="43.8593,56.6845,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="751" Position="54.9,22.0197,0" Rotation="3.1413" Scale="1,1,1" UnitType="Ultralisk2" Player="7">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="644" Position="70,24,0" Rotation="5.2331" Scale="1,1,1" UnitType="SpineCrawler" Player="7"/>
+    <ObjectUnit Id="810" Position="112.5686,35.3774,0" Rotation="5.8254" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="769" Position="10.66,46.38,0" Rotation="1.5705" Scale="1,1,1" UnitType="SiegeBreaker" Player="8"/>
+    <ObjectUnit Id="687" Position="31.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="708" Position="109.1796,46.1435,0" Rotation="3.1413" Scale="1,1,1" UnitType="Zeratul" Player="9"/>
+    <ObjectUnit Id="224" Position="38.0847,68.5117,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="334" Position="74.8503,85.0947,0" Rotation="3.6953" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="139" Position="17,86,0" Rotation="4.4438" Scale="1,1,1" UnitType="MissileTurret" Player="3"/>
+    <ObjectUnit Id="293" Position="73.3957,57.4328,0" Rotation="5.9401" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="352" Position="90.6394,116.5837,0" Rotation="6.0156" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="206" Position="45.952,58.743,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="267" Position="54.244,58.2744,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="165" Position="66,114,0" Rotation="5.4704" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="641" Position="39.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="746" Position="110.3198,49.45,0" Rotation="3.9267" Scale="1,1,1" UnitType="Roach2" Player="9"/>
+    <ObjectUnit Id="343" Position="77.8784,96.6542,0" Rotation="0.8496" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="249" Position="105,113,0" Rotation="0.579" Scale="1,1,1" UnitType="PhotonCannon" Player="2"/>
+    <ObjectUnit Id="316" Position="55.989,82.63,0" Rotation="2.5375" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="146" Position="98,170,0" Rotation="1.0134" Scale="1,1,1" UnitType="MissileTurret" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="733" Position="111.5803,37.4277,0" Rotation="3.4821" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="664" Position="87.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="861" Position="117.2678,36.61,0" Rotation="2.9785" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="755" Position="21.1965,121.5798,0" Rotation="0.0856" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="215" Position="34.9428,66.7314,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="377" Position="18.5725,110.6142,0" Rotation="0.9597" Scale="1,1,1" UnitType="Goliath" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="188" Position="60.13,160.39,0" Rotation="5.2404" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="274" Position="60.4018,58.4638,0" Rotation="5.9445" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="234" Position="80.8427,59.8503,0" Rotation="5.947" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="324" Position="48.525,95.8833,0" Rotation="5.7" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="129" Position="80,62,0" Rotation="3.586" Scale="1,1,1" UnitType="PhotonCannon" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="303" Position="42.0173,117.0986,0" Rotation="5.9064" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="779" Position="22.91,34.5598,0" Rotation="2.356" Scale="1,1,1" UnitType="Immortal" Player="8"/>
+    <ObjectUnit Id="677" Position="112.5,55.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="651" Position="55.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="805" Position="101.43,39.68,0" Rotation="3.9267" Scale="1,1,1" UnitType="HunterKiller" Player="9"/>
+    <ObjectUnit Id="736" Position="110.582,37.5712,0" Rotation="5.4433" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="846" Position="113.5126,34.532,0" Rotation="0.7016" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="362" Position="114.4704,100.5856,0" Rotation="0.188" Scale="1,1,1" UnitType="Firebat" Player="2"/>
+    <ObjectUnit Id="196" Position="45.0366,147.905,0" Rotation="0.046" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1"/>
+    <ObjectUnit Id="257" Position="91.8037,66.3308,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="175" Position="71,164,0" Rotation="0.6762" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="727" Position="13.93,38.0498,0" Rotation="2.356" Scale="1,1,1" UnitType="Overseer" Player="8">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="349" Position="87.2185,117.9443,0" Rotation="0.2336" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="243" Position="84.5556,57.1491,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="310" Position="91.5466,130.567,0" Rotation="0.1691" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="152" Position="107,169,0" Rotation="1.0134" Scale="1,1,1" UnitType="MissileTurret" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="221" Position="36.6066,67.1938,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="371" Position="26.2268,99.6745,0" Rotation="2.0173" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="182" Position="64,166,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="280" Position="71.77,58.2736,0" Rotation="5.947" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="658" Position="39.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="855" Position="116.524,39.601,0" Rotation="1.9423" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="761" Position="61.7797,15.92,0" Rotation="3.1413" Scale="1,1,1" UnitType="Hunterling" Player="7"/>
+    <ObjectUnit Id="722" Position="70.0197,24.1198,0" Rotation="3.1413" Scale="1,1,1" UnitType="Overseer" Player="7"/>
+    <ObjectUnit Id="307" Position="86.0202,117.9582,0" Rotation="0.3796" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="157" Position="98.2617,152.2944,0" Scale="1,1,1" UnitType="Beacon_Protoss" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="344" Position="72.021,95.7907,0" Rotation="5.2231" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="246" Position="114,110,0" Rotation="2.6835" Scale="1,1,1" UnitType="PhotonCannon" Player="2"/>
+    <ObjectUnit Id="179" Position="68,169,0" Rotation="0.5805" Scale="1,1,1" UnitType="MissileTurret" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="216" Position="34.2775,66.1318,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="374" Position="26.1958,101.111,0" Rotation="1.8454" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="850" Position="111.7131,34.469,0" Rotation="4.544" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="764" Position="67.2597,17.5798,0" Rotation="3.1413" Scale="1,1,1" UnitType="Hunterling" Player="7"/>
+    <ObjectUnit Id="663" Position="79.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="132" Position="45,70,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="298" Position="60.503,70.9553,0" Rotation="4.4782" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="239" Position="83.1884,58.3308,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="321" Position="48.1208,97.3037,0" Rotation="6.0075" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="672" Position="120.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="741" Position="21.2731,117.7575,0" Rotation="0.0856" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="843" Position="114.5913,35.455,0" Rotation="6.114" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="654" Position="79.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="260" Position="105,119,0" Rotation="2.73" Scale="1,1,1" UnitType="PhotonCannon" Player="2"/>
+    <ObjectUnit Id="170" Position="56,119,0" Rotation="5.4704" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="367" Position="13.8298,89.18,0" Rotation="0.7822" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="193" Position="51,166,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="671" Position="112.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="756" Position="113.585,36.4592,0" Rotation="1.4538" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="858" Position="116.54,38.6933,0" Rotation="5.6813" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="208" Position="46.7382,59.3596,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="187" Position="67.92,160.3298,0" Rotation="1.2033" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="254" Position="91.14,66.9731,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="336" Position="80.0324,84.4782,0" Rotation="2.4758" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="149" Position="96,150,0" Rotation="1.0141" Scale="1,1,1" UnitType="MissileTurret" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="315" Position="47.9916,82.631,0" Rotation="3.4995" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="689" Position="7.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="730" Position="112.5146,37.5354,0" Rotation="0.2192" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="201" Position="43.6228,57.681,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="359" Position="60.4912,73.457,0" Rotation="5.0253" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="162" Position="69,133,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="646" Position="59,24,0" Rotation="1.8913" Scale="1,1,1" UnitType="SpineCrawler" Player="7"/>
+    <ObjectUnit Id="749" Position="111.41,49.5698,0" Rotation="3.9267" Scale="1,1,1" UnitType="Roach2" Player="9"/>
+    <ObjectUnit Id="680" Position="112.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="774" Position="12.1848,35.559,0" Rotation="2.3044" Scale="1,1,1" UnitType="VikingAssault" Player="8"/>
+    <ObjectUnit Id="707" Position="105.8916,42.367,0" Rotation="3.1413" Scale="1,1,1" UnitType="KerriganChar" Player="9"/>
+    <ObjectUnit Id="329" Position="52.8593,95.155,0" Rotation="1.2336" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="231" Position="71.0407,36.2531,0" Rotation="3.7741" Scale="1,1,1" UnitType="SMMarSaraBarCorkboardBackground" Player="9"/>
+    <ObjectUnit Id="290" Position="71.0493,58.4113,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="140" Position="15,128,0" Rotation="0.53" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="167" Position="67,133,0" Rotation="6.1367" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="265" Position="54.4077,57.483,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="204" Position="44.6474,57.2973,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="354" Position="90.6457,117.8151,0" Rotation="6.0583" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="744" Position="112.5097,48.5397,0" Rotation="3.9267" Scale="1,1,1" UnitType="Roach2" Player="9"/>
+    <ObjectUnit Id="643" Position="64.5,23.5,0" Rotation="6.0207" Scale="1,1,1" UnitType="NydusNetwork" Player="7"/>
+    <ObjectUnit Id="710" Position="61.2622,26.631,0" Rotation="3.1413" Scale="1,1,1" UnitType="Ultralisk" Player="7">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="685" Position="88.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="771" Position="10.5197,39.3537,0" Rotation="1.6394" Scale="1,1,1" UnitType="VikingAssault" Player="8"/>
+    <ObjectUnit Id="295" Position="62.9484,68.3881,0" Rotation="0.2717" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="137" Position="15,122,0" Rotation="3.6833" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="332" Position="71.9877,84.0905,0" Rotation="3.7358" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="226" Position="74.0085,29.6586,0" Rotation="4.874" Scale="1,1,1" UnitType="SMMarSaraBarCorkboardBackground" Player="9"/>
+    <ObjectUnit Id="753" Position="69.5798,22.5698,0" Rotation="3.1413" Scale="1,1,1" UnitType="Baneling" Player="7"/>
+    <ObjectUnit Id="863" Position="116.3747,36.5874,0" Rotation="1.1765" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="666" Position="105,38,0" Rotation="0.96" Scale="1,1,1" UnitType="SpineCrawler" Player="9"/>
+    <ObjectUnit Id="820" Position="106.9104,106.6215,0" Rotation="4.9138" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="190" Position="73.0498,164.0397,0" Rotation="0.0434" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="379" Position="24.6591,101.3576,0" Rotation="1.7775" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="213" Position="36.3474,67.993,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="144" Position="116,115,0" Rotation="0.2036" Scale="1,1,1" UnitType="MissileTurret" Player="2"/>
+    <ObjectUnit Id="318" Position="55.677,84.3308,0" Rotation="2.153" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="251" Position="90.8054,68.5852,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="341" Position="79.901,97.6704,0" Rotation="0.7021" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="735" Position="110.5905,38.4621,0" Rotation="4.2763" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="692" Position="15.982,40.2314,0" Rotation="3.1413" Scale="1,1,1" UnitType="Odin" Player="8"/>
+    <ObjectUnit Id="844" Position="115.6828,36.295,0" Rotation="3.2316" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="738" Position="102.47,39.3298,0" Rotation="3.9267" Scale="1,1,1" UnitType="HunterKiller" Player="9"/>
+    <ObjectUnit Id="807" Position="19.9,92.92,0" Rotation="2.0988" Scale="1,1,1" UnitType="SiegeTankSieged" Player="3"/>
+    <ObjectUnit Id="649" Position="55.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="173" Position="57,164,0" Rotation="5.481" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="259" Position="93.5214,66.0112,0" Rotation="5.9426" Scale="1,1,1" UnitType="Ghost" Player="5">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="198" Position="49,158,0" Rotation="5.1096" Scale="1,1,1" UnitType="MissileTurret" Player="1"/>
+    <ObjectUnit Id="360" Position="60.544,69.8752,0" Rotation="4.2678" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="301" Position="67.537,72.774,0" Rotation="1.404" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="131" Position="50,66,0" Scale="1,1,1" UnitType="Pylon" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="326" Position="50.2314,96.3098,0" Rotation="5.4006" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="232" Position="81.1455,60.671,0" Rotation="5.947" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="679" Position="120.5,63.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="777" Position="21.3198,36.24,0" Rotation="2.356" Scale="1,1,1" UnitType="Immortal" Player="8"/>
+    <ObjectUnit Id="282" Position="71.7854,57.3774,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="180" Position="61,167,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="369" Position="18.3205,87.7492,0" Rotation="6.0141" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="223" Position="37.0715,68.754,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="763" Position="65.5197,17.5297,0" Rotation="3.1413" Scale="1,1,1" UnitType="Hunterling" Player="7">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="853" Position="115.6523,38.6203,0" Rotation="0.5605" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="656" Position="120.5,55.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="830" Position="74.5954,69.6635,0" Rotation="1.6447" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="725" Position="114.0998,46.8198,0" Rotation="3.9267" Scale="1,1,1" UnitType="Overseer" Player="9"/>
+    <ObjectUnit Id="784" Position="64.5,23.5,0" Rotation="6.0207" Scale="1,1,1" UnitType="NydusNetwork2" Player="7">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="154" Position="111.8937,161.171,0" Rotation="1.9377" Scale="1,1,1" UnitType="SiegeTankSieged" Player="2"/>
+    <ObjectUnit Id="308" Position="90.3737,129.6396,0" Rotation="0.3774" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="241" Position="82.838,57.4687,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="351" Position="87.1953,116.5427,0" Rotation="0.289" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="372" Position="26.2458,106.8488,0" Rotation="1.1396" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="218" Position="34.6804,65.042,0" Rotation="5.9492" Scale="1,1,1" UnitType="Ghost" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="287" Position="67.6123,58.616,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="177" Position="79,166,0" Rotation="0.794" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="661" Position="63.5,39.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="848" Position="115.5551,34.4477,0" Rotation="2.1853" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="244" Position="108,116,0" Scale="1,1,1" UnitType="Pylon" Player="2"/>
+    <ObjectUnit Id="346" Position="80.0512,96.0515,0" Rotation="0.774" Scale="1,1,1" UnitType="Diamondback" Player="5"/>
+    <ObjectUnit Id="159" Position="52.8361,148.1774,0" Rotation="0.4311" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1"/>
+    <ObjectUnit Id="305" Position="40.7475,117.282,0" Rotation="6.055" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="802" Position="68.42,22.4,0" Rotation="3.1413" Scale="1,1,1" UnitType="Baneling" Player="7"/>
+    <ObjectUnit Id="652" Position="71.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="7"/>
+    <ObjectUnit Id="743" Position="101.39,38.5898,0" Rotation="3.9267" Scale="1,1,1" UnitType="HunterKiller" Player="9"/>
+    <ObjectUnit Id="195" Position="60,170,0" Scale="1,1,1" UnitType="Pylon" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="365" Position="114.5344,99.4748,0" Rotation="0.7282" Scale="1,1,1" UnitType="Firebat" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="168" Position="53,122,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="262" Position="107,112,0" Scale="1,1,1" UnitType="Pylon" Player="2"/>
+    <ObjectUnit Id="323" Position="51.1403,84.814,0" Rotation="4.3916" Scale="1,1,1" UnitType="Stalker2" Player="4"/>
+    <ObjectUnit Id="237" Position="81.489,58.861,0" Rotation="5.9448" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="296" Position="64.728,68.4553,0" Rotation="6.153" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="134" Position="115.3862,101.4946,0" Rotation="6.2158" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="674" Position="96.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="9"/>
+    <ObjectUnit Id="780" Position="22.95,36.3498,0" Rotation="2.356" Scale="1,1,1" UnitType="Immortal" Player="8"/>
+    <ObjectUnit Id="632" Position="7.5,47.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="531" Position="66.663,117.557,0" Rotation="5.8132" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="55" Position="34.5,77.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="Bunker" Player="4"/>
+    <ObjectUnit Id="92" Position="26,119,0" Rotation="5.8444" Scale="1,1,1" UnitType="PhotonCannon" Player="3"/>
+    <ObjectUnit Id="498" Position="16.0278,161.2375,0" Rotation="4.6618" Scale="1,1,1" UnitType="SiegeTankSieged" Player="3"/>
+    <ObjectUnit Id="439" Position="64.0698,12.63,0" Rotation="3.1413" Scale="1,1,1" UnitType="Stalker" Player="10"/>
+    <ObjectUnit Id="25" Position="59,70,0" Rotation="2.436" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="114" Position="75,122,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="598" Position="70.6,131.44,0" Rotation="5.9294" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="915" Position="61,110,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="384" Position="48.7124,73.6682,0" Rotation="5.907" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="46" Position="112,117,0" Rotation="5.4975" Scale="1,1,1" UnitType="Assimilator" Player="14"/>
+    <ObjectUnit Id="491" Position="12,152,0" Rotation="0.3564" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="69" Position="29,78,0" Rotation="5.5808" Scale="1,1,1" UnitType="PerditionTurret" Player="4"/>
+    <ObjectUnit Id="522" Position="67.7705,137.978,0" Rotation="6.078" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="591" Position="57.5576,131.4707,0" Rotation="0.3674" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="906" Position="64,110,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="548" Position="61.9873,116.448,0" Rotation="0.3984" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="430" Position="22.504,121.6328,0" Rotation="0.0856" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="107" Position="93,114,0" Scale="1,1,1" UnitType="Pylon" Player="5"/>
+    <ObjectUnit Id="453" Position="117.6943,75.9924,0" Rotation="5.967" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="494" Position="34,148,0" Rotation="0.3557" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="64" Position="116.5,73.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="Bunker" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="389" Position="53.3923,70.354,0" Rotation="5.033" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="527" Position="61.184,117.5363,0" Rotation="0.533" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="911" Position="66,57,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="545" Position="61.1855,116.4975,0" Rotation="0.5324" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="110" Position="111,128,0" Scale="1,1,1" UnitType="Pylon" Player="2"/>
+    <ObjectUnit Id="5" Position="28.4335,125.8847,0" Rotation="0.6801" Scale="1,1,1" UnitType="SiegeTankSieged" Player="3"/>
+    <ObjectUnit Id="427" Position="19.9885,119.6943,0" Rotation="0.0856" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="534" Position="59.9748,136.401,0" Rotation="0.535" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="637" Position="31.5,23.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="89" Position="72,119,0" Rotation="0.9863" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="503" Position="47.7563,147.5866,0" Rotation="0.4028" Scale="1,1,1" UnitType="Thor" Player="1"/>
+    <ObjectUnit Id="50" Position="78,69,0" Rotation="4.0366" Scale="1,1,1" UnitType="PhotonCannon" Player="2"/>
+    <ObjectUnit Id="412" Position="105.705,107.778,0" Rotation="5.28" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="473" Position="29.4631,111.0524,0" Rotation="0.9562" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="119" Position="28,99,0" Scale="1,1,1" UnitType="Pylon" Player="3"/>
+    <ObjectUnit Id="434" Position="23.4355,121.2875,0" Rotation="0.0856" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="28" Position="64,77,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="568" Position="75.7546,120.3964,0" Rotation="5.4978" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="918" Position="67.5,56.5,0" Rotation="3.076" Scale="1,1,1" UnitType="PathingBlocker1x1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="595" Position="55.6574,131.3344,0" Rotation="0.4626" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="517" Position="59.595,117.678,0" Rotation="0.7355" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="622" Position="63.9555,116.764,0" Rotation="6.2568" Scale="1,1,1" UnitType="Sentry" Player="1"/>
+    <ObjectUnit Id="74" Position="51.073,110.6594,0" Rotation="0.8134" Scale="1,1,1" UnitType="SiegeTankSieged" Player="4"/>
+    <ObjectUnit Id="399" Position="79.3833,73.7297,0" Rotation="0.1967" Scale="1,1,1" UnitType="Firebat" Player="2"/>
+    <ObjectUnit Id="33" Position="68,53,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="100" Position="102,108,0" Rotation="6.235" Scale="1,1,1" UnitType="PhotonCannon" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="458" Position="116.882,75.3613,0" Rotation="5.6301" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="15" Position="68,170,0" Scale="1,1,1" UnitType="Pylon" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="417" Position="106.8713,103.104,0" Rotation="4.177" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="555" Position="51.6914,118.554,0" Rotation="0.9335" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="576" Position="47.4926,129.4086,0" Rotation="5.5441" Scale="1,1,1" UnitType="Ghost" Player="4"/>
+    <ObjectUnit Id="83" Position="37,128,0" Rotation="5.899" Scale="1,1,1" UnitType="PhotonCannon" Player="4"/>
+    <ObjectUnit Id="509" Position="59.6347,115.596,0" Rotation="0.736" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="56" Position="33.9802,62.8757,0" Rotation="1.2624" Scale="1,1,1" UnitType="SiegeTankSieged" Player="4"/>
+    <ObjectUnit Id="406" Position="115.3264,102.4487,0" Rotation="6.2343" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="540" Position="69.0854,138.0961,0" Rotation="6.1352" Scale="1,1,1" UnitType="Predator" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="631" Position="23.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="562" Position="73.5895,117.9846,0" Rotation="5.4602" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="601" Position="71.5043,131.3842,0" Rotation="5.8828" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="467" Position="20.9931,111.7675,0" Rotation="0.4858" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="125" Position="88,73,0" Scale="1,1,1" UnitType="Pylon" Player="2"/>
+    <ObjectUnit Id="440" Position="21.9943,119.9033,0" Rotation="3.6823" Scale="1,1,1" UnitType="Donatello" Player="3"/>
+    <ObjectUnit Id="22" Position="64,169,0" Rotation="0.2617" Scale="1,1,1" UnitType="RoboticsBay" Player="14">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="61" Position="100.0656,73.485,0" Rotation="1.6215" Scale="1,1,1" UnitType="SiegeTankSieged" Player="5"/>
+    <ObjectUnit Id="403" Position="112.4777,101.4277,0" Rotation="0.4816" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="86" Position="109,128,0" Rotation="5.0156" Scale="1,1,1" UnitType="PhotonCannon" Player="2"/>
+    <ObjectUnit Id="504" Position="50.1757,147.4475,0" Rotation="5.9428" Scale="1,1,1" UnitType="Thor" Player="1"/>
+    <ObjectUnit Id="626" Position="14,38,0" Rotation="1.1992" Scale="1,1,1" UnitType="SpineCrawler" Player="8"/>
+    <ObjectUnit Id="537" Position="67.9326,136.637,0" Rotation="5.8144" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="567" Position="76.3991,119.3872,0" Rotation="5.3876" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="445" Position="64.0197,18.0698,0" Rotation="3.1413" Scale="1,1,1" UnitType="Overseer" Player="7"/>
+    <ObjectUnit Id="19" Position="66,171,0" Rotation="2.012" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="470" Position="29.1013,128.2385,0" Rotation="1.0935" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="120" Position="28,107,0" Scale="1,1,1" UnitType="Pylon" Player="3"/>
+    <ObjectUnit Id="512" Position="62.0256,115.4047,0" Rotation="0.3991" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="394" Position="76.3605,70.6875,0" Rotation="1.362" Scale="1,1,1" UnitType="Firebat" Player="2"/>
+    <ObjectUnit Id="36" Position="62,53,0" Rotation="1.6567" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="79" Position="42.97,129.9,0" Scale="1,1,1" UnitType="SiegeTankSieged" Player="4"/>
+    <ObjectUnit Id="10" Position="66,67,0" Rotation="1.1428" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="420" Position="79.3964,75.0332,0" Rotation="0.1428" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="97" Position="28,101,0" Rotation="1.937" Scale="1,1,1" UnitType="PhotonCannon" Player="3"/>
+    <ObjectUnit Id="238160895" Position="63.9638,74.7578,0" Scale="1,1,1" UnitType="Raguel" Player="1"/>
+    <ObjectUnit Id="463" Position="21.7937,111.0302,0" Rotation="1.17" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="581" Position="45.457,128.4233,0" Rotation="5.7551" Scale="1,1,1" UnitType="Ghost" Player="4"/>
+    <ObjectUnit Id="558" Position="53.2382,117.5397,0" Rotation="0.9992" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="112" Position="89,128,0" Scale="1,1,1" UnitType="Pylon" Player="5"/>
+    <ObjectUnit Id="478" Position="113.7277,125.3903,0" Rotation="4.3376" Scale="1,1,1" UnitType="Ghost" Player="2"/>
+    <ObjectUnit Id="27" Position="69,72,0" Scale="1,1,1" UnitType="Pylon" Player="1"/>
+    <ObjectUnit Id="913" Position="66,111,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="575" Position="46.5622,129.4086,0" Rotation="5.6706" Scale="1,1,1" UnitType="Ghost" Player="4"/>
+    <ObjectUnit Id="529" Position="68.3015,117.4272,0" Rotation="5.57" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="634" Position="15.5,55.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="496" Position="31.094,155.9858,0" Rotation="4.6618" Scale="1,1,1" UnitType="SiegeTankSieged" Player="3"/>
+    <ObjectUnit Id="94" Position="37,114,0" Rotation="0.3564" Scale="1,1,1" UnitType="PhotonCannon" Player="4"/>
+    <ObjectUnit Id="411" Position="104.662,107.151,0" Rotation="5.2922" Scale="1,1,1" UnitType="Firebat" Player="2"/>
+    <ObjectUnit Id="53" Position="96.5,77.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="Bunker" Player="5"/>
+    <ObjectUnit Id="589" Position="82.5441,129.534,0" Rotation="0.4255" Scale="1,1,1" UnitType="Ghost" Player="5"/>
+    <ObjectUnit Id="105" Position="102,110,0" Scale="1,1,1" UnitType="Pylon" Player="2"/>
+    <ObjectUnit Id="428" Position="23.927,120.2497,0" Rotation="0.0856" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="2" Position="50,69,0" Rotation="2.6274" Scale="1,1,1" UnitType="PhotonCannon" Player="3"/>
+    <ObjectUnit Id="71" Position="53.0966,118.8083,0" Rotation="0.7658" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1"/>
+    <ObjectUnit Id="489" Position="28,168,0" Rotation="0.3564" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="44" Position="35.7075,117.3103,0" Rotation="0.3627" Scale="1,1,1" UnitType="Marauder" Player="4">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="386" Position="51.8696,68.6965,0" Rotation="4.816" Scale="1,1,1" UnitType="Goliath" Player="3"/>
+    <ObjectUnit Id="520" Position="61.4426,134.937,0" Rotation="0.453" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="584" Position="80.4633,128.4821,0" Rotation="0.7775" Scale="1,1,1" UnitType="Ghost" Player="5"/>
+    <ObjectUnit Id="547" Position="67.4865,116.4682,0" Rotation="5.682" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="909" Position="66,110,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="425" Position="95.5646,130.552,0" Rotation="5.8867" Scale="1,1,1" UnitType="Zealot" Player="5"/>
+    <ObjectUnit Id="7" Position="44.9335,58.8991,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="450" Position="111.904,75.3413,0" Rotation="0.7065" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="108" Position="85,114,0" Scale="1,1,1" UnitType="Pylon" Player="5"/>
+    <ObjectUnit Id="41" Position="68,55,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="391" Position="77.7031,147.7668,0" Rotation="0.403" Scale="1,1,1" UnitType="Thor" Player="1"/>
+    <ObjectUnit Id="66" Position="113.395,35.3923,0" Rotation="1.4514" Scale="1,1,1" UnitType="Fallen" Player="9"/>
+    <ObjectUnit Id="492" Position="14,154,0" Rotation="1.0134" Scale="1,1,1" UnitType="MissileTurret" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="525" Position="69.391,135.1215,0" Rotation="5.5578" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="30" Position="64.0124,89.9006,0" Scale="1,1,1" UnitType="Beacon_Protoss" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="432" Position="20.2248,118.4414,0" Rotation="0.0856" Scale="1,1,1" UnitType="Reaper" Player="3"/>
+    <ObjectUnit Id="117" Position="26,121,0" Scale="1,1,1" UnitType="Pylon" Player="3"/>
+    <ObjectUnit Id="475" Position="30.7253,112.3671,0" Rotation="0.681" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="593" Position="57.4592,130.3981,0" Rotation="0.3945" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="570" Position="73.8034,120.4323,0" Rotation="5.7167" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="639" Position="7.5,31.5,0" Scale="1,1,1" UnitType="CreepTumorBurrowed" Player="8"/>
+    <ObjectUnit Id="532" Position="65.8115,117.5881,0" Rotation="5.9516" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="414" Position="106.7592,107.6562,0" Rotation="5.1372" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="48" Position="14,125,0" Rotation="3.6835" Scale="1,1,1" UnitType="MissileTurret" Player="3"/>
+    <ObjectUnit Id="501" Position="64.3361,159.9594,0" Rotation="6.282" Scale="1,1,1" UnitType="Loki" Player="1"/>
+    <ObjectUnit Id="91" Position="56,127,0" Rotation="0.0651" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="419" Position="106.8525,104.4594,0" Rotation="4.4333" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="13" Position="66,77,0" Rotation="2.9582" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="456" Position="116.108,76.0502,0" Rotation="5.804" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="102" Position="112,100,0" Rotation="6.235" Scale="1,1,1" UnitType="PhotonCannon" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="553" Position="54.3002,119.7573,0" Rotation="0.4387" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="903" Position="64,111,0" Rotation="1.9963" Scale="1,1,1" UnitType="PathingBlocker2x2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="519" Position="60.1074,134.9245,0" Rotation="0.6264" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="35" Position="58,53,0" Rotation="1.6564" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="397" Position="73.9335,70.3762,0" Rotation="1.5078" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="72" Position="75.0402,118.877,0" Rotation="5.4562" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1"/>
+    <ObjectUnit Id="486" Position="106.9184,160.91,0" Scale="3,3,3" UnitType="Beacon_Zerg" Player="2"/>
+    <ObjectUnit Id="560" Position="52.6113,120.2524,0" Rotation="0.6665" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="20" Position="75,166,0" Rotation="0.7934" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="127" Position="80,67,0" Rotation="5.4975" Scale="1,1,1" UnitType="SupplyDepot" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="465" Position="31.0627,111.5515,0" Rotation="0.6738" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="404" Position="111.986,101.8618,0" Rotation="0.5175" Scale="1,1,1" UnitType="Marine" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="58" Position="70.88,56.0898,0" Rotation="6.1176" Scale="1,1,1" UnitType="SiegeTankSieged" Player="1"/>
+    <ObjectUnit Id="511" Position="61.2238,115.4543,0" Rotation="0.5334" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="81" Position="39,128,0" Scale="1,1,1" UnitType="Pylon" Player="4"/>
+    <ObjectUnit Id="629" Position="20.5,45.5,0" Rotation="0.523" Scale="1,1,1" UnitType="NydusCanal" Player="8"/>
+    <ObjectUnit Id="542" Position="49.5888,111.714,0" Rotation="0.2016" Scale="1,1,1" UnitType="Thor" Player="1"/>
+    <ObjectUnit Id="606" Position="66.6645,116.518,0" Rotation="5.811" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="122" Position="43,114,0" Scale="1,1,1" UnitType="Pylon" Player="4"/>
+    <ObjectUnit Id="17" Position="70,171,0" Rotation="0.3518" Scale="1,1,1" UnitType="PhotonCannon" Player="1"/>
+    <ObjectUnit Id="447" Position="111.8903,76.0346,0" Rotation="0.6518" Scale="1,1,1" UnitType="Ghost" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="506" Position="58.7851,57.0224,0" Rotation="0.6352" Scale="1,1,1" UnitType="Thor" Player="1">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="84" Position="91,128,0" Rotation="0.3823" Scale="1,1,1" UnitType="PhotonCannon" Player="5"/>
+    <ObjectUnit Id="401" Position="116.3308,101.4992,0" Rotation="6.0532" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="63" Position="111.5,73.5,0" Rotation="5.4975" Scale="1,1,1" UnitType="Bunker" Player="2">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="539" Position="66.6423,136.5307,0" Rotation="5.959" Scale="1,1,1" UnitType="Predator" Player="1"/>
+    <ObjectUnit Id="624" Position="23,38,0" Rotation="5.592" Scale="1,1,1" UnitType="SpineCrawler" Player="8"/>
+    <ObjectUnit Id="461" Position="29.9584,110.437,0" Rotation="1.018" Scale="1,1,1" UnitType="Ghost" Player="3"/>
+    <ObjectUnit Id="99" Position="91,114,0" Rotation="5.7556" Scale="1,1,1" UnitType="PhotonCannon" Player="5"/>
+    <ObjectUnit Id="422" Position="80.834,76.5554,0" Rotation="6.1704" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectUnit Id="8" Position="44.288,58.2805,0" Rotation="5.9516" Scale="1,1,1" UnitType="Ghost" Player="3">
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectUnit>
+    <ObjectUnit Id="556" Position="51.8581,119.4506,0" Rotation="0.8476" Scale="1,1,1" UnitType="Ghost" Player="1"/>
+    <ObjectUnit Id="583" Position="81.4001,128.393,0" Rotation="0.6628" Scale="1,1,1" UnitType="Ghost" Player="5"/>
+    <ObjectUnit Id="514" Position="67.4682,115.526,0" Rotation="5.6862" Scale="1,1,1" UnitType="Spectre" Player="1"/>
+    <ObjectUnit Id="77" Position="79.0734,152.98,0" Rotation="0.0476" Scale="1,1,1" UnitType="ShapeSmileyFace" Player="1"/>
+    <ObjectUnit Id="483" Position="113.7998,128.3164,0" Rotation="5.0134" Scale="1,1,1" UnitType="Ghost" Player="2"/>
+    <ObjectUnit Id="38" Position="35.7534,115.77,0" Rotation="0.4311" Scale="1,1,1" UnitType="Marauder" Player="4"/>
+    <ObjectUnit Id="392" Position="75.3845,68.887,0" Rotation="1.8417" Scale="1,1,1" UnitType="Marine" Player="2"/>
+    <ObjectDoodad Id="767" Variation="4" Position="77.8825,97.859,8.1391" Rotation="5.206" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="893" Variation="1" Position="60.8925,143.8322,10.133" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="409" Variation="2" Position="20.3754,104.8916,10.0036" Rotation="0.1762" Scale="1,1,1" Type="TempleMonolythLarge">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="886" Position="85.0266,135.838,10.077" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="476" Variation="1" Position="13.5856,104.87,9.9941" Rotation="0.1762" Scale="1,1,1" Type="TempleMonolythLarge">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="884" Position="86.3627,135.8413,10.067" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="895" Position="65.519,143.849,10.0712" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="714" Position="56.0771,140.435,9.9821" Rotation="0.7944" Scale="4.5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="879" Position="44.424,135.7963,10.0895" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="868" Variation="4" Position="67.962,173.075,11.3037" Rotation="3.188" Scale="2,2,2" Type="AiurProtossBuildingsSmall">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="904" Variation="2" Position="60.9191,56.304,7.9963" Scale="1,1,1" Type="MetalWallCorner">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="609" Variation="1" Position="39.0126,54.9062,7.9995" Rotation="2.2724" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="618" Variation="4" Position="50.027,82.2238,8.409" Rotation="5.2062" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="835" Variation="4" Position="49.978,97.8171,8.3217" Rotation="5.206" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="840" Variation="7" Position="77.0197,108.4,8.4384" Rotation="3.1098" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="781" Variation="2" Position="13.7053,97.4626,10.0046" Rotation="2.429" Scale="1,1,1" Type="TempleMonolythLarge">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="870" Position="72.2541,171.0041,9.7966" Rotation="0.1215" Scale="1,1,1" Type="XelNagaCliffWallSpires">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="712" Position="32.5136,136.3198,9.9985" Rotation="3.1401" Scale="5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="897" Position="59.1098,111.2597,7.9921" Rotation="2.1386" Scale="1,1,1" Type="XelNagaColumn">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="877" Position="99.824,135.8457,10.0671" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="842" Variation="4" Position="99.7077,110.6242,9.3823" Rotation="5.206" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="833" Variation="4" Position="73.8615,97.8803,8.146" Rotation="5.206" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="616" Variation="1" Position="117.7202,72.0498,7.7294" Rotation="3.9672" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="611" Variation="1" Position="56.0241,54.114,8.049" Rotation="3.1413" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="719" Position="108.7248,136.3198,10.0031" Rotation="3.1401" Scale="5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="902" Position="63.9626,56.3066,7.992" Scale="1,1,1" Type="MetalWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="874" Position="102.419,135.8544,10.0593" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="865" Variation="4" Position="63.9907,173.3754,11.3928" Rotation="3.1882" Scale="2,2,2" Type="AiurProtossBuildingsSmall">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="838" Variation="7" Position="50.9238,108.4663,8.439" Rotation="3.11" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="612" Variation="1" Position="71.9926,54.1472,8.1774" Rotation="3.1413" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="806" Variation="1" Position="8.0588,134.3371,8.0183" Rotation="2.3303" Scale="5,5,5" Type="XelNagaTowerSmall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="867" Position="56.174,170.904,9.7966" Rotation="0.1213" Scale="1,1,1" Type="XelNagaCliffWallSpires">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="717" Position="19.5114,136.3198,9.9987" Rotation="3.1413" Scale="5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="872" Position="25.7973,135.8073,10.0866" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="621" Variation="4" Position="78.073,82.167,8.2612" Rotation="5.206" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="804" Position="65.9992,110.6567,8.3242" Rotation="4.7121" Scale="0.5,0.5,0.2998" Type="XelNagaCliffWallSpires">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="614" Variation="1" Position="94.9992,60.929,7.9978" Rotation="3.9267" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="836" Variation="7" Position="54.9753,110.5222,8.4458" Rotation="3.11" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="792" Position="121.73,136.3198,10.003" Rotation="3.1384" Scale="5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="888" Variation="1" Position="82.8542,135.8342,10.1367" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="883" Variation="1" Position="40.9152,135.789,10.1555" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="881" Position="43.0876,135.7927,10.0993" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="890" Variation="1" Position="67.1281,143.881,10.1118" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="794" Position="28.3923,135.8161,10.0795" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="839" Variation="7" Position="73.0598,110.3598,8.24" Rotation="3.1413" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="613" Variation="1" Position="89.1022,54.8012,8.0004" Rotation="3.9267" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="812" Position="114,90,8.2175" Rotation="3.1413" Scale="0.65,0.4,1" Type="XelNagaHullPlate">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="864" Variation="4" Position="96.3991,110.5251,9.2792" Rotation="5.206" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="718" Position="95.721,136.3198,9.9987" Rotation="3.1401" Scale="5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="875" Variation="1" Position="103.152,135.8706,10.1174" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="615" Variation="1" Position="110.165,71.9882,8.2524" Rotation="2.143" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="620" Variation="4" Position="73.9714,82.1494,8.175" Rotation="5.206" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="837" Variation="7" Position="47.0097,110.5197,8.4401" Rotation="3.1413" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="716" Position="82.7165,136.3198,9.9987" Rotation="3.1401" Scale="5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="901" Variation="3" Position="67.0085,56.311,7.99" Scale="1,1,1" Type="MetalWallCorner">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="873" Variation="1" Position="24.8837,135.8088,10.1464" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="866" Variation="4" Position="59.9355,173.1428,11.3928" Rotation="3.188" Scale="2,2,2" Type="AiurProtossBuildingsSmall">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="793" Position="6.5097,136.3198,9.998" Rotation="3.1401" Scale="5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="786" Position="61.9497,110.8503,8.4025" Rotation="1.5705" Scale="0.5,0.5,0.2998" Type="XelNagaCliffWallSpires">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="882" Position="41.8288,135.7875,10.0842" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="889" Position="66.4357,143.8544,10.059" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="891" Position="63.065,143.836,10.078" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="880" Variation="1" Position="45.157,135.8125,10.1435" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="795" Variation="1" Position="29.1254,135.8322,10.1342" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="887" Position="83.7678,135.8325,10.0732" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="892" Position="61.8061,143.8305,10.0751" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="796" Position="66.0541,112.1132,9.0366" Rotation="4.7121" Scale="0.5,0.5,0.2998" Type="XelNagaCliffWallSpires">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="766" Variation="1" Position="20.6364,97.1711,9.9973" Rotation="2.3493" Scale="1,1,1" Type="TempleMonolythLarge">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="894" Position="64.4111,143.838,10.077" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="720" Position="64.0634,144.5717,9.9978" Rotation="3.1384" Scale="3,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="885" Variation="1" Position="87.0957,135.8574,10.1242" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="619" Variation="4" Position="54.0842,82.195,8.3728" Rotation="5.206" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="809" Position="114,85.7998,8.4538" Scale="0.6496,0.5,1" Type="XelNagaHullPlate">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="841" Variation="7" Position="81.058,110.3996,8.6691" Rotation="3.1098" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="834" Variation="4" Position="53.9338,97.749,8.4223" Rotation="5.206" Scale="1.1633,1.1633,1.1633" Type="ShakurasHexColumns">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="869" Position="61.8833,112.0751,9.0285" Rotation="1.5705" Scale="0.5,0.5,0.2998" Type="XelNagaCliffWallSpires">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="905" Variation="2" Position="63.97,109.8298,7.995" Scale="1,1,0.7998" Type="XelNagaHullCliffWalls">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="715" Position="72.1186,140.4655,10.0031" Rotation="2.356" Scale="4.5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="898" Position="68.95,111.2897,7.992" Rotation="2.0942" Scale="1,1,1" Type="XelNagaColumn">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="878" Variation="1" Position="98.9104,135.8474,10.1296" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="68" Position="113.97,82,9.939" Rotation="1.5705" Scale="1,1,1" Type="MonlythLightBridge" BoostexCliffLevel="2">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="782" Position="64.0297,168.0068,12.002" Rotation="3.6696" Scale="0.8913,0.8913,0.8913" Type="Sunrays">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="832" Position="114,98,8.2175" Scale="0.65,0.4,1" Type="XelNagaHullPlate">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="610" Variation="1" Position="32.984,61.1181,7.984" Rotation="2.2724" Scale="0.5,0.5,0.5" Type="ShakurasTempleWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="811" Position="114.0114,78.0334,8.4538" Rotation="3.1401" Scale="0.65,0.4,1" Type="XelNagaHullPlate">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="70" Position="114,94,9.8334" Rotation="1.5705" Scale="1,1,1" Type="MonlythLightBridge" BoostexCliffLevel="2">
+        <Flag Index="HeightOffset" Value="1"/>
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="713" Position="45.4487,136.3198,9.9975" Rotation="3.1401" Scale="5,1,3" Type="ForceFieldWall">
+        <Flag Index="HeightAbsolute" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="876" Position="101.0827,135.851,10.0703" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectDoodad Id="871" Position="27.0561,135.8125,10.0895" Rotation="1.5705" Scale="1,1,1" Type="XelNagaHullReactorConduit">
+        <Flag Index="HeightAbsolute" Value="1"/>
+        <Flag Index="ForcePlacement" Value="1"/>
+    </ObjectDoodad>
+    <ObjectPoint Id="826" Position="127.8098,117.89,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 015" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="817" Position="0.0097,122.19,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 007" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="922" Position="56.2126,89.5241,0" Scale="1,1,1" Type="Normal" Name="cinematic pt5" Color="0,0,0,0"/>
+    <ObjectPoint Id="790" Position="72.0283,76.8537,0" Scale="1,1,1" Type="Normal" Name="Rally Asta" Color="0,0,0,0"/>
+    <ObjectPoint Id="696" Position="64.5,16.5,0" Scale="1,1,1" Type="StartLoc" Name="start molo" Color="0,0,0,0"/>
+    <ObjectPoint Id="819" Position="0.0598,132.1198,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 009" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="824" Position="127.8498,107.9,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 013" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="698" Position="75.5,73.5,0" Scale="1,1,1" Type="StartLoc" Name="start micha" Color="0,0,0,0"/>
+    <ObjectPoint Id="799" Position="0.0197,90.15,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 001" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="920" Position="102.3972,44.0817,0" Scale="1,1,1" Type="Normal" Name="cinematic pt3" Color="0,0,0,0"/>
+    <ObjectPoint Id="217" Position="67.5,29.5,0" Scale="1,1,1" Type="Normal" Name="Phase 0 Tutorial Devil" Color="0,0,0,0"/>
+    <ObjectPoint Id="899" Position="9.71,133.4,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone Statue3" Color="0,0,0,0"/>
+    <ObjectPoint Id="43" Position="0.5898,180.48,0" Scale="1,1,1" Type="Normal" Name="top left" Color="0,0,0,0"/>
+    <ObjectPoint Id="813" Position="0.0498,102.0598,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 003" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="900" Position="7.8398,134.93,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone Statue4" Color="0,0,0,0"/>
+    <ObjectPoint Id="815" Position="0.0498,112.0397,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 005" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="694" Position="18.5,42.5,0" Scale="1,1,1" Type="StartLoc" Name="start asmo" Color="0,0,0,0"/>
+    <ObjectPoint Id="701" Position="76.5,89.5,0" Scale="1,1,1" Type="StartLoc" Name="start jeho" Color="0,0,0,0"/>
+    <ObjectPoint Id="916" Position="58.0437,165.4665,0" Scale="1,1,1" Type="Normal" Name="cinematic pt1" Color="0,0,0,0"/>
+    <ObjectPoint Id="927" Position="93.1433,56.9411,0" Scale="1,1,1" Type="Normal" Name="cinematic michael" Color="0,0,0,0"/>
+    <ObjectPoint Id="822" Position="127.7998,96.8298,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 011" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="829" Position="127.8398,132.92,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 018" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="925" Position="56.5266,24.8962,0" Scale="1,1,1" Type="Normal" Name="cinematic pt0" Color="0,0,0,0"/>
+    <ObjectPoint Id="928" Position="91.011,59.2302,0" Scale="1,1,1" Type="Normal" Name="cinematic michael squad" Color="0,0,0,0"/>
+    <ObjectPoint Id="814" Position="0.0698,107.0998,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 004" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="700" Position="51.5,90.5,0" Scale="1,1,1" Type="StartLoc" Name="start sera" Color="0,0,0,0"/>
+    <ObjectPoint Id="695" Position="109.5,42.5,0" Scale="1,1,1" Type="StartLoc" Name="start asta" Color="0,0,0,0"/>
+    <ObjectPoint Id="926" Position="91.962,152.4458,0" Scale="1,1,1" Type="Normal" Name="cinematic pt8" Color="0,0,0,0"/>
+    <ObjectPoint Id="821" Position="127.7897,91.0097,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 010" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="919" Position="12.055,122.198,0" Scale="1,1,1" Type="Normal" Name="cinematic pt2" Color="0,0,0,0"/>
+    <ObjectPoint Id="924" Position="23.3872,150.751,0" Scale="1,1,1" Type="Normal" Name="cinematic pt7" Color="0,0,0,0"/>
+    <ObjectPoint Id="693" Position="64.5,23.5,0" Scale="1,1,1" Type="StartLoc" Name="start satan" Color="0,0,0,0"/>
+    <ObjectPoint Id="702" Position="63.5,90.5,0" Scale="1,1,1" Type="StartLoc" Name="start zadk" Color="0,0,0,0"/>
+    <ObjectPoint Id="828" Position="127.8598,127.97,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 017" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="823" Position="127.8198,102.8598,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 012" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="923" Position="55.8344,122.9936,0" Scale="1,1,1" Type="Normal" Name="cinematic pt6" Color="0,0,0,0"/>
+    <ObjectPoint Id="697" Position="64.5,159.5,0" Scale="1,1,1" Type="StartLoc" Name="start jesus" Color="0,0,0,0"/>
+    <ObjectPoint Id="791" Position="64.0112,79.9614,0" Scale="1,1,1" Type="Normal" Name="Rally Satan" Color="0,0,0,0"/>
+    <ObjectPoint Id="816" Position="0.0397,117.0898,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 006" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="827" Position="127.7797,122.98,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 016" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="789" Position="55.986,76.945,0" Scale="1,1,1" Type="Normal" Name="Rally Asmo" Color="0,0,0,0"/>
+    <ObjectPoint Id="699" Position="52.5,74.5,0" Scale="1,1,1" Type="StartLoc" Name="start gabr" Color="0,0,0,0"/>
+    <ObjectPoint Id="921" Position="89.3083,56.4772,0" Scale="1,1,1" Type="Normal" Name="cinematic pt4" Color="0,0,0,0"/>
+    <ObjectPoint Id="825" Position="127.8198,112.8398,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 014" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="818" Position="0.0898,127.18,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 008" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="617" Position="6.4,133.71,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone Statue1" Color="0,0,0,0"/>
+    <ObjectPoint Id="800" Position="0.0297,96.0297,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone 002" Color="0,0,0,0" PathingRadiusSoft="7.75" PathingRadiusHard="7"/>
+    <ObjectPoint Id="896" Position="7.93,131.94,0" Scale="1,1,1" Type="NoFlyZone" Name="No Fly Zone Statue2" Color="0,0,0,0"/>
+    <Group Type="ObjectUnit" Name="Prime Evils" Icon="Assets\Textures\black.dds" Id="4">
+        <GroupObject Id="705"/>
+        <GroupObject Id="692"/>
+        <GroupObject Id="783"/>
+    </Group>
+    <Group Type="ObjectUnit" Name="Bene Immune" Icon="Assets\Textures\black.dds" Id="11">
+        <GroupObject Id="692"/>
+        <GroupObject Id="704"/>
+        <GroupObject Id="703"/>
+        <GroupObject Id="705"/>
+        <GroupObject Id="706"/>
+        <GroupObject Id="710"/>
+        <GroupObject Id="708"/>
+        <GroupObject Id="707"/>
+        <GroupObject Id="783"/>
+        <GroupObject Id="439"/>
+    </Group>
+    <Group Type="ObjectUnit" Name="Reduced Mode Pathing Blockers" Icon="Assets\Textures\black.dds" Id="6">
+        <GroupObject Id="903"/>
+        <GroupObject Id="906"/>
+        <GroupObject Id="907"/>
+        <GroupObject Id="908"/>
+        <GroupObject Id="909"/>
+        <GroupObject Id="910"/>
+        <GroupObject Id="911"/>
+        <GroupObject Id="912"/>
+        <GroupObject Id="913"/>
+        <GroupObject Id="914"/>
+        <GroupObject Id="915"/>
+        <GroupObject Id="917"/>
+        <GroupObject Id="918"/>
+    </Group>
+    <Group Type="ObjectUnit" Name="Hellgates" Icon="Assets\Textures\black.dds" Id="1">
+        <GroupObject Id="784"/>
+        <GroupObject Id="709"/>
+        <GroupObject Id="785"/>
+    </Group>
+</PlacedObjects>

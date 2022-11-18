@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CTerrainTex id="UlnarHull1">
+        <Texture value="Textures\ulnar_hull1.dds"/>
+    </CTerrainTex>
+    <CTerrainTex id="UlnarHull2">
+        <Texture value="Textures\ulnar_hull2.dds"/>
+    </CTerrainTex>
+    <CTerrainTex id="UlnarHull3">
+        <Texture value="Textures\ulnar_hull3.dds"/>
+    </CTerrainTex>
+</Catalog>

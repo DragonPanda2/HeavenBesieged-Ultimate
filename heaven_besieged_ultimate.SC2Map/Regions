@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Regions>
+    <region id="1">
+        <name value="Elite Hell Satan"/>
+        <shape type="circle">
+            <center value="58.5307,24.2482"/>
+            <radius value="3.9833"/>
+        </shape>
+    </region>
+    <region id="2">
+        <name value="Elite Hell Satan Copy"/>
+        <shape type="circle">
+            <center value="63.7773,17.9785"/>
+            <radius value="3.9833"/>
+        </shape>
+    </region>
+    <region id="3">
+        <name value="Elite Hell Satan Copy 2"/>
+        <shape type="circle">
+            <center value="69.45,23.736"/>
+            <radius value="3.9833"/>
+        </shape>
+    </region>
+    <region id="4">
+        <name value="Elite Hell Asmodeus"/>
+        <shape type="circle">
+            <center value="14.2722,46.4768"/>
+            <radius value="3.9833"/>
+        </shape>
+    </region>
+    <region id="5">
+        <name value="Elite Hell Astaroth"/>
+        <shape type="circle">
+            <center value="104.9753,38.822"/>
+            <radius value="3.9833"/>
+        </shape>
+    </region>
+    <region id="6">
+        <name value="Elite Hell Asmodeus Copy"/>
+        <shape type="circle">
+            <center value="13.935,38.4355"/>
+            <radius value="3.9833"/>
+        </shape>
+    </region>
+    <region id="7">
+        <name value="Elite Hell Asmodeus Copy 2"/>
+        <shape type="circle">
+            <center value="22.7448,38.7258"/>
+            <radius value="3.9833"/>
+        </shape>
+    </region>
+    <region id="8">
+        <name value="Elite Hell Astaroth Copy"/>
+        <shape type="circle">
+            <center value="113.7246,38.8781"/>
+            <radius value="3.9833"/>
+        </shape>
+    </region>
+    <region id="9">
+        <name value="Elite Hell Astaroth Copy 2"/>
+        <shape type="circle">
+            <center value="113.879,47.663"/>
+            <radius value="3.9833"/>
+        </shape>
+    </region>
+    <region id="10">
+        <name value="Gateway Gabr"/>
+        <shape type="rect">
+            <quad value="52.887,71.4111,57.387,74.9111"/>
+        </shape>
+    </region>
+    <region id="11">
+        <name value="Gateway Sera"/>
+        <shape type="rect">
+            <quad value="56.2541,75.7512,60.7541,79.2512"/>
+        </shape>
+    </region>
+    <region id="12">
+        <name value="Gateway Jeho"/>
+        <shape type="rect">
+            <quad value="67.2514,75.7502,71.7514,79.2502"/>
+        </shape>
+    </region>
+    <region id="13">
+        <name value="Gateway Micha"/>
+        <shape type="rect">
+            <quad value="70.7805,71.4733,75.2805,74.9733"/>
+        </shape>
+    </region>
+    <region id="14">
+        <name value="jesus elite spawn left"/>
+        <shape type="rect">
+            <quad value="58.0502,120.6337,61.828,128.0246"/>
+        </shape>
+    </region>
+    <region id="15">
+        <name value="jesus elite spawn right"/>
+        <shape type="rect">
+            <quad value="66.0678,120.287,69.9401,128.0383"/>
+        </shape>
+    </region>
+    <region id="16">
+        <name value="heal beacon"/>
+        <shape type="circle">
+            <center value="98.3024,152.306"/>
+            <radius value="1.5"/>
+        </shape>
+    </region>
+    <region id="17">
+        <name value="heal beacon Copy"/>
+        <shape type="circle">
+            <center value="29.5686,152.5517"/>
+            <radius value="1.5"/>
+        </shape>
+    </region>
+    <region id="18">
+        <name value="heal beacon Copy 2"/>
+        <shape type="circle">
+            <center value="64.0124,89.9704"/>
+            <radius value="1.5"/>
+        </shape>
+    </region>
+    <region id="19">
+        <name value="heal beacon Copy 3"/>
+        <shape type="circle">
+            <center value="64,137"/>
+            <radius value="1.5"/>
+        </shape>
+    </region>
+    <region id="20">
+        <name value="heal mech"/>
+        <shape type="circle">
+            <center value="20.9426,161.1176"/>
+            <radius value="4.035"/>
+        </shape>
+    </region>
+    <region id="21">
+        <name value="heal organic"/>
+        <shape type="circle">
+            <center value="106.984,161.1315"/>
+            <radius value="3.9416"/>
+        </shape>
+    </region>
+    <region id="22">
+        <name value="Benediction Wall"/>
+        <shape type="rect">
+            <quad value="0.9562,135.7236,52.4492,181.1333"/>
+        </shape>
+        <shape type="rect">
+            <quad value="50.4411,144.124,76.761,174.6337"/>
+        </shape>
+        <shape type="rect">
+            <quad value="75.3554,135.8808,127.7937,181.2905"/>
+        </shape>
+        <shape type="diamond">
+            <center value="53.3715,150.5063"/>
+            <width value="20.8398"/>
+            <height value="20.1098"/>
+        </shape>
+        <shape type="diamond">
+            <center value="75.3715,151.5056"/>
+            <width value="20.8398"/>
+            <height value="20.1098"/>
+        </shape>
+    </region>
+    <region id="23">
+        <name value="Ass Spawn 1"/>
+        <shape type="rect">
+            <quad value="105.8315,114.3002,108.6223,116.3884"/>
+        </shape>
+    </region>
+    <region id="24">
+        <name value="Ass Spawn 2"/>
+        <shape type="rect">
+            <quad value="105.7414,117.325,108.5322,119.413"/>
+        </shape>
+    </region>
+    <region id="25">
+        <name value="Ass Spawn 3"/>
+        <shape type="rect">
+            <quad value="111.864,111.079,114.6547,113.1672"/>
+        </shape>
+    </region>
+    <region id="26">
+        <name value="Ass Spawn 4"/>
+        <shape type="rect">
+            <quad value="108.4367,111.0283,111.2275,113.1164"/>
+        </shape>
+    </region>
+    <region id="27">
+        <name value="Heal Asmo"/>
+        <shape type="circle">
+            <center value="18.516,42.5856"/>
+            <radius value="6"/>
+        </shape>
+    </region>
+    <region id="28">
+        <name value="Heal Satan"/>
+        <shape type="circle">
+            <center value="64.3964,23.5976"/>
+            <radius value="6"/>
+        </shape>
+    </region>
+    <region id="29">
+        <name value="Heal Asta"/>
+        <shape type="circle">
+            <center value="109.411,42.576"/>
+            <radius value="6"/>
+        </shape>
+    </region>
+    <region id="30">
+        <name value="ReducedModeDoodads"/>
+        <shape type="rect">
+            <quad value="59.24,55.068,68.2397,58.068"/>
+        </shape>
+        <shape type="rect">
+            <quad value="62.5,107.5,65.5,112.5"/>
+        </shape>
+    </region>
+    <region id="31">
+        <name value="Nydus Tip Region"/>
+        <invisible/>
+        <shape type="rect">
+            <quad value="5.1047,68.1752,127.6401,184"/>
+        </shape>
+    </region>
+    <region id="32">
+        <name value="Throne Uri"/>
+        <shape type="rect">
+            <quad value="49.0468,168.1076,52.4743,171.125"/>
+        </shape>
+    </region>
+    <region id="33">
+        <name value="Throne Sera"/>
+        <shape type="rect">
+            <quad value="56.0334,165.62,59.3825,168.9963"/>
+        </shape>
+    </region>
+    <region id="34">
+        <name value="Throne Messi"/>
+        <shape type="rect">
+            <quad value="62.3774,159.5024,66.1098,162.9277"/>
+        </shape>
+    </region>
+    <region id="35">
+        <name value="Throne Jeho"/>
+        <shape type="rect">
+            <quad value="68.922,165.481,72.1296,168.8205"/>
+        </shape>
+    </region>
+    <region id="36">
+        <name value="Throne Mich"/>
+        <shape type="rect">
+            <quad value="75.683,167.8151,79.36,171.446"/>
+        </shape>
+    </region>
+</Regions>

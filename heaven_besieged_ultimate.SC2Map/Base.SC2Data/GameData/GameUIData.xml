@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CGameUI id="Dflt">
+        <FontStyleFileArray value="HBFontStyles.SC2Style"/>
+        <CustomLayoutFileArray value="HB_UI_Tweaks.SC2Layout"/>
+        <CostDisplayColor index="Minerals" value="0,0,0,0"/>
+        <CostDisplayColor index="Vespene" value="0,0,0,0"/>
+    </CGameUI>
+</Catalog>

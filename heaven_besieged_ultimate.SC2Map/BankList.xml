@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BankList>
+    <Bank Name="HeavenBesiegedCL" Player="1"/>
+    <Bank Name="HeavenBesiegedCL" Player="2"/>
+    <Bank Name="HeavenBesiegedCL" Player="3"/>
+    <Bank Name="HeavenBesiegedCL" Player="4"/>
+    <Bank Name="HeavenBesiegedCL" Player="5"/>
+    <Bank Name="HeavenBesiegedCL" Player="6"/>
+    <Bank Name="HeavenBesiegedCL" Player="7"/>
+    <Bank Name="HeavenBesiegedCL" Player="8"/>
+    <Bank Name="HeavenBesiegedCL" Player="9"/>
+    <Bank Name="HeavenBesiegedCL" Player="10"/>
+    <Bank Name="HeavenBesiegedCL" Player="11"/>
+    <Bank Name="HeavenBesiegedCL" Player="12"/>
+    <Bank Name="HeavenBesiegedCL" Player="13"/>
+</BankList>

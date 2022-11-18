@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CCliffDoodad id="MonlythLightBridge2">
+        <EditorCategories value="TerrainObjectType:Monlyth"/>
+        <TexSets value="Monlyth"/>
+        <CliffSet value="MonlythCliff1"/>
+        <NumCellsDown value="5"/>
+        <NumCellsAcross value="13"/>
+        <HeightCodes value="CAAAAAAAAAAAC"/>
+        <HeightCodes value="CCCCCCCCCCCCC"/>
+        <HeightCodes value="CCCCCCCCCCCCC"/>
+        <HeightCodes value="CCCCCCCCCCCCC"/>
+        <HeightCodes value="CAAAAAAAAAAAC"/>
+        <Model value="Assets\TerrainObjects\MonlythLightBridgeTerrainObject\MonlythLightBridgeTerrainObject.m3"/>
+    </CCliffDoodad>
+</Catalog>

@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CBehaviorBuff id="APCDisableDummyWeapons">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="APCDummyWeapon"/>
+            <WeaponDisableArray value="APCAttackRedirectWeapon"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArbiterMPStasisField">
+        <Duration value="12"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArbiterMPStasisFieldTimedLife">
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="12"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CargoForceEnableAttackAndBoostRange">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification WeaponRange="0.5">
+            <AbilClassEnableArray index="CAbilAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="APCSwapWeapons">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponEnableArray value="APCAttackRedirectWeapon"/>
+            <WeaponDisableArray value="APCDummyWeapon"/>
+        </Modification>
+        <RemoveValidatorArray value="APCisAttacking"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="APCRange">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="15"/>
+        <Modification WeaponRange="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DarkSwarmGod">
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-plague.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <DamageResponse ModifyFraction="0.5">
+            <ValidatorArray value="IsGod"/>
+            <Chance value="1"/>
+            <Cost>
+                <Cooldown Location="Player"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DefilerMPPlague2">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-plague.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="20"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="DefilerMPPlagueDamage2"/>
+        <Modification>
+            <ModifyFlags index="Detected" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Detector1023" parent="Detector">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-status-detector.dds"/>
+        <Modification Detect="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DoubleDamageToPortals">
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-shieldslevel1.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FungalGrowthMovement">
+        <Duration value="2.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FungalGrowthSlowMovement">
+        <Modification MoveSpeedMultiplier="0.75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HasCargo">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="65535"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Alacrity">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="hasEnourghEnergyForAlacrity"/>
+        <Period value="0.05"/>
+        <PeriodicEffect value="AlacritySet"/>
+        <Modification MoveSpeedMultiplier="2"/>
+        <RemoveValidatorArray value="hasEnergy"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Ambush">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Modification>
+            <DamageDealtFraction index="Melee" value="1.5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AmbushPrepared">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="casterhasstalking"/>
+        <FinalEffect value="AmbushSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AmbushPreparing">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="casterhasstalking"/>
+        <Duration value="10"/>
+        <ExpireEffect value="AmbushPrepared"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BeingBanished">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.7"/>
+        <PeriodicEffect value="banisheddrain"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Bob">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.125"/>
+        <DurationRandomMin value="0.05"/>
+        <Modification Height="0.075" DetectArc="0" RadarArc="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BurstofSpeed">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-charge-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3.5"/>
+        <Modification MoveSpeedMultiplier="1.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CommonHealVisual">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-heal-color.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Concentrating">
+        <InfoIcon value="Assets\Textures\btn-tips-laserdrillantiair.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification LifeArmorMultiplier="0" DetectArc="0" RadarArc="0"/>
+        <Duration value="3"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CreepMove">
+        <InfoFlags index="Hidden" value="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CreepMove3">
+        <InfoFlags index="Hidden" value="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Damageminus1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="600"/>
+        <Modification>
+            <DamageDealtScaled index="Melee" value="-1"/>
+            <DamageDealtScaled index="Ranged" value="-1"/>
+            <DamageDealtScaled index="Splash" value="-1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Damageplus1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="1000"/>
+        <Modification>
+            <DamageDealtScaled index="Melee" value="1"/>
+            <DamageDealtScaled index="Ranged" value="1"/>
+            <DamageDealtScaled index="Splash" value="-1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DarkSwarm">
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-plague.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <DamageResponse ModifyFraction="0.1">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Melee" value="0"/>
+            <ValidatorArray value="IsNotGod"/>
+            <Chance value="1"/>
+            <Cost>
+                <Cooldown Location="Player"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DarkSwarmEgg">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="ApplyDarkSwarmProtection"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InitialEffect value="ApplyDarkSwarmProtection"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Detector102" parent="Detector">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-status-detector.dds"/>
+        <Modification Detect="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Detector1022" parent="Detector">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-status-detector.dds"/>
+        <Modification Detect="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Devilrangedebuff">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.7"/>
+        <Modification WeaponRange="-3"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DisableMove">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="100"/>
+        <Modification>
+            <AbilLinkDisableArray value="move"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DonatelloRepairSearch">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="DonatelloRepairSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Hallucination">
+        <Modification>
+            <BehaviorLinkDisableArray value="DonatelloRepairSearch"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HarpyFlightEnergyDrain">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterHasEnergy"/>
+        <FinalEffect value="LeapMorphToNormalForm"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalRegenArray index="Energy" value="-4"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HealBeaconEvil">
+        <InfoIcon value="Assets\Textures\icon-health-zerg.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="45"/>
+    </CBehaviorBuff>
+    <CBehaviorJump id="HunterlingJump2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <TriggerHeightDeltaMin value="1.5"/>
+        <TriggerHeightDeltaMax value="4.5"/>
+        <InitiateRangeUp value="1.5"/>
+        <InitiateRangeDown value="0.5"/>
+        <JumpRangeMax value="12"/>
+        <Mover value="CliffJumper"/>
+        <MoverUp value="ReaperJumpDown"/>
+        <MoverDown value="ReaperJumpDown"/>
+        <DurationPreLaunch value="0.05"/>
+        <DurationPostLand value="0.075"/>
+        <DurationMoveOut value="0.08"/>
+        <Placeholder value="HunterlingPlaceholder"/>
+        <LandAdjustmentDown value="1"/>
+        <LandArrivalRange value="0.05"/>
+        <LandCheckRadius value="5"/>
+    </CBehaviorJump>
+    <CBehaviorBuff id="Imprangedebuff">
+        <Cost>
+            <Charge Link="Behavior/Devilrangedebuff"/>
+            <Cooldown Link="Behavior/Devilrangedebuff"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.7"/>
+        <Modification WeaponRange="-2.5">
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/Devilrangedebuff"/>
+                    <Cooldown Link="Behavior/Devilrangedebuff"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/Devilrangedebuff"/>
+                <Cooldown Link="Behavior/Devilrangedebuff"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DumaGuardianShieldSource">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="GuardianShieldSearch"/>
+        <Modification>
+            <VitalRegenArray index="Energy" value="-0.5625"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnableAutocastonheroic">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FungalGrowth">
+        <Duration value="2.5"/>
+        <FinalEffect value="FungalApplySlow"/>
+        <Modification MoveSpeedMaximum="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FungalGrowth4">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-fungalgrowth.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="20"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="FungalGrowthDamage2"/>
+        <Modification DetectArc="0" RadarArc="0"/>
+        <InitialEffect value="PlagueReveal"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FungalSlow75">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <Modification MoveSpeedMultiplier="0.75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GuardianShield">
+        <InitialEffect value="DumaGuardianShieldInit"/>
+        <PeriodicEffect value="DumaGuardianShieldRegen"/>
+        <Modification>
+            <VitalMaxArray index="Shields" value="100"/>
+        </Modification>
+        <DamageResponse>
+            <Kind index="Spell" value="1"/>
+            <Kind index="Melee" value="1"/>
+            <Kind index="Splash" value="1"/>
+            <ModifyAmount value="0"/>
+            <Chance value="0"/>
+        </DamageResponse>
+        <Duration value="0.75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HallucinationTimedLife">
+        <DisplayDuration index="Ally" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HardenedShield">
+        <DamageResponse ClampMaximum="50" Minimum="50"/>
+        <DisableValidatorArray index="0" value="hardenedshieldsvalidator"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HealBeacon">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="45"/>
+        <InfoIcon value="Assets\Textures\icon-health-zerg.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorJump id="HunterlingJump">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <TriggerHeightDeltaMin value="1.5"/>
+        <TriggerHeightDeltaMax value="4.5"/>
+        <InitiateRangeUp value="1.5"/>
+        <InitiateRangeDown value="0.5"/>
+        <JumpRangeMax value="12"/>
+        <Mover value="CliffJumper"/>
+        <MoverUp value="ReaperJumpDown"/>
+        <MoverDown value="ReaperJumpDown"/>
+        <DurationPreLaunch value="0.0285"/>
+        <DurationPostLand value="0.043"/>
+        <DurationMoveOut value="0.0456"/>
+        <Placeholder value="HunterlingPlaceholder"/>
+        <LandAdjustmentDown value="1"/>
+        <LandArrivalRange value="0.05"/>
+        <LandCheckRadius value="5"/>
+        <InfoIcon value="Assets\Textures\btn-lostvinking-bomb.dds"/>
+    </CBehaviorJump>
+    <CBehaviorBuff id="Immobilizedwhileattacking">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="Targetisattacking"/>
+        <Duration value="0.08"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="hasnoPushable"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="InfernalPoison">
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-explode-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="8"/>
+        <Period value="1"/>
+        <PeriodCount value="40"/>
+        <PeriodicEffect value="AstarothPoisonDamage"/>
+        <Duration value="40"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="InfernalSiege">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-phasemine-zeratul.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="20"/>
+        <Duration value="40"/>
+        <Modification WeaponRange="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="InfestedTerransEggTimedLife">
+        <Duration value="30"/>
+        <ExpireEffect value="Kill"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Landing">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="0.375"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LeapAssaultSpeedBuff">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsCasterInAir"/>
+        <RemoveValidatorArray value="HarpyLeapAssaultHarpyIsFlying"/>
+        <Modification MoveSpeedMultiplier="2" AccelerationMultiplier="2" DecelerationMultiplier="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LeapAttacking">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Modification>
+            <Height value="0.8"/>
+            <MoveSpeedMultiplier value="3"/>
+            <DetectArc value="0"/>
+            <RadarArc value="0"/>
+            <StateFlags index="SuppressCollision" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LeapStun">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-swarmseeds.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Modification MoveSpeedMultiplier="0.75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LeapStunShort">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-swarmseeds.dds"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Duration value="0.25"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Leaping">
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <FinalEffect value="LeapApplyLandingBehavior"/>
+        <Modification Height="3" MoveSpeedBonus="3">
+            <StateFlags index="SuppressCollision" value="1"/>
+            <HeightTime index="Start" value="0.25"/>
+            <HeightTime index="Stop" value="0.375"/>
+        </Modification>
+        <PeriodicEffect value="HunterlingBob"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LifeStealingAttack">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-corruption-color.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MedivacHealBeamBusy2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <MaxStackCount value="3"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MedivacTargetBeingHealed2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Terran"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MeleeAttackMovespeedslow">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+        <Modification MoveSpeedMultiplier="0.01"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MightyWordTargetFind">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="MightyWordSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="NydusWormInvuln">
+        <Modification>
+            <StateFlags index="Invulnerable" value="0"/>
+            <StateFlags index="Unselectable" value="0"/>
+            <StateFlags index="Untargetable" value="0"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="NydusWormInvuln2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="IsConstructing"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PlagueReveal">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="8"/>
+        <Modification>
+            <StateFlags index="SuppressCloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorPowerSource id="PowerSource">
+        <Radius value="7.5"/>
+    </CBehaviorPowerSource>
+    <CBehaviorBuff id="PsiStorm">
+        <Duration value="0.4084"/>
+        <Period value="0.351"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PsionicShockwaveHeightAndStun">
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="0"/>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Push">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <InitialEffect value="Push"/>
+        <RefreshEffect value="Push"/>
+        <PeriodicEffect value="Push"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PushBuff">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.3"/>
+        <PeriodicEffect value="PushBuff"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="JehoelEnemyPushBuff">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.1"/>
+        <PeriodicEffect value="JehoelPushBuff"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PushBuffradius0pt625">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="PushBuff0pt625"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PushBuffradius0pt75">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="PushBuff0pt75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PushBuffradius1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="PushBuff1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PushBuffradius0pt5">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="PushBuff0pt5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PushBuffradius0pt375">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.2"/>
+        <PeriodicEffect value="PushBuff0pt375"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PushSlow">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="4"/>
+        <Duration value="0.2"/>
+        <Modification MoveSpeedMultiplier="0.75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RaphSelfRange">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification WeaponRange="1"/>
+        <MaxStackCount value="15"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RaphHasNoCargo">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="RaphHasNoCargo"/>
+        <Modification>
+            <AbilLinkDisableArray value="attack"/>
+            <AbilLinkDisableArray value="attack2"/>
+            <WeaponDisableArray value="raphaeldummyweapon"/>
+            <WeaponDisableArray value="raphaeldummyweapon2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Reanimated">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-phaseshift.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="10"/>
+    </CBehaviorBuff>
+    <CBehaviorJump id="ReaperJump">
+        <DurationPreLaunch value="0.0285"/>
+        <DurationPostLand value="0.043"/>
+        <DurationMoveOut value="0.0456"/>
+    </CBehaviorJump>
+    <CBehaviorBuff id="SammyazzaInfernalSiegeTriggerToken">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.125"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SammyazzaInfernalSiegeTriggerToken2">
+        <Cost>
+            <Charge Link="Behavior/SammyazzaInfernalSiegeTriggerToken"/>
+            <Cooldown Link="Behavior/SammyazzaInfernalSiegeTriggerToken"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.125"/>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/SammyazzaInfernalSiegeTriggerToken"/>
+                <Cooldown Link="Behavior/SammyazzaInfernalSiegeTriggerToken"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SeraphielSnipeShootToken">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-unit-terran-nova.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.4"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Slow">
+        <Modification MoveSpeedMultiplier="0.6"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpectreHoldFireB">
+        <InfoIcon value="Assets\Textures\btn-research-zerg-cellularreactor.dds"/>
+        <RemoveValidatorArray index="0" removed="1"/>
+        <Modification MoveSpeedMultiplier="1.2" LifeArmorMultiplier="2">
+            <StateFlags index="Passive" value="0"/>
+            <WeaponDisableArray value="Specter"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Stalking">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterNotAttacking"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="AmbushPreparing"/>
+        <Modification MoveSpeedMultiplier="0.35">
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+        <InfoIcon value="Assets\Textures\btn-ability-terran-cloak.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SurfaceForSpellCast2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Units"/>
+        <Modification>
+            <ModifyFlags index="Reveal" value="1"/>
+            <ModifyFlags index="Detected" value="1"/>
+            <StateFlags index="SuppressCloak" value="1"/>
+            <AbilLinkDisableArray value="BurrowInfestorUp"/>
+        </Modification>
+        <Period value="0.2"/>
+        <PeriodCount value="100"/>
+        <PeriodicEffect value="PlaguePeriodic"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ScourgeTimedLife" parent="TimedLife">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-timebomb.dds"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="45"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SystemHevenReinforcementVisual">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.15"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SystemHellReinforcementVisual">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.15"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="Invulnerable" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TimeScaleLower">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification TimeScale="0.5712" DetectArc="0" RadarArc="0"/>
+    </CBehaviorBuff>
+    <CBehaviorVeterancy id="UnknownBehavior">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <ShareFilters index="DamageDealt" value="-;Self,Ally,Neutral,Enemy,Hallucination"/>
+        <ShareFilters index="DamageTaken" value="-;Self,Ally,Neutral,Enemy,Hallucination"/>
+        <ShareFilters index="Kills" value="-;Self,Ally,Neutral,Enemy,Hallucination"/>
+        <VeterancyLevelArray/>
+        <VeterancyLevelArray MinVeterancyXP="100000"/>
+    </CBehaviorVeterancy>
+    <CBehaviorBuff id="ShockwaveHeight">
+        <InfoFlags index="Hidden" value="1"/>
+        <BehaviorCategories index="Temporary" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.56"/>
+        <Period value="0.32"/>
+        <PeriodCount value="1"/>
+        <InitialEffect value="ShockwaveLift"/>
+        <PeriodicEffect value="ShockwaveDrop"/>
+        <FinalEffect value="ShockwaveDamage"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Wraithform">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-cloakfield-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification MoveSpeedMultiplier="1.3">
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ZeratulStun">
+        <Modification MoveSpeedMultiplier="0.5">
+            <ModifyFlags index="SuppressMoving" value="0"/>
+            <ModifyFlags index="SuppressTurning" value="0"/>
+            <AbilClassEnableArray index="CAbilMove" value="1"/>
+            <AbilClassEnableArray index="CAbilStop" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="donatellocancelrepair">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="immobilizeenemyattackers">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="casterhasnoalacrity"/>
+        <Period value="0.08"/>
+        <PeriodicEffect value="Immobilzeenemyattackerssearch"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="isLoaded">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorCreepSource id="makeCreep4x42">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Zerg,AbilityorEffectType:Structures"/>
+        <Period value="0.42"/>
+        <Start value="Footprint4x4CreepSourceGrown"/>
+        <Birth value="Footprint4x4CreepSourceStart"/>
+        <Grown value="Footprint4x4CreepSourceGrown"/>
+    </CBehaviorCreepSource>
+    <CBehaviorBuff id="pushable">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="targetofleap">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+</Catalog>
