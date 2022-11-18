@@ -607,7 +607,6 @@ int gf_GetIntfromCCGString (string lp_cCGString, int lp_controlGroupNumber);
 string gf_CreateCCGString (int lp_addedInteger, string lp_existingString);
 void gf_AddHeroGlowtoAllHeroics ();
 int gf_CreateObjectivePing (unit lp_tARGETUNIT, playergroup lp_pLAYERGROUP, text lp_tOOLTIP);
-unitgroup gf_ControlGroupFromInteger (int lp_cCGValue, int lp_role, int lp_controlGroup);
 void gf_CreateAftermathDialog ();
 void gf_CreateKudosToastPanel (int lp_rOLE, int lp_pLAYER);
 void gf_AftermathShowToasttoPlayer (int lp_sOURCEPLAYER, int lp_tARGETPLAYER);
@@ -638,21 +637,22 @@ void gf_TutorialInitialObjective ();
 void gf_TutorialGateisDown ();
 void gf_TUTORIALPauseUnitControl (bool lp_fREEZE, unitgroup lp_group);
 fixed gf_GetAPCUnitRange (unit lp_u);
-bool gf_IsPlayerGood (int lp_playa);
 void gf_TakeUntakeGiveAftermathStatTracking (int lp_currentOwner, int lp_nextOwner, unit lp_uNIT);
 int gf_ColorID_To_Color (int lp_iD);
 void gf_CreateTieDialog ();
 bool gf_TieVoteProcessandOutcome ();
 text gf_HandleLeaversGetforcestext (int lp_pLAYER);
 bool gf_isRoleGood2 (int lp_role);
-string gf_numberwithspaces (int lp_num);
 void gf_RefreshCCG (int lp_player);
-text gf_GetRoleNameColored (int lp_role);
 void gf_UpdateStatsDisplay ();
 bool gf_CheckAdminList (int lp_playerNumber);
 void gf_CreateVotekickDialog (int lp_targetPlayer);
 bool gf_VotekickingProcessOutcome ();
 void gf_KickMoveUnits (int lp_kickedPlayer);
+string gf_numberwithspaces (int lp_num);
+unitgroup gf_ControlGroupFromInteger (int lp_cCGValue, int lp_role, int lp_controlGroup);
+text gf_GetRoleNameColored (int lp_role);
+bool gf_IsPlayerGood (int lp_playa);
 int gf_GetRoleNumber (string lp_role);
 
 //--------------------------------------------------------------------------------------------------
@@ -1541,811 +1541,6 @@ int gf_CreateObjectivePing (unit lp_tARGETUNIT, playergroup lp_pLAYERGROUP, text
     PingSetUnit(PingLastCreated(), lp_tARGETUNIT);
     PingSetTooltip(PingLastCreated(), lp_tOOLTIP);
     return PingLastCreated();
-}
-
-unitgroup gf_ControlGroupFromInteger (int lp_cCGValue, int lp_role, int lp_controlGroup) {
-    // Variable Declarations
-    unitgroup lv_returnUnitGroup;
-    unit lv_dummyUnit;
-    int lv_tempValue;
-    int lv_magnitude;
-
-    // Automatic Variable Declarations
-    int auto99790A44_val;
-    int auto891BB2F7_val;
-    int auto298E8C9E_val;
-    int autoD4A0C86B_val;
-    int auto06111F05_val;
-    int autoAEA6C199_val;
-    int auto99D8EBB0_val;
-    int auto0D0B509C_val;
-    int auto41C1959C_val;
-    int auto9CAE56A7_val;
-    int auto15910559_val;
-
-    // Variable Initialization
-    lv_returnUnitGroup = UnitGroupEmpty();
-    lv_tempValue = lp_cCGValue;
-
-    // Implementation
-    auto99790A44_val = lp_role;
-    if (auto99790A44_val == gv_syn.lv_roleMessiah) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(501)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(238160895)));
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(622)));
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Spectre", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("ThorAP", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Thor", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Predator", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-
-        }
-        else {
-            auto891BB2F7_val = lp_controlGroup;
-            if (auto891BB2F7_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(501)));
-            }
-            else if (auto891BB2F7_val == 2) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(238160895)));
-            }
-            else if (auto891BB2F7_val == 3) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(622)));
-            }
-            else if (auto891BB2F7_val == 4) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else if (auto99790A44_val == gv_syn.lv_roleMichael) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(729)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(211)));
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Marine", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Firebat", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-
-        }
-        else {
-            auto298E8C9E_val = lp_controlGroup;
-            if (auto298E8C9E_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(729)));
-            }
-            else if (auto298E8C9E_val == 2) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(211)));
-            }
-            else if (auto298E8C9E_val == 4) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else if (auto99790A44_val == gv_syn.lv_roleUriel) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(65)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(440)));
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Goliath", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Reaper", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-
-        }
-        else {
-            autoD4A0C86B_val = lp_controlGroup;
-            if (autoD4A0C86B_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(65)));
-            }
-            else if (autoD4A0C86B_val == 2) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(440)));
-            }
-            else if (autoD4A0C86B_val == 4) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else if (auto99790A44_val == gv_syn.lv_roleJehoel) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(347)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(348)));
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Diamondback", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Zealot", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-
-        }
-        else {
-            auto06111F05_val = lp_controlGroup;
-            if (auto06111F05_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(347)));
-            }
-            else if (auto06111F05_val == 2) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(348)));
-            }
-            else if (auto06111F05_val == 4) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else if (auto99790A44_val == gv_syn.lv_roleSeraphiel) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(313)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(330)));
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Stalker2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Marauder", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-
-        }
-        else {
-            autoAEA6C199_val = lp_controlGroup;
-            if (autoAEA6C199_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(313)));
-            }
-            else if (autoAEA6C199_val == 2) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(330)));
-            }
-            else if (autoAEA6C199_val == 4) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else if (auto99790A44_val == gv_syn.lv_roleZadkiel) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(711)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-
-        }
-        else {
-            auto99D8EBB0_val = lp_controlGroup;
-            if (auto99D8EBB0_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(711)));
-            }
-            else if (auto99D8EBB0_val == 4) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else if (auto99790A44_val == gv_syn.lv_roleDevil) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(705)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(706)));
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(710)));
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ultralisk2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("UltraliskBurrowed2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Hunterling", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("HunterlingLeaping", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Baneling", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("BanelingBurrowed", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusCanal", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overseer", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overlord", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("OverlordCocoon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusNetwork2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-        }
-        else {
-            auto0D0B509C_val = lp_controlGroup;
-            if (auto0D0B509C_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(705)));
-            }
-            else if (auto0D0B509C_val == 2) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(706)));
-            }
-            else if (auto0D0B509C_val == 3) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(710)));
-            }
-            else if (auto0D0B509C_val == 4) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(648)));
-            }
-            else if (auto0D0B509C_val == 5) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(784)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else if (auto99790A44_val == gv_syn.lv_roleAsmodeus) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(692)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(703)));
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(704)));
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Immortal", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("VikingAssault", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("VikingFighter", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeBreakerSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeBreaker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusCanal", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overseer", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overlord", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("OverlordCocoon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusNetwork2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-        }
-        else {
-            auto41C1959C_val = lp_controlGroup;
-            if (auto41C1959C_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(692)));
-            }
-            else if (auto41C1959C_val == 2) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(703)));
-            }
-            else if (auto41C1959C_val == 3) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(704)));
-            }
-            else if (auto41C1959C_val == 4) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(629)));
-            }
-            else if (auto41C1959C_val == 5) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(709)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else if (auto99790A44_val == gv_syn.lv_roleAstaroth) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(783)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(707)));
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(708)));
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("HunterKiller", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("HunterKillerBurrowed", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Fallen", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("ZerglingBurrowed2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Roach2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("RoachBurrowed2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusCanal", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overseer", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overlord", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("OverlordCocoon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusNetwork2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
-            }
-
-        }
-        else {
-            auto9CAE56A7_val = lp_controlGroup;
-            if (auto9CAE56A7_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(783)));
-            }
-            else if (auto9CAE56A7_val == 2) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(707)));
-            }
-            else if (auto9CAE56A7_val == 3) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(708)));
-            }
-            else if (auto9CAE56A7_val == 4) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(670)));
-            }
-            else if (auto9CAE56A7_val == 5) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(785)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else if (auto99790A44_val == gv_syn.lv_roleMoloch) {
-        if ((lp_cCGValue != 0)) {
-            lv_magnitude = 256;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(439)));
-            }
-
-            lv_magnitude = 128;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 64;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 32;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 16;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 8;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 4;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 2;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-            lv_magnitude = 1;
-            if ((lv_tempValue >= lv_magnitude)) {
-                lv_tempValue = (lv_tempValue - lv_magnitude);
-            }
-
-        }
-        else {
-            auto15910559_val = lp_controlGroup;
-            if (auto15910559_val == 1) {
-                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(439)));
-            }
-            else {
-            }
-        }
-        return lv_returnUnitGroup;
-    }
-    else {
-        return lv_returnUnitGroup;
-    }
 }
 
 void gf_CreateAftermathDialog () {
@@ -4082,17 +3277,6 @@ fixed gf_GetAPCUnitRange (unit lp_u) {
     return MinF(MinF(lv_bestSRange, lv_bestGRange), lv_bestARange);
 }
 
-bool gf_IsPlayerGood (int lp_playa) {
-    // Automatic Variable Declarations
-    // Implementation
-    if (((lp_playa == gv_gameData.lv_rolesOwners[gv_syn.lv_roleDevil]) || (lp_playa == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAsmodeus]) || (lp_playa == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAstaroth]) || (lp_playa == gv_gameData.lv_rolesOwners[gv_syn.lv_roleMoloch]))) {
-        return false;
-    }
-    else {
-        return true;
-    }
-}
-
 void gf_TakeUntakeGiveAftermathStatTracking (int lp_currentOwner, int lp_nextOwner, unit lp_uNIT) {
     // Automatic Variable Declarations
     // Implementation
@@ -4254,23 +3438,6 @@ bool gf_isRoleGood2 (int lp_role) {
     return (lp_role <= 6);
 }
 
-string gf_numberwithspaces (int lp_num) {
-    // Variable Declarations
-    const int lv_width = 4;
-    string lv_numstr;
-
-    // Automatic Variable Declarations
-    // Variable Initialization
-    lv_numstr = "";
-
-    // Implementation
-    lv_numstr = IntToString(lp_num);
-    while ((StringLength(lv_numstr) < lv_width)) {
-        lv_numstr = (" " + lv_numstr);
-    }
-    return lv_numstr;
-}
-
 void gf_RefreshCCG (int lp_player) {
     // Variable Declarations
     int lv_role;
@@ -4291,47 +3458,6 @@ void gf_RefreshCCG (int lp_player) {
         for ( ; ( (auto93D13252_ai >= 0 && lv_group <= auto93D13252_ae) || (auto93D13252_ai < 0 && lv_group >= auto93D13252_ae) ) ; lv_group += auto93D13252_ai ) {
             gv_banks.lv_controlGroups[lp_player][lv_role][lv_group] = gv_cCGData.lv_savedGroups[lp_player][lv_role][lv_group];
         }
-    }
-}
-
-text gf_GetRoleNameColored (int lp_role) {
-    // Automatic Variable Declarations
-    int auto843CDB0F_val;
-
-    // Implementation
-    auto843CDB0F_val = lp_role;
-    if (auto843CDB0F_val == gv_syn.lv_roleMessiah) {
-        return StringExternal("Param/Value/896E8129");
-    }
-    else if (auto843CDB0F_val == gv_syn.lv_roleMichael) {
-        return StringExternal("Param/Value/9208D5DF");
-    }
-    else if (auto843CDB0F_val == gv_syn.lv_roleUriel) {
-        return StringExternal("Param/Value/4BCF8932");
-    }
-    else if (auto843CDB0F_val == gv_syn.lv_roleJehoel) {
-        return StringExternal("Param/Value/29708A07");
-    }
-    else if (auto843CDB0F_val == gv_syn.lv_roleSeraphiel) {
-        return StringExternal("Param/Value/522624DA");
-    }
-    else if (auto843CDB0F_val == gv_syn.lv_roleZadkiel) {
-        return StringExternal("Param/Value/D7735A23");
-    }
-    else if (auto843CDB0F_val == gv_syn.lv_roleDevil) {
-        return StringExternal("Param/Value/22572F86");
-    }
-    else if (auto843CDB0F_val == gv_syn.lv_roleAsmodeus) {
-        return StringExternal("Param/Value/DB20E478");
-    }
-    else if (auto843CDB0F_val == gv_syn.lv_roleAstaroth) {
-        return StringExternal("Param/Value/3FB52846");
-    }
-    else if (auto843CDB0F_val == gv_syn.lv_roleMoloch) {
-        return StringExternal("Param/Value/E946F411");
-    }
-    else {
-        return StringExternal("Param/Value/C0DF0CB1");
     }
 }
 
@@ -4517,6 +3643,880 @@ void gf_KickMoveUnits (int lp_kickedPlayer) {
             }
         }
 
+    }
+}
+
+string gf_numberwithspaces (int lp_num) {
+    // Variable Declarations
+    const int lv_width = 4;
+    string lv_numstr;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_numstr = "";
+
+    // Implementation
+    lv_numstr = IntToString(lp_num);
+    while ((StringLength(lv_numstr) < lv_width)) {
+        lv_numstr = (" " + lv_numstr);
+    }
+    return lv_numstr;
+}
+
+unitgroup gf_ControlGroupFromInteger (int lp_cCGValue, int lp_role, int lp_controlGroup) {
+    // Variable Declarations
+    unitgroup lv_returnUnitGroup;
+    unit lv_dummyUnit;
+    int lv_tempValue;
+    int lv_magnitude;
+
+    // Automatic Variable Declarations
+    int auto99790A44_val;
+    int auto891BB2F7_val;
+    int auto298E8C9E_val;
+    int autoD4A0C86B_val;
+    int auto06111F05_val;
+    int autoAEA6C199_val;
+    int auto99D8EBB0_val;
+    int auto0D0B509C_val;
+    int auto41C1959C_val;
+    int auto9CAE56A7_val;
+    int auto15910559_val;
+
+    // Variable Initialization
+    lv_returnUnitGroup = UnitGroupEmpty();
+    lv_tempValue = lp_cCGValue;
+
+    // Implementation
+    auto99790A44_val = lp_role;
+    if (auto99790A44_val == gv_syn.lv_roleMessiah) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(501)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(238160895)));
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(622)));
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Spectre", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("ThorAP", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Thor", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Predator", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+
+        }
+        else {
+            auto891BB2F7_val = lp_controlGroup;
+            if (auto891BB2F7_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(501)));
+            }
+            else if (auto891BB2F7_val == 2) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(238160895)));
+            }
+            else if (auto891BB2F7_val == 3) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(622)));
+            }
+            else if (auto891BB2F7_val == 4) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else if (auto99790A44_val == gv_syn.lv_roleMichael) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(729)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(211)));
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Marine", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Firebat", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+
+        }
+        else {
+            auto298E8C9E_val = lp_controlGroup;
+            if (auto298E8C9E_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(729)));
+            }
+            else if (auto298E8C9E_val == 2) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(211)));
+            }
+            else if (auto298E8C9E_val == 4) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else if (auto99790A44_val == gv_syn.lv_roleUriel) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(65)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(440)));
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Goliath", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Reaper", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+
+        }
+        else {
+            autoD4A0C86B_val = lp_controlGroup;
+            if (autoD4A0C86B_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(65)));
+            }
+            else if (autoD4A0C86B_val == 2) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(440)));
+            }
+            else if (autoD4A0C86B_val == 4) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else if (auto99790A44_val == gv_syn.lv_roleJehoel) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(347)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(348)));
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Diamondback", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Zealot", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+
+        }
+        else {
+            auto06111F05_val = lp_controlGroup;
+            if (auto06111F05_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(347)));
+            }
+            else if (auto06111F05_val == 2) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(348)));
+            }
+            else if (auto06111F05_val == 4) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else if (auto99790A44_val == gv_syn.lv_roleSeraphiel) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(313)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(330)));
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Stalker2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Marauder", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("MissileTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Pylon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSkinPreview", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTankSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeTank", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PhotonCannon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Bunker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurret", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("PerditionTurretUnderground", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ghost", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+
+        }
+        else {
+            autoAEA6C199_val = lp_controlGroup;
+            if (autoAEA6C199_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(313)));
+            }
+            else if (autoAEA6C199_val == 2) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(330)));
+            }
+            else if (autoAEA6C199_val == 4) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else if (auto99790A44_val == gv_syn.lv_roleZadkiel) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(711)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+
+        }
+        else {
+            auto99D8EBB0_val = lp_controlGroup;
+            if (auto99D8EBB0_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(711)));
+            }
+            else if (auto99D8EBB0_val == 4) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(22)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else if (auto99790A44_val == gv_syn.lv_roleDevil) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(705)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(706)));
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(710)));
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Ultralisk2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("UltraliskBurrowed2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Hunterling", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("HunterlingLeaping", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Baneling", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("BanelingBurrowed", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusCanal", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overseer", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overlord", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("OverlordCocoon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusNetwork2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+        }
+        else {
+            auto0D0B509C_val = lp_controlGroup;
+            if (auto0D0B509C_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(705)));
+            }
+            else if (auto0D0B509C_val == 2) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(706)));
+            }
+            else if (auto0D0B509C_val == 3) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(710)));
+            }
+            else if (auto0D0B509C_val == 4) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(648)));
+            }
+            else if (auto0D0B509C_val == 5) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(784)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else if (auto99790A44_val == gv_syn.lv_roleAsmodeus) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(692)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(703)));
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(704)));
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Immortal", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("VikingAssault", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("VikingFighter", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeBreakerSieged", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("SiegeBreaker", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusCanal", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overseer", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overlord", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("OverlordCocoon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusNetwork2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+        }
+        else {
+            auto41C1959C_val = lp_controlGroup;
+            if (auto41C1959C_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(692)));
+            }
+            else if (auto41C1959C_val == 2) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(703)));
+            }
+            else if (auto41C1959C_val == 3) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(704)));
+            }
+            else if (auto41C1959C_val == 4) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(629)));
+            }
+            else if (auto41C1959C_val == 5) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(709)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else if (auto99790A44_val == gv_syn.lv_roleAstaroth) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(783)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(707)));
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(708)));
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("HunterKiller", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("HunterKillerBurrowed", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Fallen", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("ZerglingBurrowed2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Roach2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("RoachBurrowed2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusCanal", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overseer", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("Overlord", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("OverlordCocoon", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, UnitGroup("NydusNetwork2", gv_gameData.lv_rolesOwners[lp_role], RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+            }
+
+        }
+        else {
+            auto9CAE56A7_val = lp_controlGroup;
+            if (auto9CAE56A7_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(783)));
+            }
+            else if (auto9CAE56A7_val == 2) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(707)));
+            }
+            else if (auto9CAE56A7_val == 3) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(708)));
+            }
+            else if (auto9CAE56A7_val == 4) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(670)));
+            }
+            else if (auto9CAE56A7_val == 5) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(785)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else if (auto99790A44_val == gv_syn.lv_roleMoloch) {
+        if ((lp_cCGValue != 0)) {
+            lv_magnitude = 256;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(439)));
+            }
+
+            lv_magnitude = 128;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 64;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 32;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 16;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 8;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 4;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 2;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+            lv_magnitude = 1;
+            if ((lv_tempValue >= lv_magnitude)) {
+                lv_tempValue = (lv_tempValue - lv_magnitude);
+            }
+
+        }
+        else {
+            auto15910559_val = lp_controlGroup;
+            if (auto15910559_val == 1) {
+                UnitGroupAddUnitGroup(lv_returnUnitGroup, libNtve_gf_ConvertUnitToUnitGroup(UnitFromId(439)));
+            }
+            else {
+            }
+        }
+        return lv_returnUnitGroup;
+    }
+    else {
+        return lv_returnUnitGroup;
+    }
+}
+
+text gf_GetRoleNameColored (int lp_role) {
+    // Automatic Variable Declarations
+    int auto843CDB0F_val;
+
+    // Implementation
+    auto843CDB0F_val = lp_role;
+    if (auto843CDB0F_val == gv_syn.lv_roleMessiah) {
+        return StringExternal("Param/Value/896E8129");
+    }
+    else if (auto843CDB0F_val == gv_syn.lv_roleMichael) {
+        return StringExternal("Param/Value/9208D5DF");
+    }
+    else if (auto843CDB0F_val == gv_syn.lv_roleUriel) {
+        return StringExternal("Param/Value/4BCF8932");
+    }
+    else if (auto843CDB0F_val == gv_syn.lv_roleJehoel) {
+        return StringExternal("Param/Value/29708A07");
+    }
+    else if (auto843CDB0F_val == gv_syn.lv_roleSeraphiel) {
+        return StringExternal("Param/Value/522624DA");
+    }
+    else if (auto843CDB0F_val == gv_syn.lv_roleZadkiel) {
+        return StringExternal("Param/Value/D7735A23");
+    }
+    else if (auto843CDB0F_val == gv_syn.lv_roleDevil) {
+        return StringExternal("Param/Value/22572F86");
+    }
+    else if (auto843CDB0F_val == gv_syn.lv_roleAsmodeus) {
+        return StringExternal("Param/Value/DB20E478");
+    }
+    else if (auto843CDB0F_val == gv_syn.lv_roleAstaroth) {
+        return StringExternal("Param/Value/3FB52846");
+    }
+    else if (auto843CDB0F_val == gv_syn.lv_roleMoloch) {
+        return StringExternal("Param/Value/E946F411");
+    }
+    else {
+        return StringExternal("Param/Value/C0DF0CB1");
+    }
+}
+
+bool gf_IsPlayerGood (int lp_playa) {
+    // Automatic Variable Declarations
+    // Implementation
+    if (((lp_playa == gv_gameData.lv_rolesOwners[gv_syn.lv_roleDevil]) || (lp_playa == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAsmodeus]) || (lp_playa == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAstaroth]) || (lp_playa == gv_gameData.lv_rolesOwners[gv_syn.lv_roleMoloch]))) {
+        return false;
+    }
+    else {
+        return true;
     }
 }
 
