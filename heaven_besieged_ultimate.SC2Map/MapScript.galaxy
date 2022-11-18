@@ -589,10 +589,6 @@ void InitGlobals () {
 //--------------------------------------------------------------------------------------------------
 // Global Function Declarations
 //--------------------------------------------------------------------------------------------------
-bool gf_CheckAdminList (int lp_playerNumber);
-void gf_CreateVotekickDialog (int lp_targetPlayer);
-bool gf_VotekickingProcessOutcome ();
-void gf_KickMoveUnits (int lp_kickedPlayer);
 int gf_GetRoleNumber (string lp_role);
 int gf_DuckGetRoleIdFromLobby (string lp_role);
 bool gf_ScrubList (int lp_playerNumber);
@@ -654,13 +650,14 @@ string gf_numberwithspaces (int lp_num);
 void gf_RefreshCCG (int lp_player);
 text gf_GetRoleNameColored (int lp_role);
 void gf_UpdateStatsDisplay ();
+bool gf_CheckAdminList (int lp_playerNumber);
+void gf_CreateVotekickDialog (int lp_targetPlayer);
+bool gf_VotekickingProcessOutcome ();
+void gf_KickMoveUnits (int lp_kickedPlayer);
 
 //--------------------------------------------------------------------------------------------------
 // Trigger Variables
 //--------------------------------------------------------------------------------------------------
-trigger gt_AdminKick;
-trigger gt_Votekick;
-trigger gt_ANYDIALOGITEMISUSEDVotekicking;
 trigger gt_MainInitialization;
 trigger gt_InitializeVariables;
 trigger gt_LagHack;
@@ -840,6 +837,8 @@ trigger gt_ListSelectionRedirectRoles;
 trigger gt_ListSelectionRedirectRoles2;
 trigger gt_IncrementGamesPlayed;
 trigger gt_DecreaseGamesPlayedTie;
+trigger gt_Votekick;
+trigger gt_ANYDIALOGITEMISUSEDVotekicking;
 
 //--------------------------------------------------------------------------------------------------
 // Custom Script: Bootstrap
@@ -856,135 +855,6 @@ void InitCustomScript () {
 //--------------------------------------------------------------------------------------------------
 // Global Functions
 //--------------------------------------------------------------------------------------------------
-bool gf_CheckAdminList (int lp_playerNumber) {
-    // Automatic Variable Declarations
-    // Implementation
-    if (((PlayerHandle(lp_playerNumber) == ""))) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-void gf_CreateVotekickDialog (int lp_targetPlayer) {
-    // Automatic Variable Declarations
-    // Implementation
-    if ((gv_gameData.lv_tieTriggered == true)) {
-        DialogCreate(550, 200, c_anchorTopRight, 0, 220, true);
-    }
-    else {
-        DialogCreate(550, 200, c_anchorTopRight, 0, 0, true);
-    }
-    DialogSetTitle(DialogLastCreated(), (StringExternal("Param/Value/5B5DB227") + PlayerName(lp_targetPlayer) + StringExternal("Param/Value/F95F93C3")));
-    DialogSetVisible(DialogLastCreated(), PlayerGroupAll(), true);
-    gv_gameData.lv_votekickDialog = DialogLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 80, 50, c_anchorBottomLeft, 50, 50, StringToText(""), StringExternal("Param/Value/526F78DD"), "");
-    gv_gameData.lv_votekickYESButton = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 80, 50, c_anchorBottom, 0, 50, StringToText(""), StringExternal("Param/Value/C34C5E97"), "");
-    gv_gameData.lv_votekickNOButton = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, 50, c_anchorBottomRight, 50, 50, StringToText(""), StringExternal("Param/Value/6D47005F"), "");
-    gv_gameData.lv_votekickABSTAINButton = DialogControlLastCreated();
-}
-
-bool gf_VotekickingProcessOutcome () {
-    // Variable Declarations
-    int lv_totalPlayerAmount;
-    fixed lv_timeRemaining;
-
-    // Automatic Variable Declarations
-    // Variable Initialization
-    lv_totalPlayerAmount = PlayerGroupCount(PlayerGroupActive());
-    lv_timeRemaining = 20.0;
-
-    // Implementation
-    while ((lv_timeRemaining > 0.0) && (gv_gameData.lv_votekickYesVoteAmount <= (lv_totalPlayerAmount-gv_gameData.lv_votekickYesVoteAmount-gv_gameData.lv_votekickAbstainedAmount)) && (gv_gameData.lv_votekickNoVoteAmount <= (lv_totalPlayerAmount-gv_gameData.lv_votekickNoVoteAmount-gv_gameData.lv_votekickAbstainedAmount)) && ((lv_totalPlayerAmount - gv_gameData.lv_votekickAbstainedAmount) > 0)) {
-        Wait(0.25, c_timeGame);
-        lv_timeRemaining -= 0.25;
-    }
-    if ((gv_gameData.lv_votekickYesVoteAmount > (lv_totalPlayerAmount-gv_gameData.lv_votekickYesVoteAmount-gv_gameData.lv_votekickAbstainedAmount))) {
-        return true;
-    }
-
-    return false;
-}
-
-void gf_KickMoveUnits (int lp_kickedPlayer) {
-    // Automatic Variable Declarations
-    int auto6159F112_val;
-    unitgroup auto9F5563B6_g;
-    int auto9F5563B6_u;
-    unit auto9F5563B6_var;
-    unitgroup auto714E19A7_g;
-    int auto714E19A7_u;
-    unit auto714E19A7_var;
-    unitgroup auto9F51456A_g;
-    int auto9F51456A_u;
-    unit auto9F51456A_var;
-    unitgroup auto4A2D2327_g;
-    int auto4A2D2327_u;
-    unit auto4A2D2327_var;
-    unitgroup auto891FB1DF_g;
-    int auto891FB1DF_u;
-    unit auto891FB1DF_var;
-
-    // Implementation
-    if ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHeaven, lp_kickedPlayer) == true)) {
-        auto891FB1DF_g = UnitGroup(UnitGetType(EventUnit()), lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-        auto891FB1DF_u = UnitGroupCount(auto891FB1DF_g, c_unitCountAll);
-        for (;; auto891FB1DF_u -= 1) {
-            auto891FB1DF_var = UnitGroupUnitFromEnd(auto891FB1DF_g, auto891FB1DF_u);
-            if (auto891FB1DF_var == null) { break; }
-            if ((UnitGetType(auto891FB1DF_var) != "SiegeTankSieged") && (UnitGetType(auto891FB1DF_var) != "Beacon_Zerg") && (UnitGetType(auto891FB1DF_var) != "Beacon_Terran") && (UnitGetType(auto891FB1DF_var) != "Beacon_Protoss")) {
-                UnitSetPosition(auto891FB1DF_var, PointWithOffset(UnitGetPosition(UnitFromId(22)), 0.0, -8.0), false);
-            }
-
-        }
-    }
-    else {
-        if ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHell, lp_kickedPlayer) == true)) {
-            auto6159F112_val = lp_kickedPlayer;
-            if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAstaroth]) {
-                auto714E19A7_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-                auto714E19A7_u = UnitGroupCount(auto714E19A7_g, c_unitCountAll);
-                for (;; auto714E19A7_u -= 1) {
-                    auto714E19A7_var = UnitGroupUnitFromEnd(auto714E19A7_g, auto714E19A7_u);
-                    if (auto714E19A7_var == null) { break; }
-                    UnitSetPosition(auto714E19A7_var, PointFromId(695), false);
-                }
-            }
-            else if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAsmodeus]) {
-                auto9F51456A_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-                auto9F51456A_u = UnitGroupCount(auto9F51456A_g, c_unitCountAll);
-                for (;; auto9F51456A_u -= 1) {
-                    auto9F51456A_var = UnitGroupUnitFromEnd(auto9F51456A_g, auto9F51456A_u);
-                    if (auto9F51456A_var == null) { break; }
-                    UnitSetPosition(auto9F51456A_var, PointFromId(694), false);
-                }
-            }
-            else if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleDevil]) {
-                auto4A2D2327_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-                auto4A2D2327_u = UnitGroupCount(auto4A2D2327_g, c_unitCountAll);
-                for (;; auto4A2D2327_u -= 1) {
-                    auto4A2D2327_var = UnitGroupUnitFromEnd(auto4A2D2327_g, auto4A2D2327_u);
-                    if (auto4A2D2327_var == null) { break; }
-                    UnitSetPosition(auto4A2D2327_var, PointFromId(693), false);
-                }
-            }
-            else {
-                auto9F5563B6_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-                auto9F5563B6_u = UnitGroupCount(auto9F5563B6_g, c_unitCountAll);
-                for (;; auto9F5563B6_u -= 1) {
-                    auto9F5563B6_var = UnitGroupUnitFromEnd(auto9F5563B6_g, auto9F5563B6_u);
-                    if (auto9F5563B6_var == null) { break; }
-                    UnitSetPosition(auto9F5563B6_var, PointFromId(696), false);
-                }
-            }
-        }
-
-    }
-}
-
 int gf_GetRoleNumber (string lp_role) {
     // Automatic Variable Declarations
     string auto618B1A54_val;
@@ -4562,333 +4432,133 @@ void gf_UpdateStatsDisplay () {
     }
 }
 
-//--------------------------------------------------------------------------------------------------
-// Trigger: AdminKick
-//--------------------------------------------------------------------------------------------------
-bool gt_AdminKick_Func (bool testConds, bool runActions) {
+bool gf_CheckAdminList (int lp_playerNumber) {
+    // Automatic Variable Declarations
+    // Implementation
+    if (((PlayerHandle(lp_playerNumber) == ""))) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+void gf_CreateVotekickDialog (int lp_targetPlayer) {
+    // Automatic Variable Declarations
+    // Implementation
+    if ((gv_gameData.lv_tieTriggered == true)) {
+        DialogCreate(550, 200, c_anchorTopRight, 0, 220, true);
+    }
+    else {
+        DialogCreate(550, 200, c_anchorTopRight, 0, 0, true);
+    }
+    DialogSetTitle(DialogLastCreated(), (StringExternal("Param/Value/5B5DB227") + PlayerName(lp_targetPlayer) + StringExternal("Param/Value/F95F93C3")));
+    DialogSetVisible(DialogLastCreated(), PlayerGroupAll(), true);
+    gv_gameData.lv_votekickDialog = DialogLastCreated();
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 80, 50, c_anchorBottomLeft, 50, 50, StringToText(""), StringExternal("Param/Value/526F78DD"), "");
+    gv_gameData.lv_votekickYESButton = DialogControlLastCreated();
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 80, 50, c_anchorBottom, 0, 50, StringToText(""), StringExternal("Param/Value/C34C5E97"), "");
+    gv_gameData.lv_votekickNOButton = DialogControlLastCreated();
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, 50, c_anchorBottomRight, 50, 50, StringToText(""), StringExternal("Param/Value/6D47005F"), "");
+    gv_gameData.lv_votekickABSTAINButton = DialogControlLastCreated();
+}
+
+bool gf_VotekickingProcessOutcome () {
     // Variable Declarations
-    int lv_kickedPlayer;
+    int lv_totalPlayerAmount;
+    fixed lv_timeRemaining;
 
     // Automatic Variable Declarations
-    string auto1BED3A95_val;
-
     // Variable Initialization
+    lv_totalPlayerAmount = PlayerGroupCount(PlayerGroupActive());
+    lv_timeRemaining = 20.0;
 
-    // Conditions
-    if (testConds) {
-        if (!((gf_CheckAdminList(EventPlayer()) == true))) {
-            return false;
-        }
+    // Implementation
+    while ((lv_timeRemaining > 0.0) && (gv_gameData.lv_votekickYesVoteAmount <= (lv_totalPlayerAmount-gv_gameData.lv_votekickYesVoteAmount-gv_gameData.lv_votekickAbstainedAmount)) && (gv_gameData.lv_votekickNoVoteAmount <= (lv_totalPlayerAmount-gv_gameData.lv_votekickNoVoteAmount-gv_gameData.lv_votekickAbstainedAmount)) && ((lv_totalPlayerAmount - gv_gameData.lv_votekickAbstainedAmount) > 0)) {
+        Wait(0.25, c_timeGame);
+        lv_timeRemaining -= 0.25;
     }
-
-    // Actions
-    if (!runActions) {
+    if ((gv_gameData.lv_votekickYesVoteAmount > (lv_totalPlayerAmount-gv_gameData.lv_votekickYesVoteAmount-gv_gameData.lv_votekickAbstainedAmount))) {
         return true;
     }
 
-    auto1BED3A95_val = EventChatMessage(false);
-    if (auto1BED3A95_val == "-adminkick 1") {
-        lv_kickedPlayer = 1;
-    }
-    else if (auto1BED3A95_val == "-adminkick 2") {
-        lv_kickedPlayer = 2;
-    }
-    else if (auto1BED3A95_val == "-adminkick 3") {
-        lv_kickedPlayer = 3;
-    }
-    else if (auto1BED3A95_val == "-adminkick 4") {
-        lv_kickedPlayer = 4;
-    }
-    else if (auto1BED3A95_val == "-adminkick 5") {
-        lv_kickedPlayer = 5;
-    }
-    else if (auto1BED3A95_val == "-adminkick 6") {
-        lv_kickedPlayer = 6;
-    }
-    else if (auto1BED3A95_val == "-adminkick 7") {
-        lv_kickedPlayer = 7;
-    }
-    else if (auto1BED3A95_val == "-adminkick 8") {
-        lv_kickedPlayer = 8;
-    }
-    else if (auto1BED3A95_val == "-adminkick 9") {
-        lv_kickedPlayer = 9;
-    }
-    else if (auto1BED3A95_val == "-adminkick 10") {
-        lv_kickedPlayer = 10;
-    }
-    else if (auto1BED3A95_val == "-adminkick white") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMessiah];
-    }
-    else if (auto1BED3A95_val == "-adminkick teal") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMichael];
-    }
-    else if (auto1BED3A95_val == "-adminkick blue") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMichael];
-    }
-    else if (auto1BED3A95_val == "-adminkick green") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleUriel];
-    }
-    else if (auto1BED3A95_val == "-adminkick brown") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleJehoel];
-    }
-    else if (auto1BED3A95_val == "-adminkick purple") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleSeraphiel];
-    }
-    else if (auto1BED3A95_val == "-adminkick grey") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleZadkiel];
-    }
-    else if (auto1BED3A95_val == "-adminkick gray") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleZadkiel];
-    }
-    else if (auto1BED3A95_val == "-adminkick black") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleZadkiel];
-    }
-    else if (auto1BED3A95_val == "-adminkick red") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleDevil];
-    }
-    else if (auto1BED3A95_val == "-adminkick orange") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleAsmodeus];
-    }
-    else if (auto1BED3A95_val == "-adminkick yellow") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleAstaroth];
-    }
-    else if (auto1BED3A95_val == "-adminkick pink") {
-        lv_kickedPlayer = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMoloch];
-    }
-    else {
-        return true;
-    }
-    if ((PlayerStatus(lv_kickedPlayer) != c_playerStatusActive)) {
-        UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/C5D6872A"));
-        return true;
-    }
-
-    if ((gf_CheckAdminList(lv_kickedPlayer) == false)) {
-        libNtve_gf_SetUpgradeLevelForPlayer(lv_kickedPlayer, "PassiveController", (TechTreeUpgradeCount(lv_kickedPlayer, "PassiveController", c_techCountCompleteOnly)+1));
-        TextExpressionSetToken("Param/Expression/23146EE2", "A", TextWithColor(PlayerName(lv_kickedPlayer), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lv_kickedPlayer, false))));
-        TextExpressionSetToken("Param/Expression/23146EE2", "B", StringExternal("Param/Value/6EDC4BBE"));
-        TextExpressionSetToken("Param/Expression/23146EE2", "C", TextWithColor(PlayerName(EventPlayer()), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(EventPlayer(), false))));
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, TextExpressionAssemble("Param/Expression/23146EE2"));
-        Wait(2.0, c_timeGame);
-        GameOver(lv_kickedPlayer, c_gameOverDefeat, false, false);
-        libNtve_gf_SetUpgradeLevelForPlayer(lv_kickedPlayer, "PassiveController", (TechTreeUpgradeCount(lv_kickedPlayer, "PassiveController", c_techCountCompleteOnly)-1));
-        gf_KickMoveUnits(lv_kickedPlayer);
-    }
-    else {
-        TextExpressionSetToken("Param/Expression/CD20FB6C", "B", PlayerName(lv_kickedPlayer));
-        TextExpressionSetToken("Param/Expression/CD20FB6C", "A", PlayerName(EventPlayer()));
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, TextExpressionAssemble("Param/Expression/CD20FB6C"));
-    }
-    return true;
+    return false;
 }
 
-//--------------------------------------------------------------------------------------------------
-void gt_AdminKick_Init () {
-    gt_AdminKick = TriggerCreate("gt_AdminKick_Func");
-    TriggerAddEventChatMessage(gt_AdminKick, c_playerAny, "-adminkick", false);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: Votekick
-//--------------------------------------------------------------------------------------------------
-bool gt_Votekick_Func (bool testConds, bool runActions) {
-    // Variable Declarations
-    int lv_playerToBeKicked;
-
+void gf_KickMoveUnits (int lp_kickedPlayer) {
     // Automatic Variable Declarations
-    string autoAE1C41A0_val;
-    const int auto16F9440D_ae = 10;
-    int auto16F9440D_var;
+    int auto6159F112_val;
+    unitgroup auto9F5563B6_g;
+    int auto9F5563B6_u;
+    unit auto9F5563B6_var;
+    unitgroup auto714E19A7_g;
+    int auto714E19A7_u;
+    unit auto714E19A7_var;
+    unitgroup auto9F51456A_g;
+    int auto9F51456A_u;
+    unit auto9F51456A_var;
+    unitgroup auto4A2D2327_g;
+    int auto4A2D2327_u;
+    unit auto4A2D2327_var;
+    unitgroup auto891FB1DF_g;
+    int auto891FB1DF_u;
+    unit auto891FB1DF_var;
 
-    // Variable Initialization
+    // Implementation
+    if ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHeaven, lp_kickedPlayer) == true)) {
+        auto891FB1DF_g = UnitGroup(UnitGetType(EventUnit()), lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        auto891FB1DF_u = UnitGroupCount(auto891FB1DF_g, c_unitCountAll);
+        for (;; auto891FB1DF_u -= 1) {
+            auto891FB1DF_var = UnitGroupUnitFromEnd(auto891FB1DF_g, auto891FB1DF_u);
+            if (auto891FB1DF_var == null) { break; }
+            if ((UnitGetType(auto891FB1DF_var) != "SiegeTankSieged") && (UnitGetType(auto891FB1DF_var) != "Beacon_Zerg") && (UnitGetType(auto891FB1DF_var) != "Beacon_Terran") && (UnitGetType(auto891FB1DF_var) != "Beacon_Protoss")) {
+                UnitSetPosition(auto891FB1DF_var, PointWithOffset(UnitGetPosition(UnitFromId(22)), 0.0, -8.0), false);
+            }
 
-    // Conditions
-    if (testConds) {
-        if (!((gv_gameData.lv_votekickVotekickInProgress == false))) {
-            return false;
         }
-    }
-
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    if ((gv_playerData[EventPlayer()].lv_hasPlayerAlreadyInitiatedAKick == true)) {
-        UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/F8C4A8EF"));
-        return true;
-    }
-
-    autoAE1C41A0_val = EventChatMessage(false);
-    if (autoAE1C41A0_val == "-kick 1") {
-        lv_playerToBeKicked = 1;
-    }
-    else if (autoAE1C41A0_val == "-kick 2") {
-        lv_playerToBeKicked = 2;
-    }
-    else if (autoAE1C41A0_val == "-kick 3") {
-        lv_playerToBeKicked = 3;
-    }
-    else if (autoAE1C41A0_val == "-kick 4") {
-        lv_playerToBeKicked = 4;
-    }
-    else if (autoAE1C41A0_val == "-kick 5") {
-        lv_playerToBeKicked = 5;
-    }
-    else if (autoAE1C41A0_val == "-kick 6") {
-        lv_playerToBeKicked = 6;
-    }
-    else if (autoAE1C41A0_val == "-kick 7") {
-        lv_playerToBeKicked = 7;
-    }
-    else if (autoAE1C41A0_val == "-kick 8") {
-        lv_playerToBeKicked = 8;
-    }
-    else if (autoAE1C41A0_val == "-kick 9") {
-        lv_playerToBeKicked = 9;
-    }
-    else if (autoAE1C41A0_val == "-kick 10") {
-        lv_playerToBeKicked = 10;
-    }
-    else if (autoAE1C41A0_val == "-kick white") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMessiah];
-    }
-    else if (autoAE1C41A0_val == "-kick teal") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMichael];
-    }
-    else if (autoAE1C41A0_val == "-kick blue") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMichael];
-    }
-    else if (autoAE1C41A0_val == "-kick green") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleUriel];
-    }
-    else if (autoAE1C41A0_val == "-kick brown") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleJehoel];
-    }
-    else if (autoAE1C41A0_val == "-kick purple") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleSeraphiel];
-    }
-    else if (autoAE1C41A0_val == "-kick grey") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleZadkiel];
-    }
-    else if (autoAE1C41A0_val == "-kick gray") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleZadkiel];
-    }
-    else if (autoAE1C41A0_val == "-kick black") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleZadkiel];
-    }
-    else if (autoAE1C41A0_val == "-kick red") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleDevil];
-    }
-    else if (autoAE1C41A0_val == "-kick orange") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleAsmodeus];
-    }
-    else if (autoAE1C41A0_val == "-kick yellow") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleAstaroth];
-    }
-    else if (autoAE1C41A0_val == "-kick pink") {
-        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMoloch];
     }
     else {
-        return true;
-    }
-    if (((lv_playerToBeKicked < 1) || (lv_playerToBeKicked > 13))) {
-        return true;
-    }
-
-    if ((PlayerStatus(lv_playerToBeKicked) != c_playerStatusActive)) {
-        UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/D30EFEEC"));
-        return true;
-    }
-
-    if ((gv_gameData.lv_gameStarted == true)) {
-        if ((((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHeaven, EventPlayer()) == true) && (PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHeaven, lv_playerToBeKicked) == false)) || ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHell, EventPlayer()) == true) && (PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHell, lv_playerToBeKicked) == false)))) {
-            UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/902A84A0"));
-            return true;
+        if ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHell, lp_kickedPlayer) == true)) {
+            auto6159F112_val = lp_kickedPlayer;
+            if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAstaroth]) {
+                auto714E19A7_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+                auto714E19A7_u = UnitGroupCount(auto714E19A7_g, c_unitCountAll);
+                for (;; auto714E19A7_u -= 1) {
+                    auto714E19A7_var = UnitGroupUnitFromEnd(auto714E19A7_g, auto714E19A7_u);
+                    if (auto714E19A7_var == null) { break; }
+                    UnitSetPosition(auto714E19A7_var, PointFromId(695), false);
+                }
+            }
+            else if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAsmodeus]) {
+                auto9F51456A_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+                auto9F51456A_u = UnitGroupCount(auto9F51456A_g, c_unitCountAll);
+                for (;; auto9F51456A_u -= 1) {
+                    auto9F51456A_var = UnitGroupUnitFromEnd(auto9F51456A_g, auto9F51456A_u);
+                    if (auto9F51456A_var == null) { break; }
+                    UnitSetPosition(auto9F51456A_var, PointFromId(694), false);
+                }
+            }
+            else if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleDevil]) {
+                auto4A2D2327_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+                auto4A2D2327_u = UnitGroupCount(auto4A2D2327_g, c_unitCountAll);
+                for (;; auto4A2D2327_u -= 1) {
+                    auto4A2D2327_var = UnitGroupUnitFromEnd(auto4A2D2327_g, auto4A2D2327_u);
+                    if (auto4A2D2327_var == null) { break; }
+                    UnitSetPosition(auto4A2D2327_var, PointFromId(693), false);
+                }
+            }
+            else {
+                auto9F5563B6_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+                auto9F5563B6_u = UnitGroupCount(auto9F5563B6_g, c_unitCountAll);
+                for (;; auto9F5563B6_u -= 1) {
+                    auto9F5563B6_var = UnitGroupUnitFromEnd(auto9F5563B6_g, auto9F5563B6_u);
+                    if (auto9F5563B6_var == null) { break; }
+                    UnitSetPosition(auto9F5563B6_var, PointFromId(696), false);
+                }
+            }
         }
 
     }
-
-    gv_playerData[EventPlayer()].lv_hasPlayerAlreadyInitiatedAKick = true;
-    gv_gameData.lv_votekickVotekickInProgress = true;
-    gv_gameData.lv_votekickYesVoteAmount = 0;
-    gv_gameData.lv_votekickNoVoteAmount = 0;
-    gv_gameData.lv_votekickAbstainedAmount = 0;
-    auto16F9440D_var = 1;
-    for ( ; auto16F9440D_var <= auto16F9440D_ae; auto16F9440D_var += 1 ) {
-        gv_playerData[auto16F9440D_var].lv_hasPlayerVoted = false;
-    }
-    gf_CreateVotekickDialog(lv_playerToBeKicked);
-    libNtve_gf_SetUpgradeLevelForPlayer(lv_playerToBeKicked, "PassiveController", (TechTreeUpgradeCount(lv_playerToBeKicked, "PassiveController", c_techCountCompleteOnly)+1));
-    if ((gf_VotekickingProcessOutcome() == true)) {
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (PlayerName(lv_playerToBeKicked) + StringExternal("Param/Value/D54DAA39")));
-        GameOver(lv_playerToBeKicked, c_gameOverDefeat, false, false);
-        gf_KickMoveUnits(lv_playerToBeKicked);
-    }
-    else {
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (PlayerName(lv_playerToBeKicked) + StringExternal("Param/Value/BE7C2186")));
-    }
-    libNtve_gf_SetUpgradeLevelForPlayer(lv_playerToBeKicked, "PassiveController", (TechTreeUpgradeCount(lv_playerToBeKicked, "PassiveController", c_techCountCompleteOnly)-1));
-    DialogDestroy(gv_gameData.lv_votekickDialog);
-    gv_gameData.lv_votekickVotekickInProgress = false;
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void gt_Votekick_Init () {
-    gt_Votekick = TriggerCreate("gt_Votekick_Func");
-    TriggerAddEventChatMessage(gt_Votekick, c_playerAny, "-kick", false);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: ANY DIALOG ITEM IS USED - Votekicking
-//--------------------------------------------------------------------------------------------------
-bool gt_ANYDIALOGITEMISUSEDVotekicking_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    int auto3F9CBEE9_val;
-
-    // Conditions
-    if (testConds) {
-        if (!((DialogControlGetDialog(EventDialogControl()) == gv_gameData.lv_votekickDialog))) {
-            return false;
-        }
-
-        if (!((gv_playerData[EventPlayer()].lv_hasPlayerVoted == false))) {
-            return false;
-        }
-    }
-
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    auto3F9CBEE9_val = EventDialogControl();
-    if (auto3F9CBEE9_val == gv_gameData.lv_votekickYESButton) {
-        gv_playerData[EventPlayer()].lv_hasPlayerVoted = true;
-        gv_gameData.lv_votekickYesVoteAmount += 1;
-        DialogSetVisible(gv_gameData.lv_votekickDialog, PlayerGroupSingle(EventPlayer()), false);
-    }
-    else if (auto3F9CBEE9_val == gv_gameData.lv_votekickNOButton) {
-        gv_playerData[EventPlayer()].lv_hasPlayerVoted = true;
-        gv_gameData.lv_votekickNoVoteAmount += 1;
-        DialogSetVisible(gv_gameData.lv_votekickDialog, PlayerGroupSingle(EventPlayer()), false);
-    }
-    else if (auto3F9CBEE9_val == gv_gameData.lv_votekickABSTAINButton) {
-        gv_playerData[EventPlayer()].lv_hasPlayerVoted = true;
-        gv_gameData.lv_votekickAbstainedAmount += 1;
-        DialogSetVisible(gv_gameData.lv_votekickDialog, PlayerGroupSingle(EventPlayer()), false);
-    }
-    else {
-    }
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void gt_ANYDIALOGITEMISUSEDVotekicking_Init () {
-    gt_ANYDIALOGITEMISUSEDVotekicking = TriggerCreate("gt_ANYDIALOGITEMISUSEDVotekicking_Func");
-    TriggerAddEventDialogControl(gt_ANYDIALOGITEMISUSEDVotekicking, c_playerAny, c_invalidDialogControlId, c_triggerControlEventTypeClick);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -16187,12 +15857,211 @@ void gt_DecreaseGamesPlayedTie_Init () {
 }
 
 //--------------------------------------------------------------------------------------------------
+// Trigger: Votekick
+//--------------------------------------------------------------------------------------------------
+bool gt_Votekick_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_playerToBeKicked;
+
+    // Automatic Variable Declarations
+    string autoAE1C41A0_val;
+    const int auto16F9440D_ae = 10;
+    int auto16F9440D_var;
+
+    // Variable Initialization
+
+    // Conditions
+    if (testConds) {
+        if (!((gv_gameData.lv_votekickVotekickInProgress == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    if ((gv_playerData[EventPlayer()].lv_hasPlayerAlreadyInitiatedAKick == true)) {
+        UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/F8C4A8EF"));
+        return true;
+    }
+
+    autoAE1C41A0_val = EventChatMessage(false);
+    if (autoAE1C41A0_val == "-kick 1") {
+        lv_playerToBeKicked = 1;
+    }
+    else if (autoAE1C41A0_val == "-kick 2") {
+        lv_playerToBeKicked = 2;
+    }
+    else if (autoAE1C41A0_val == "-kick 3") {
+        lv_playerToBeKicked = 3;
+    }
+    else if (autoAE1C41A0_val == "-kick 4") {
+        lv_playerToBeKicked = 4;
+    }
+    else if (autoAE1C41A0_val == "-kick 5") {
+        lv_playerToBeKicked = 5;
+    }
+    else if (autoAE1C41A0_val == "-kick 6") {
+        lv_playerToBeKicked = 6;
+    }
+    else if (autoAE1C41A0_val == "-kick 7") {
+        lv_playerToBeKicked = 7;
+    }
+    else if (autoAE1C41A0_val == "-kick 8") {
+        lv_playerToBeKicked = 8;
+    }
+    else if (autoAE1C41A0_val == "-kick 9") {
+        lv_playerToBeKicked = 9;
+    }
+    else if (autoAE1C41A0_val == "-kick 10") {
+        lv_playerToBeKicked = 10;
+    }
+    else if (autoAE1C41A0_val == "-kick white") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMessiah];
+    }
+    else if (autoAE1C41A0_val == "-kick teal") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMichael];
+    }
+    else if (autoAE1C41A0_val == "-kick blue") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMichael];
+    }
+    else if (autoAE1C41A0_val == "-kick green") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleUriel];
+    }
+    else if (autoAE1C41A0_val == "-kick brown") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleJehoel];
+    }
+    else if (autoAE1C41A0_val == "-kick purple") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleSeraphiel];
+    }
+    else if (autoAE1C41A0_val == "-kick grey") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleZadkiel];
+    }
+    else if (autoAE1C41A0_val == "-kick gray") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleZadkiel];
+    }
+    else if (autoAE1C41A0_val == "-kick black") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleZadkiel];
+    }
+    else if (autoAE1C41A0_val == "-kick red") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleDevil];
+    }
+    else if (autoAE1C41A0_val == "-kick orange") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleAsmodeus];
+    }
+    else if (autoAE1C41A0_val == "-kick yellow") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleAstaroth];
+    }
+    else if (autoAE1C41A0_val == "-kick pink") {
+        lv_playerToBeKicked = gv_gameData.lv_rolesOwners[gv_syn.lv_roleMoloch];
+    }
+    else {
+        return true;
+    }
+    if (((lv_playerToBeKicked < 1) || (lv_playerToBeKicked > 13))) {
+        return true;
+    }
+
+    if ((PlayerStatus(lv_playerToBeKicked) != c_playerStatusActive)) {
+        UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/D30EFEEC"));
+        return true;
+    }
+
+    if ((gv_gameData.lv_gameStarted == true)) {
+        if ((((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHeaven, EventPlayer()) == true) && (PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHeaven, lv_playerToBeKicked) == false)) || ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHell, EventPlayer()) == true) && (PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHell, lv_playerToBeKicked) == false)))) {
+            UIDisplayMessage(PlayerGroupSingle(EventPlayer()), c_messageAreaSubtitle, StringExternal("Param/Value/902A84A0"));
+            return true;
+        }
+
+    }
+
+    gv_playerData[EventPlayer()].lv_hasPlayerAlreadyInitiatedAKick = true;
+    gv_gameData.lv_votekickVotekickInProgress = true;
+    gv_gameData.lv_votekickYesVoteAmount = 0;
+    gv_gameData.lv_votekickNoVoteAmount = 0;
+    gv_gameData.lv_votekickAbstainedAmount = 0;
+    auto16F9440D_var = 1;
+    for ( ; auto16F9440D_var <= auto16F9440D_ae; auto16F9440D_var += 1 ) {
+        gv_playerData[auto16F9440D_var].lv_hasPlayerVoted = false;
+    }
+    gf_CreateVotekickDialog(lv_playerToBeKicked);
+    libNtve_gf_SetUpgradeLevelForPlayer(lv_playerToBeKicked, "PassiveController", (TechTreeUpgradeCount(lv_playerToBeKicked, "PassiveController", c_techCountCompleteOnly)+1));
+    if ((gf_VotekickingProcessOutcome() == true)) {
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (PlayerName(lv_playerToBeKicked) + StringExternal("Param/Value/D54DAA39")));
+        GameOver(lv_playerToBeKicked, c_gameOverDefeat, false, false);
+        gf_KickMoveUnits(lv_playerToBeKicked);
+    }
+    else {
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaSubtitle, (PlayerName(lv_playerToBeKicked) + StringExternal("Param/Value/BE7C2186")));
+    }
+    libNtve_gf_SetUpgradeLevelForPlayer(lv_playerToBeKicked, "PassiveController", (TechTreeUpgradeCount(lv_playerToBeKicked, "PassiveController", c_techCountCompleteOnly)-1));
+    DialogDestroy(gv_gameData.lv_votekickDialog);
+    gv_gameData.lv_votekickVotekickInProgress = false;
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Votekick_Init () {
+    gt_Votekick = TriggerCreate("gt_Votekick_Func");
+    TriggerAddEventChatMessage(gt_Votekick, c_playerAny, "-kick", false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: ANY DIALOG ITEM IS USED - Votekicking
+//--------------------------------------------------------------------------------------------------
+bool gt_ANYDIALOGITEMISUSEDVotekicking_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    int auto3F9CBEE9_val;
+
+    // Conditions
+    if (testConds) {
+        if (!((DialogControlGetDialog(EventDialogControl()) == gv_gameData.lv_votekickDialog))) {
+            return false;
+        }
+
+        if (!((gv_playerData[EventPlayer()].lv_hasPlayerVoted == false))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto3F9CBEE9_val = EventDialogControl();
+    if (auto3F9CBEE9_val == gv_gameData.lv_votekickYESButton) {
+        gv_playerData[EventPlayer()].lv_hasPlayerVoted = true;
+        gv_gameData.lv_votekickYesVoteAmount += 1;
+        DialogSetVisible(gv_gameData.lv_votekickDialog, PlayerGroupSingle(EventPlayer()), false);
+    }
+    else if (auto3F9CBEE9_val == gv_gameData.lv_votekickNOButton) {
+        gv_playerData[EventPlayer()].lv_hasPlayerVoted = true;
+        gv_gameData.lv_votekickNoVoteAmount += 1;
+        DialogSetVisible(gv_gameData.lv_votekickDialog, PlayerGroupSingle(EventPlayer()), false);
+    }
+    else if (auto3F9CBEE9_val == gv_gameData.lv_votekickABSTAINButton) {
+        gv_playerData[EventPlayer()].lv_hasPlayerVoted = true;
+        gv_gameData.lv_votekickAbstainedAmount += 1;
+        DialogSetVisible(gv_gameData.lv_votekickDialog, PlayerGroupSingle(EventPlayer()), false);
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_ANYDIALOGITEMISUSEDVotekicking_Init () {
+    gt_ANYDIALOGITEMISUSEDVotekicking = TriggerCreate("gt_ANYDIALOGITEMISUSEDVotekicking_Func");
+    TriggerAddEventDialogControl(gt_ANYDIALOGITEMISUSEDVotekicking, c_playerAny, c_invalidDialogControlId, c_triggerControlEventTypeClick);
+}
+
+//--------------------------------------------------------------------------------------------------
 // Trigger Initialization
 //--------------------------------------------------------------------------------------------------
 void InitTriggers () {
-    gt_AdminKick_Init();
-    gt_Votekick_Init();
-    gt_ANYDIALOGITEMISUSEDVotekicking_Init();
     gt_MainInitialization_Init();
     gt_InitializeVariables_Init();
     gt_LagHack_Init();
@@ -16372,6 +16241,8 @@ void InitTriggers () {
     gt_ListSelectionRedirectRoles2_Init();
     gt_IncrementGamesPlayed_Init();
     gt_DecreaseGamesPlayedTie_Init();
+    gt_Votekick_Init();
+    gt_ANYDIALOGITEMISUSEDVotekicking_Init();
 }
 
 //--------------------------------------------------------------------------------------------------
