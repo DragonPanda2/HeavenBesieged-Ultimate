@@ -31,6 +31,7 @@ Category/Name/DDF8E5F0=Hero Death Messages
 Category/Name/E252E202=Nydus
 Category/Name/F1B8A86C=Sandbox
 Category/Name/F7A31AA5=Objectives
+CustomScript/Name/1B648C50=Bootstrap
 FunctionDef/Grammar/AC7EB231=Move units of (~kickedPlayer~)
 FunctionDef/Grammar/F7EF6267=Create Dialog Image For ~panel~ with the dimension (~sizeX~, ~sizeY~) (Size to Parent ~sizeToParent~) anchored to ~anchor~ with and offset of (~x~, ~y~) setting the tooltip to "~tooltip~" using the image (~file~), with transparency of ~fade~%, desaturation set to ~desaturationFlag~ (~desatuationColor~).
 FunctionDef/Hint/629871F2=Returns True if Player Handle IS an admin.
