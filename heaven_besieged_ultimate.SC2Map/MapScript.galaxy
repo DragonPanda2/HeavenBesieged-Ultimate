@@ -658,8 +658,6 @@ void gf_UpdateStatsDisplay ();
 //--------------------------------------------------------------------------------------------------
 // Trigger Variables
 //--------------------------------------------------------------------------------------------------
-trigger gt__2D2D2D2D2D2D2D2D2D2D2D2D2D;
-trigger gt_UpdateLog;
 trigger gt_AdminKick;
 trigger gt_Votekick;
 trigger gt_ANYDIALOGITEMISUSEDVotekicking;
@@ -4562,34 +4560,6 @@ void gf_UpdateStatsDisplay () {
     for ( ; ( (autoC4329B7B_ai >= 0 && lv_slot <= autoC4329B7B_ae) || (autoC4329B7B_ai < 0 && lv_slot >= autoC4329B7B_ae) ) ; lv_slot += autoC4329B7B_ai ) {
         DialogControlAddItem(gv_banks.lv_statisticsItemNames, PlayerGroupAll(), lv_nametext[lv_slot]);
     }
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: -------------
-//--------------------------------------------------------------------------------------------------
-bool gt__2D2D2D2D2D2D2D2D2D2D2D2D2D_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void gt__2D2D2D2D2D2D2D2D2D2D2D2D2D_Init () {
-    gt__2D2D2D2D2D2D2D2D2D2D2D2D2D = TriggerCreate("gt__2D2D2D2D2D2D2D2D2D2D2D2D2D_Func");
-    TriggerEnable(gt__2D2D2D2D2D2D2D2D2D2D2D2D2D, false);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: Update Log
-//--------------------------------------------------------------------------------------------------
-bool gt_UpdateLog_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void gt_UpdateLog_Init () {
-    gt_UpdateLog = TriggerCreate("gt_UpdateLog_Func");
-    TriggerEnable(gt_UpdateLog, false);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -16220,8 +16190,6 @@ void gt_DecreaseGamesPlayedTie_Init () {
 // Trigger Initialization
 //--------------------------------------------------------------------------------------------------
 void InitTriggers () {
-    gt__2D2D2D2D2D2D2D2D2D2D2D2D2D_Init();
-    gt_UpdateLog_Init();
     gt_AdminKick_Init();
     gt_Votekick_Init();
     gt_ANYDIALOGITEMISUSEDVotekicking_Init();
