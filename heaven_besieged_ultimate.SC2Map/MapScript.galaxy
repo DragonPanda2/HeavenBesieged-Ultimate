@@ -589,7 +589,6 @@ void InitGlobals () {
 //--------------------------------------------------------------------------------------------------
 // Global Function Declarations
 //--------------------------------------------------------------------------------------------------
-int gf_GetRoleNumber (string lp_role);
 int gf_DuckGetRoleIdFromLobby (string lp_role);
 bool gf_ScrubList (int lp_playerNumber);
 void gf_DuckRoleSelectorSubRankIconTemplateRole (int lp_x, int lp_y, int lp_roleID, int lp_dialog);
@@ -654,6 +653,7 @@ bool gf_CheckAdminList (int lp_playerNumber);
 void gf_CreateVotekickDialog (int lp_targetPlayer);
 bool gf_VotekickingProcessOutcome ();
 void gf_KickMoveUnits (int lp_kickedPlayer);
+int gf_GetRoleNumber (string lp_role);
 
 //--------------------------------------------------------------------------------------------------
 // Trigger Variables
@@ -855,47 +855,6 @@ void InitCustomScript () {
 //--------------------------------------------------------------------------------------------------
 // Global Functions
 //--------------------------------------------------------------------------------------------------
-int gf_GetRoleNumber (string lp_role) {
-    // Automatic Variable Declarations
-    string auto618B1A54_val;
-
-    // Implementation
-    auto618B1A54_val = lp_role;
-    if (auto618B1A54_val == "0001") {
-        return gv_syn.lv_roleMessiah;
-    }
-    else if (auto618B1A54_val == "0003") {
-        return gv_syn.lv_roleMichael;
-    }
-    else if (auto618B1A54_val == "0002") {
-        return gv_syn.lv_roleUriel;
-    }
-    else if (auto618B1A54_val == "0005") {
-        return gv_syn.lv_roleJehoel;
-    }
-    else if (auto618B1A54_val == "0004") {
-        return gv_syn.lv_roleSeraphiel;
-    }
-    else if (auto618B1A54_val == "0006") {
-        return gv_syn.lv_roleZadkiel;
-    }
-    else if (auto618B1A54_val == "0007") {
-        return gv_syn.lv_roleDevil;
-    }
-    else if (auto618B1A54_val == "0008") {
-        return gv_syn.lv_roleAsmodeus;
-    }
-    else if (auto618B1A54_val == "0009") {
-        return gv_syn.lv_roleAstaroth;
-    }
-    else if (auto618B1A54_val == "0010") {
-        return gv_syn.lv_roleMoloch;
-    }
-    else {
-        return -1;
-    }
-}
-
 int gf_DuckGetRoleIdFromLobby (string lp_role) {
     // Automatic Variable Declarations
     string auto8F19AFFE_val;
@@ -4558,6 +4517,47 @@ void gf_KickMoveUnits (int lp_kickedPlayer) {
             }
         }
 
+    }
+}
+
+int gf_GetRoleNumber (string lp_role) {
+    // Automatic Variable Declarations
+    string auto618B1A54_val;
+
+    // Implementation
+    auto618B1A54_val = lp_role;
+    if (auto618B1A54_val == "0001") {
+        return gv_syn.lv_roleMessiah;
+    }
+    else if (auto618B1A54_val == "0003") {
+        return gv_syn.lv_roleMichael;
+    }
+    else if (auto618B1A54_val == "0002") {
+        return gv_syn.lv_roleUriel;
+    }
+    else if (auto618B1A54_val == "0005") {
+        return gv_syn.lv_roleJehoel;
+    }
+    else if (auto618B1A54_val == "0004") {
+        return gv_syn.lv_roleSeraphiel;
+    }
+    else if (auto618B1A54_val == "0006") {
+        return gv_syn.lv_roleZadkiel;
+    }
+    else if (auto618B1A54_val == "0007") {
+        return gv_syn.lv_roleDevil;
+    }
+    else if (auto618B1A54_val == "0008") {
+        return gv_syn.lv_roleAsmodeus;
+    }
+    else if (auto618B1A54_val == "0009") {
+        return gv_syn.lv_roleAstaroth;
+    }
+    else if (auto618B1A54_val == "0010") {
+        return gv_syn.lv_roleMoloch;
+    }
+    else {
+        return -1;
     }
 }
 
