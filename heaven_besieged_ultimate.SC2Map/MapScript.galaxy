@@ -645,15 +645,15 @@ text gf_HandleLeaversGetforcestext (int lp_pLAYER);
 bool gf_isRoleGood2 (int lp_role);
 void gf_RefreshCCG (int lp_player);
 void gf_UpdateStatsDisplay ();
-bool gf_CheckAdminList (int lp_playerNumber);
-void gf_CreateVotekickDialog (int lp_targetPlayer);
-bool gf_VotekickingProcessOutcome ();
-void gf_KickMoveUnits (int lp_kickedPlayer);
 string gf_numberwithspaces (int lp_num);
 unitgroup gf_ControlGroupFromInteger (int lp_cCGValue, int lp_role, int lp_controlGroup);
 text gf_GetRoleNameColored (int lp_role);
 bool gf_IsPlayerGood (int lp_playa);
 int gf_GetRoleNumber (string lp_role);
+bool gf_CheckAdminList (int lp_playerNumber);
+void gf_CreateVotekickDialog (int lp_targetPlayer);
+bool gf_VotekickingProcessOutcome ();
+void gf_KickMoveUnits (int lp_kickedPlayer);
 
 //--------------------------------------------------------------------------------------------------
 // Trigger Variables
@@ -3517,135 +3517,6 @@ void gf_UpdateStatsDisplay () {
     }
 }
 
-bool gf_CheckAdminList (int lp_playerNumber) {
-    // Automatic Variable Declarations
-    // Implementation
-    if (((PlayerHandle(lp_playerNumber) == ""))) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-void gf_CreateVotekickDialog (int lp_targetPlayer) {
-    // Automatic Variable Declarations
-    // Implementation
-    if ((gv_gameData.lv_tieTriggered == true)) {
-        DialogCreate(550, 200, c_anchorTopRight, 0, 220, true);
-    }
-    else {
-        DialogCreate(550, 200, c_anchorTopRight, 0, 0, true);
-    }
-    DialogSetTitle(DialogLastCreated(), (StringExternal("Param/Value/5B5DB227") + PlayerName(lp_targetPlayer) + StringExternal("Param/Value/F95F93C3")));
-    DialogSetVisible(DialogLastCreated(), PlayerGroupAll(), true);
-    gv_gameData.lv_votekickDialog = DialogLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 80, 50, c_anchorBottomLeft, 50, 50, StringToText(""), StringExternal("Param/Value/526F78DD"), "");
-    gv_gameData.lv_votekickYESButton = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 80, 50, c_anchorBottom, 0, 50, StringToText(""), StringExternal("Param/Value/C34C5E97"), "");
-    gv_gameData.lv_votekickNOButton = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, 50, c_anchorBottomRight, 50, 50, StringToText(""), StringExternal("Param/Value/6D47005F"), "");
-    gv_gameData.lv_votekickABSTAINButton = DialogControlLastCreated();
-}
-
-bool gf_VotekickingProcessOutcome () {
-    // Variable Declarations
-    int lv_totalPlayerAmount;
-    fixed lv_timeRemaining;
-
-    // Automatic Variable Declarations
-    // Variable Initialization
-    lv_totalPlayerAmount = PlayerGroupCount(PlayerGroupActive());
-    lv_timeRemaining = 20.0;
-
-    // Implementation
-    while ((lv_timeRemaining > 0.0) && (gv_gameData.lv_votekickYesVoteAmount <= (lv_totalPlayerAmount-gv_gameData.lv_votekickYesVoteAmount-gv_gameData.lv_votekickAbstainedAmount)) && (gv_gameData.lv_votekickNoVoteAmount <= (lv_totalPlayerAmount-gv_gameData.lv_votekickNoVoteAmount-gv_gameData.lv_votekickAbstainedAmount)) && ((lv_totalPlayerAmount - gv_gameData.lv_votekickAbstainedAmount) > 0)) {
-        Wait(0.25, c_timeGame);
-        lv_timeRemaining -= 0.25;
-    }
-    if ((gv_gameData.lv_votekickYesVoteAmount > (lv_totalPlayerAmount-gv_gameData.lv_votekickYesVoteAmount-gv_gameData.lv_votekickAbstainedAmount))) {
-        return true;
-    }
-
-    return false;
-}
-
-void gf_KickMoveUnits (int lp_kickedPlayer) {
-    // Automatic Variable Declarations
-    int auto6159F112_val;
-    unitgroup auto9F5563B6_g;
-    int auto9F5563B6_u;
-    unit auto9F5563B6_var;
-    unitgroup auto714E19A7_g;
-    int auto714E19A7_u;
-    unit auto714E19A7_var;
-    unitgroup auto9F51456A_g;
-    int auto9F51456A_u;
-    unit auto9F51456A_var;
-    unitgroup auto4A2D2327_g;
-    int auto4A2D2327_u;
-    unit auto4A2D2327_var;
-    unitgroup auto891FB1DF_g;
-    int auto891FB1DF_u;
-    unit auto891FB1DF_var;
-
-    // Implementation
-    if ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHeaven, lp_kickedPlayer) == true)) {
-        auto891FB1DF_g = UnitGroup(UnitGetType(EventUnit()), lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-        auto891FB1DF_u = UnitGroupCount(auto891FB1DF_g, c_unitCountAll);
-        for (;; auto891FB1DF_u -= 1) {
-            auto891FB1DF_var = UnitGroupUnitFromEnd(auto891FB1DF_g, auto891FB1DF_u);
-            if (auto891FB1DF_var == null) { break; }
-            if ((UnitGetType(auto891FB1DF_var) != "SiegeTankSieged") && (UnitGetType(auto891FB1DF_var) != "Beacon_Zerg") && (UnitGetType(auto891FB1DF_var) != "Beacon_Terran") && (UnitGetType(auto891FB1DF_var) != "Beacon_Protoss")) {
-                UnitSetPosition(auto891FB1DF_var, PointWithOffset(UnitGetPosition(UnitFromId(22)), 0.0, -8.0), false);
-            }
-
-        }
-    }
-    else {
-        if ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHell, lp_kickedPlayer) == true)) {
-            auto6159F112_val = lp_kickedPlayer;
-            if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAstaroth]) {
-                auto714E19A7_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-                auto714E19A7_u = UnitGroupCount(auto714E19A7_g, c_unitCountAll);
-                for (;; auto714E19A7_u -= 1) {
-                    auto714E19A7_var = UnitGroupUnitFromEnd(auto714E19A7_g, auto714E19A7_u);
-                    if (auto714E19A7_var == null) { break; }
-                    UnitSetPosition(auto714E19A7_var, PointFromId(695), false);
-                }
-            }
-            else if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAsmodeus]) {
-                auto9F51456A_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-                auto9F51456A_u = UnitGroupCount(auto9F51456A_g, c_unitCountAll);
-                for (;; auto9F51456A_u -= 1) {
-                    auto9F51456A_var = UnitGroupUnitFromEnd(auto9F51456A_g, auto9F51456A_u);
-                    if (auto9F51456A_var == null) { break; }
-                    UnitSetPosition(auto9F51456A_var, PointFromId(694), false);
-                }
-            }
-            else if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleDevil]) {
-                auto4A2D2327_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-                auto4A2D2327_u = UnitGroupCount(auto4A2D2327_g, c_unitCountAll);
-                for (;; auto4A2D2327_u -= 1) {
-                    auto4A2D2327_var = UnitGroupUnitFromEnd(auto4A2D2327_g, auto4A2D2327_u);
-                    if (auto4A2D2327_var == null) { break; }
-                    UnitSetPosition(auto4A2D2327_var, PointFromId(693), false);
-                }
-            }
-            else {
-                auto9F5563B6_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
-                auto9F5563B6_u = UnitGroupCount(auto9F5563B6_g, c_unitCountAll);
-                for (;; auto9F5563B6_u -= 1) {
-                    auto9F5563B6_var = UnitGroupUnitFromEnd(auto9F5563B6_g, auto9F5563B6_u);
-                    if (auto9F5563B6_var == null) { break; }
-                    UnitSetPosition(auto9F5563B6_var, PointFromId(696), false);
-                }
-            }
-        }
-
-    }
-}
-
 string gf_numberwithspaces (int lp_num) {
     // Variable Declarations
     const int lv_width = 4;
@@ -4558,6 +4429,135 @@ int gf_GetRoleNumber (string lp_role) {
     }
     else {
         return -1;
+    }
+}
+
+bool gf_CheckAdminList (int lp_playerNumber) {
+    // Automatic Variable Declarations
+    // Implementation
+    if (((PlayerHandle(lp_playerNumber) == ""))) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+void gf_CreateVotekickDialog (int lp_targetPlayer) {
+    // Automatic Variable Declarations
+    // Implementation
+    if ((gv_gameData.lv_tieTriggered == true)) {
+        DialogCreate(550, 200, c_anchorTopRight, 0, 220, true);
+    }
+    else {
+        DialogCreate(550, 200, c_anchorTopRight, 0, 0, true);
+    }
+    DialogSetTitle(DialogLastCreated(), (StringExternal("Param/Value/5B5DB227") + PlayerName(lp_targetPlayer) + StringExternal("Param/Value/F95F93C3")));
+    DialogSetVisible(DialogLastCreated(), PlayerGroupAll(), true);
+    gv_gameData.lv_votekickDialog = DialogLastCreated();
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 80, 50, c_anchorBottomLeft, 50, 50, StringToText(""), StringExternal("Param/Value/526F78DD"), "");
+    gv_gameData.lv_votekickYESButton = DialogControlLastCreated();
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 80, 50, c_anchorBottom, 0, 50, StringToText(""), StringExternal("Param/Value/C34C5E97"), "");
+    gv_gameData.lv_votekickNOButton = DialogControlLastCreated();
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, 50, c_anchorBottomRight, 50, 50, StringToText(""), StringExternal("Param/Value/6D47005F"), "");
+    gv_gameData.lv_votekickABSTAINButton = DialogControlLastCreated();
+}
+
+bool gf_VotekickingProcessOutcome () {
+    // Variable Declarations
+    int lv_totalPlayerAmount;
+    fixed lv_timeRemaining;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_totalPlayerAmount = PlayerGroupCount(PlayerGroupActive());
+    lv_timeRemaining = 20.0;
+
+    // Implementation
+    while ((lv_timeRemaining > 0.0) && (gv_gameData.lv_votekickYesVoteAmount <= (lv_totalPlayerAmount-gv_gameData.lv_votekickYesVoteAmount-gv_gameData.lv_votekickAbstainedAmount)) && (gv_gameData.lv_votekickNoVoteAmount <= (lv_totalPlayerAmount-gv_gameData.lv_votekickNoVoteAmount-gv_gameData.lv_votekickAbstainedAmount)) && ((lv_totalPlayerAmount - gv_gameData.lv_votekickAbstainedAmount) > 0)) {
+        Wait(0.25, c_timeGame);
+        lv_timeRemaining -= 0.25;
+    }
+    if ((gv_gameData.lv_votekickYesVoteAmount > (lv_totalPlayerAmount-gv_gameData.lv_votekickYesVoteAmount-gv_gameData.lv_votekickAbstainedAmount))) {
+        return true;
+    }
+
+    return false;
+}
+
+void gf_KickMoveUnits (int lp_kickedPlayer) {
+    // Automatic Variable Declarations
+    int auto6159F112_val;
+    unitgroup auto9F5563B6_g;
+    int auto9F5563B6_u;
+    unit auto9F5563B6_var;
+    unitgroup auto714E19A7_g;
+    int auto714E19A7_u;
+    unit auto714E19A7_var;
+    unitgroup auto9F51456A_g;
+    int auto9F51456A_u;
+    unit auto9F51456A_var;
+    unitgroup auto4A2D2327_g;
+    int auto4A2D2327_u;
+    unit auto4A2D2327_var;
+    unitgroup auto891FB1DF_g;
+    int auto891FB1DF_u;
+    unit auto891FB1DF_var;
+
+    // Implementation
+    if ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHeaven, lp_kickedPlayer) == true)) {
+        auto891FB1DF_g = UnitGroup(UnitGetType(EventUnit()), lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        auto891FB1DF_u = UnitGroupCount(auto891FB1DF_g, c_unitCountAll);
+        for (;; auto891FB1DF_u -= 1) {
+            auto891FB1DF_var = UnitGroupUnitFromEnd(auto891FB1DF_g, auto891FB1DF_u);
+            if (auto891FB1DF_var == null) { break; }
+            if ((UnitGetType(auto891FB1DF_var) != "SiegeTankSieged") && (UnitGetType(auto891FB1DF_var) != "Beacon_Zerg") && (UnitGetType(auto891FB1DF_var) != "Beacon_Terran") && (UnitGetType(auto891FB1DF_var) != "Beacon_Protoss")) {
+                UnitSetPosition(auto891FB1DF_var, PointWithOffset(UnitGetPosition(UnitFromId(22)), 0.0, -8.0), false);
+            }
+
+        }
+    }
+    else {
+        if ((PlayerGroupHasPlayer(gv_gameData.lv_playerGroupHell, lp_kickedPlayer) == true)) {
+            auto6159F112_val = lp_kickedPlayer;
+            if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAstaroth]) {
+                auto714E19A7_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+                auto714E19A7_u = UnitGroupCount(auto714E19A7_g, c_unitCountAll);
+                for (;; auto714E19A7_u -= 1) {
+                    auto714E19A7_var = UnitGroupUnitFromEnd(auto714E19A7_g, auto714E19A7_u);
+                    if (auto714E19A7_var == null) { break; }
+                    UnitSetPosition(auto714E19A7_var, PointFromId(695), false);
+                }
+            }
+            else if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleAsmodeus]) {
+                auto9F51456A_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+                auto9F51456A_u = UnitGroupCount(auto9F51456A_g, c_unitCountAll);
+                for (;; auto9F51456A_u -= 1) {
+                    auto9F51456A_var = UnitGroupUnitFromEnd(auto9F51456A_g, auto9F51456A_u);
+                    if (auto9F51456A_var == null) { break; }
+                    UnitSetPosition(auto9F51456A_var, PointFromId(694), false);
+                }
+            }
+            else if (auto6159F112_val == gv_gameData.lv_rolesOwners[gv_syn.lv_roleDevil]) {
+                auto4A2D2327_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+                auto4A2D2327_u = UnitGroupCount(auto4A2D2327_g, c_unitCountAll);
+                for (;; auto4A2D2327_u -= 1) {
+                    auto4A2D2327_var = UnitGroupUnitFromEnd(auto4A2D2327_g, auto4A2D2327_u);
+                    if (auto4A2D2327_var == null) { break; }
+                    UnitSetPosition(auto4A2D2327_var, PointFromId(693), false);
+                }
+            }
+            else {
+                auto9F5563B6_g = UnitGroup(null, lp_kickedPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+                auto9F5563B6_u = UnitGroupCount(auto9F5563B6_g, c_unitCountAll);
+                for (;; auto9F5563B6_u -= 1) {
+                    auto9F5563B6_var = UnitGroupUnitFromEnd(auto9F5563B6_g, auto9F5563B6_u);
+                    if (auto9F5563B6_var == null) { break; }
+                    UnitSetPosition(auto9F5563B6_var, PointFromId(696), false);
+                }
+            }
+        }
+
     }
 }
 

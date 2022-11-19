@@ -29,6 +29,7 @@ Category/Name/D08F5F97=Banninator
 Category/Name/D1B18CB6=Banks
 Category/Name/DBC870EB=Reinforcements
 Category/Name/DDF8E5F0=Hero Death Messages
+Category/Name/E1746B3A=HeavensBesieged
 Category/Name/E252E202=Nydus
 Category/Name/F1B8A86C=Sandbox
 Category/Name/F7A31AA5=Objectives
