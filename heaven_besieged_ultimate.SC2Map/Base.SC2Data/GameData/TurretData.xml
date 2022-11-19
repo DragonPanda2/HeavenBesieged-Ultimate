@@ -1,21 +1,3 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
-    <CTurret id="DiamondbackCopymessiah" parent="FreeRotate">
-        <Idle value="Reset"/>
-        <YawRate value="135"/>
-        <YawIdleRate value="135"/>
-        <Fidget>
-            <ChanceArray index="Anim" value="0"/>
-            <ChanceArray index="Idle" value="100"/>
-            <ChanceArray index="Turn" value="0"/>
-        </Fidget>
-    </CTurret>
-    <CTurret id="Goliath">
-        <YawArc value="360"/>
-    </CTurret>
-    <CTurret id="LockedForward">
-        <YawArc value="29.9926"/>
-        <YawRate value="999.8437"/>
-        <Fidget TurnAngle="0"/>
-    </CTurret>
 </Catalog>
